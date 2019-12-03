@@ -1,0 +1,72 @@
+'use strict';
+/**用户管理controller层
+ * @param userManagerController
+ */
+const Controller = require('egg').Controller;
+
+class UserController extends Controller {
+    //用户登录
+    async login() {
+        const { ctx } = this;
+        let result=await this.service.user.login();
+        const {code,res}=result;
+        if (code===0){
+            const token=this.app.jwt.sign({
+                data:result.data
+            },this.app.config.jwt.secret,{expiresIn:'0.5h'});
+            ctx.body={
+                code,
+                message:res+'欢迎您！'+result.data.username,
+                token
+            }
+        }else {
+            ctx.body={
+                code,
+                message:res
+            }
+        }
+    }
+    //用户注册
+    async registor(){
+        const { ctx }=this;
+        let result=await this.service.user.registor();
+        const {code,res}=result;
+        if (code===0){
+            const token=this.app.jwt.sign({
+                data:result.data
+            },this.app.config.jwt.secret,{expiresIn:'1h'});
+            ctx.body={
+                code,
+                message:res,
+                token
+            }
+        }else {
+            ctx.body={
+                code,
+                message:res
+            }
+        }
+    }
+
+    //通过token获取用户信息
+    async getUserInfo(){
+        const { ctx,app }=this;
+        console.log(ctx.body)
+        ctx.body={
+            code:0,
+            message:'获取用户信息成功!',
+            data:ctx.payload
+        }
+    }
+    //重置密码
+    async resetPass(){
+    const { ctx }=this;
+    let result=await this.service.user.resetPass();
+    const {code,res}=result;
+    ctx.body={
+        code,
+        message:res
+    }
+    }
+}
+module.exports = UserController;
