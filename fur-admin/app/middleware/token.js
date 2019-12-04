@@ -6,7 +6,7 @@ module.exports=(options,app)=>{
               let payload=app.jwt.verify(token.split(' ')[1],app.config.jwt.secret);
               if (payload){
                   ctx.payload=payload;
-                 await next();
+                  await next();
               }else {
                   ctx.body={
                       code:6,

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/config/config.default.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/config/config.default.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,54 +18,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/material/index.vue">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/api/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4590">
-              <caret line="155" column="28" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
+            <state relative-caret-position="1320">
+              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
               <folding>
-                <element signature="e#3148#3199#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-admin/config/plugin.js">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/list/dialog/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+              <folding>
+                <element signature="e#1981#2026#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-admin/app/service/verify.js">
+        <entry file="file://$PROJECT_DIR$/fur-front/config/dev.env.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-admin/app/router.js">
+        <entry file="file://$PROJECT_DIR$/fur-front/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state relative-caret-position="360">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-admin/app/io/controller/chat.js">
+        <entry file="file://$PROJECT_DIR$/fur-admin/config/config.default.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+              <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fur-admin/app/io/middleware/filter.js">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/list/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            <state relative-caret-position="248">
+              <caret line="179" column="33" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="33" />
+              <folding>
+                <element signature="e#3955#4001#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
+            <state relative-caret-position="-437">
               <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding>
                 <element signature="e#926#975#0" expanded="true" />
@@ -81,28 +92,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-front/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-front/src/main.js">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/untils/valiateUntil.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="180">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#140#161#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fur-admin/app/io/middleware/auth.js">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/api/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2070">
+              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +141,6 @@
     <findStrings>
       <find>!important</find>
       <find>!importan</find>
-      <find>ruleForm</find>
       <find>ruleFormDialog</find>
       <find>visible</find>
       <find>visible1</find>
@@ -134,7 +153,16 @@
       <find>token</find>
       <find>List</find>
       <find>cate</find>
+      <find>router</find>
+      <find>ruleForm</find>
+      <find>singleData</find>
+      <find>cssFlag</find>
+      <find>FormVis</find>
+      <find>de</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Administrator\WebstormProjects\plFurniture</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,9 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fur-front/src/components/component/head/Header.vue" />
-        <option value="$PROJECT_DIR$/fur-admin/app/controller/user.js" />
-        <option value="$PROJECT_DIR$/fur-admin/app/router/goods.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/controller/goods.js" />
         <option value="$PROJECT_DIR$/fur-front/src/components/pages/product/Product-dialog.vue" />
         <option value="$PROJECT_DIR$/fur-front/src/filters/money.js" />
@@ -159,13 +184,10 @@
         <option value="$PROJECT_DIR$/fur-front/src/views/product/Product-material.vue" />
         <option value="$PROJECT_DIR$/fur-front/node_modules/vue-loader/lib/template-compiler/index.js" />
         <option value="$PROJECT_DIR$/fur-front/.babelrc" />
-        <option value="$PROJECT_DIR$/fur-front/src/router/index.js" />
         <option value="$PROJECT_DIR$/fur-front/src/views/product/dialog/index.vue" />
         <option value="$PROJECT_DIR$/fur-front/static/css/reset.css" />
         <option value="$PROJECT_DIR$/fur-front/src/views/product/detail/index.vue" />
         <option value="$PROJECT_DIR$/fur-front/src/views/product/materail/index.vue" />
-        <option value="$PROJECT_DIR$/fur-front/src/views/product/list/dialog/index.vue" />
-        <option value="$PROJECT_DIR$/fur-front/src/views/product/material/dialog/index.vue" />
         <option value="$PROJECT_DIR$/fur-admin/app/model/material.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/model/spend.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/model/materials.js" />
@@ -179,24 +201,30 @@
         <option value="$PROJECT_DIR$/fur-admin/app/router/category.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/controller/category.js" />
         <option value="$PROJECT_DIR$/fur-front/src/views/product/index.vue" />
-        <option value="$PROJECT_DIR$/fur-front/src/views/product/list/index.vue" />
         <option value="$PROJECT_DIR$/fur-admin/app/model/category.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/service/category.js" />
-        <option value="$PROJECT_DIR$/fur-front/src/api/index.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/service/user.js" />
         <option value="$PROJECT_DIR$/fur-admin/config/plugin.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/io/middleware/connection.js" />
-        <option value="$PROJECT_DIR$/fur-admin/config/config.default.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/router.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" />
-        <option value="$PROJECT_DIR$/fur-front/src/views/product/material/index.vue" />
         <option value="$PROJECT_DIR$/fur-admin/app/io/middleware/auth.js" />
         <option value="$PROJECT_DIR$/fur-admin/app/io/middleware/filter.js" />
         <option value="$PROJECT_DIR$/fur-front/src/main.js" />
+        <option value="$PROJECT_DIR$/fur-front/src/views/product/material/index.vue" />
+        <option value="$PROJECT_DIR$/fur-front/src/views/product/material/dialog/index.vue" />
+        <option value="$PROJECT_DIR$/fur-admin/app/middleware/token.js" />
+        <option value="$PROJECT_DIR$/fur-front/src/router/index.js" />
+        <option value="$PROJECT_DIR$/fur-front/src/api/ajax.js" />
+        <option value="$PROJECT_DIR$/fur-front/src/api/index.js" />
+        <option value="$PROJECT_DIR$/fur-front/config/index.js" />
+        <option value="$PROJECT_DIR$/fur-admin/config/config.default.js" />
+        <option value="$PROJECT_DIR$/fur-front/src/views/product/list/index.vue" />
+        <option value="$PROJECT_DIR$/fur-front/src/views/product/list/dialog/index.vue" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="324" />
     <option name="y" value="11" />
     <option name="width" value="1400" />
@@ -215,6 +243,75 @@
             <path>
               <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
               <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="untils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plFurniture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plFurniture" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,12 +416,12 @@
       <workItem from="1575017977423" duration="8000" />
       <workItem from="1575341386365" duration="9532000" />
       <workItem from="1575367739503" duration="365000" />
-      <workItem from="1575428492192" duration="633000" />
+      <workItem from="1575428492192" duration="19579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373004000" />
+    <option name="totallyTimeSpent" value="391950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,8 +434,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2528978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2528978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,9 +448,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49841937" visible="true" weight="0.30368763" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015806" side_tool="true" weight="0.3253796" />
-      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49789253" visible="true" weight="0.30368763" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021075" side_tool="true" weight="0.30368763" />
+      <window_info anchor="bottom" id="TypeScript" order="11" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -383,46 +481,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fur-front/src/views/order/Order-dialog.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/static/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/list/dialog/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4650">
-          <caret line="157" column="30" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/node_modules/@types/sequelize/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/controller/verify.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/controller/upload.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/controller/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/model/materials.js" />
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/controller/orders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/model/spends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="33" column="91" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fur-admin/app/model/orders.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2280">
@@ -477,16 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/material/dialog/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
-          <folding>
-            <element signature="e#1315#1360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fur-front/src/components/left-bar/Left-bar.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1350" />
@@ -501,9 +549,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/api/ajax.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/fur-front/src/views/admin/index.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -522,30 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/list/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5250">
-          <caret line="180" column="24" selection-start-line="180" selection-start-column="24" selection-end-line="180" selection-end-column="24" />
-          <folding>
-            <element signature="e#3955#4006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fur-admin/app/controller/list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2220">
           <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="42" column="89" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,29 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/middleware/token.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/config/config.default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/material/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4590">
-          <caret line="155" column="28" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
-          <folding>
-            <element signature="e#3148#3199#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fur-admin/config/plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -643,13 +645,6 @@
     <entry file="file://$PROJECT_DIR$/fur-admin/app/service/verify.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fur-admin/app/io/controller/chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -657,27 +652,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/index.vue">
+    <entry file="file://$PROJECT_DIR$/fur-admin/app/io/middleware/filter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-admin/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/material/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="123" column="53" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
           <folding>
-            <element signature="e#926#975#0" expanded="true" />
+            <element signature="e#3155#3206#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fur-front/src/main.js">
+    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/material/dialog/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="85" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-admin/app/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -688,10 +712,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fur-admin/app/io/middleware/filter.js">
+    <entry file="file://$PROJECT_DIR$/fur-front/src/untils/storeUntil.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-admin/app/middleware/token.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="-120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/api/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-admin/config/config.default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/untils/valiateUntil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-437">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#926#975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/list/dialog/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+          <folding>
+            <element signature="e#1981#2026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/views/product/list/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="179" column="33" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="33" />
+          <folding>
+            <element signature="e#3955#4001#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

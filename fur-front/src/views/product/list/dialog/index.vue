@@ -2,7 +2,7 @@
   <div class="dialog">
     <el-dialog
       :title="title"
-      :visible="FormVisible"
+      :visible.sync="FormVisible"
       width="30%"
       center>
       <span>
@@ -106,8 +106,8 @@
             this.ruleForm.goods_image=this.fileList[0].url;
           },
         //取消按钮点击函数
-        cancel(){
-          this.resetFields();
+         cancel(){
+
           this.resetFileList();
           this.$emit('visibleChange');
          },
@@ -147,23 +147,22 @@
            }
         },
         //重置表单数据函数
-        resetFields(){  //重置表单内容操作 传给父组件执行
-           this.$refs['ruleForm'].resetFields();
-        }
       },
       watch:{
           //检测单个编辑数据变化
-       singleData(val){
-         let newForm={}
-         for(let item in val){
-          if (item!=='id'){
-            newForm[item]=val[item];
-          }
+       singleData:{
+         handler(val){
+             let newForm={}
+             for(let item in val){
+               if (item!=='id'){
+                 newForm[item]=val[item];
+               }
+             }
+             this.id=val.id;
+             this.ruleForm=newForm;
+             this.fileList=[{name: newForm.goods_name+newForm.goods_image.substring(newForm.goods_image.lastIndexOf('.')), url: newForm.goods_image}];
          }
-         this.id=val.id;
-         this.ruleForm=newForm;
-         this.fileList=[{name: newForm.goods_name+newForm.goods_image.substring(newForm.goods_image.lastIndexOf('.')), url: newForm.goods_image}];
-        },
+       },
         //检测点击添加或编辑变化
         flag(val){
          if (val===0){

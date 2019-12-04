@@ -108,13 +108,12 @@
           </el-pagination>
         </div>
       </div>
-      <ProductDialog :FormVisible="FormVisible" :flag="flag" @visibleChange="visibleChange" @tableChange="tableChange" :singleData="singleData"></ProductDialog>
+        <ProductDialog :FormVisible="FormVisible" :flag="flag" @visibleChange="visibleChange" @tableChange="tableChange" :singleData="singleData" ref="ProductDialog"></ProductDialog>
       <ProductDetail ref="product-detail" :singleInfo="singleInfo"></ProductDetail>
     </div>
 </template>
 
 <script>
-  import {valiateToken} from "@/untils/valiateUntil";
   import {moneyFormat} from "@/filters/index.js"
   import ProductDetail from '@/views/product/detail/index'
   import ProductDialog from '@/views/product/list/dialog/index';
@@ -177,8 +176,6 @@
           const {currentPage,pageSize}=this;
           reqProduct({currentPage,pageSize}).then(res=>{
             const {code,message,data}=res.data;
-            const result=valiateToken(code,message,this.$router);
-            if (result){
               if (code===0){
                 /*              data.forEach(item => {
                                 item.visible = false;
@@ -190,7 +187,6 @@
               }
               Message.error(message);
               this.loading=false;
-            }
           })
         },
         //确定操作后触发$emit的函数
@@ -229,6 +225,7 @@
         //添加按钮点击函数
         addProducts(){
           this.flag=0;
+          this.resetFields();
           this.FormVisible=true;
         },
         //编辑按钮点击函数
@@ -236,15 +233,12 @@
           this.flag=1;
           reqGetProduct({id:row.id}).then(res=>{
             const {code,message,data}=res.data;
-            const result=valiateToken(code,message,this.$router);
-            if (result){
               if (code===0){
-                this.singleData=data[0];
                 this.FormVisible=true;
+                this.singleData=data[0];
               }else {
                 Message.error(message);
               }
-            }
           }).catch(err=>{
             Message.error(err);
           })
@@ -258,8 +252,6 @@
           }).then(()=>{
             reqDelProduct({id:row.id}).then(res=>{
               const {code,message}=res.data;
-              const result=valiateToken(code,message,this.$router);
-              if (result){
                 if (code===0){
                   Message.success(message);
                   if (this.pagination===0){
@@ -270,7 +262,6 @@
                   return;
                 }
                 Message.error(message);
-              }
             })
           }).catch(err=>{
           })
@@ -285,8 +276,6 @@
             const {arrId}=this;
             reqDelMany({arrId}).then(res=>{
               const {code,message}=res.data;
-              const result=valiateToken(code,message,this.$router);
-              if (result){
                 if (code===0){
                   Message.success(message);
                   if (this.pagination===0){
@@ -297,7 +286,6 @@
                 }else {
                   Message.error(message);
                 }
-              }
             })
           }).catch(err=>{})
         },
@@ -308,15 +296,12 @@
           const {select,value}=this.formInline;
           reqSearch({select,value:value.trim(),pageSize,currentPage}).then(res=>{
             const {code,data,message}=res.data;
-            const result=valiateToken(code,message,this.$router);
-            if (result){
               if (code===0){
                 this.tableData=data.result;
                 this.total=data.total;
               }else {
                 Message.error(message);
               }
-            }
           }).catch(err=>{
             Message.error(err);
           })
@@ -329,6 +314,10 @@
         //子组件触发$emit函数
         visibleChange(){
           this.FormVisible=false;
+        },
+        resetFields(){
+          let {goods_name,goods_material,goods_price,goods_info}=this.singleData;
+          goods_name=goods_material=goods_price=goods_info='';
         }
       },
       components:{
@@ -349,3 +338,4 @@
 <style scoped>
 
 </style>
+

@@ -18,7 +18,7 @@
             <el-button class="el-button--danger" icon="el-icon-delete" @click="">批量删除</el-button>
           </el-form-item>
           <el-form-item>
-            <el-button plain icon="el-icon-plus" @click="">添加列表</el-button>
+            <el-button plain icon="el-icon-plus" @click="addList">添加列表</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -90,6 +90,7 @@
           </el-pagination>
         </div>
       </div>
+      <MaterialDialog ref="MaterialDialog"></MaterialDialog>
     </div>
 </template>
 
@@ -97,6 +98,7 @@
   import {valiateToken} from "@/untils/valiateUntil";
   import {reqCategory} from "../../../api";
   import {Message} from 'element-ui'
+  import MaterialDialog from '@/views/product/material/dialog/index'
   export default {
         name: "material",
         data(){
@@ -117,6 +119,9 @@
       methods:{
         sendTest(){
 
+        },
+        addList(){
+          this.$refs.MaterialDialog.FormVisible=true;
         },
         getCategory(){
           this.pagination=0;
@@ -149,6 +154,9 @@
           this.pagination=1;
           this.$socket.emit('chat','我是你爸爸！');
         }
+      },
+      components:{
+        MaterialDialog
       },
       mounted() {
           this.getCategory();

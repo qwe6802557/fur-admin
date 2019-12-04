@@ -7,7 +7,7 @@
       center>
       <span>
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-          <el-form-item label="配件名称" prop="goods_name">
+          <el-form-item label="配件名称" prop="material_name">
               <el-input v-model="ruleForm.material_name"></el-input>
           </el-form-item>
           <el-form-item label="配件单价" prop="material_price">
@@ -36,15 +36,15 @@
 </template>
 
 <script>
-    import {reqDeletePic} from "../../../../api";
     import {Message} from 'element-ui';
     export default {
-        name: "ProductDialog",
-        props:['FormVisible','flag','singleData'],
+        name: "MaterialDialog",
         data(){
           return {
               id:'',
-              title:'添加配件',
+              showFlag:0,
+              title:'添加列表',
+              FormVisible:false,
               ruleForm:{
                 material_name:'',
                 material_info:'',
@@ -76,8 +76,7 @@
       methods:{
         //取消按钮点击函数
         cancel(){
-          this.resetFields();
-          this.$emit('visibleChange');
+          this.FormVisible=false;
          },
         //确定按钮点击函数
          confirm(){

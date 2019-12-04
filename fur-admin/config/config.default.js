@@ -68,7 +68,7 @@ module.exports = appInfo => {
 
   //跨域配置
   config.cors = {
-    origin:'http://localhost:8080',
+    origin:'http://192.168.1.115:8080',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
     credentials:true
   };

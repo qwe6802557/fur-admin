@@ -20,24 +20,26 @@ export const reqRegistor=user=>ajax(LOCALURL+'/user/registor',user,'POST');
 //根据token取登录信息请求 需要token验证
 export const reqLoginMes=()=>ajax(LOCALURL+'/user/userInfo',{},'GET',Memory.token);
 //获取产品及分页列表 需要token验证
-export const reqProduct=(page)=>ajax(LOCALURL+'/goods/list',page,'GET',Memory.token);
+export const reqProduct=page=>ajax(LOCALURL+'/goods/list',page,'GET',Memory.token);
 //添加产品请求 需要token验证
-export const reqAddProduct=(product)=>ajax(LOCALURL+'/goods/add',product,'POST',Memory.token);
+export const reqAddProduct=product=>ajax(LOCALURL+'/goods/add',product,'POST',Memory.token);
 //编辑产品获取请求 需要token验证
-export const reqGetProduct=(id)=>ajax(LOCALURL+'/goods/edit',id,'GET',Memory.token);
+export const reqGetProduct=id=>ajax(LOCALURL+'/goods/edit',id,'GET',Memory.token);
 //编辑产品提交请求 需要token验证
-export const reqEditProduct=(product)=>ajax(LOCALURL+'/goods/edit',product,'POST',Memory.token);
+export const reqEditProduct=product=>ajax(LOCALURL+'/goods/edit',product,'POST',Memory.token);
 //删除产品提交请求 需要token验证
-export const reqDelProduct=(id)=>ajax(LOCALURL+'/goods/delete',id,'POST',Memory.token);
+export const reqDelProduct=id=>ajax(LOCALURL+'/goods/delete',id,'POST',Memory.token);
 //批量删除产品提交请求，需要token验证
 export const reqDelMany=arr=>ajax(LOCALURL+'/goods/deleteMany',arr,'POST',Memory.token);
 //模糊搜索产品提交请求，需要token验证
 export const reqSearch=condition=>ajax(LOCALURL+'/goods/search',condition,'POST',Memory.token);
 //移除图片删除请求 需要token验证
-export const reqDeletePic=(picture)=>ajax(LOCALURL+'/upload/delete',picture,'POST',Memory.token);
+export const reqDeletePic=picture=>ajax(LOCALURL+'/upload/delete',picture,'POST',Memory.token);
 /**
  *配件管理区域
  */
 
-//获取配件一级列表
-export const reqCategory=(page)=>ajax(LOCALURL+'/category/list',page,'GET',Memory.token);
+//获取配件一级列表 需要token验证
+export const reqCategory=page=>ajax(LOCALURL+'/category/list',page,'GET',Memory.token);
+//添加配件一级列表 需要token验证
+export const reqAddCategory=category=>ajax(LOCALURL+'/category/add',category,'POST',Memory.token);
