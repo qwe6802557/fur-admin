@@ -2,11 +2,12 @@
   <div class="dialog">
     <el-dialog
       :title="title"
-      :visible="FormVisible"
+      :visible.sync="FormVisible"
       width="30%"
+      v-if="FormVisible"
       center>
       <span>
-        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm" >
           <el-form-item label="配件名称" prop="material_name">
               <el-input v-model="ruleForm.material_name"></el-input>
           </el-form-item>
@@ -96,7 +97,7 @@
       },
       watch:{
           //检测单个编辑数据变化
-       singleData(val){
+       /*singleData(val){
          let newForm={}
          for(let item in val){
           if (item!=='id'){
@@ -105,7 +106,7 @@
          }
          this.id=val.id;
          this.ruleForm=newForm;
-        },
+        },*/
         //检测点击添加或编辑变化
         flag(val){
          if (val===0){

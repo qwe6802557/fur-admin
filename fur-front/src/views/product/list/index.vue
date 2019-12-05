@@ -225,8 +225,10 @@
         //添加按钮点击函数
         addProducts(){
           this.flag=0;
-          this.resetFields();
           this.FormVisible=true;
+          this.$nextTick(()=>{
+            this.$refs.ProductDialog.resetFields();
+          });
         },
         //编辑按钮点击函数
         editProducts(row){
@@ -235,7 +237,9 @@
             const {code,message,data}=res.data;
               if (code===0){
                 this.FormVisible=true;
-                this.singleData=data[0];
+                this.$nextTick(()=>{
+                  this.singleData=data[0];
+                });
               }else {
                 Message.error(message);
               }
