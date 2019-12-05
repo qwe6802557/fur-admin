@@ -26,10 +26,10 @@ class CategoryService extends Service{
                 return result;
     }
     async addCategory(){
-        let {category_name}=this.ctx.request.body;
+        let {category_name,category_info}=this.ctx.request.body;
         category_name=category_name.trim();
-        console.log(category_name);
-        if (category_name){
+        category_info=category_info.trim();
+        if (category_name && category_info){
                 const result=await this.ctx.model.Category.findAll({
                     where:{
                         category_name
@@ -38,7 +38,7 @@ class CategoryService extends Service{
                 if (result.length!=0){
                     return 1;
                 }
-                await this.ctx.model.Category.create({category_name});
+                await this.ctx.model.Category.create({category_name,category_info});
                 return 0;
         }else{
             return false;

@@ -4,18 +4,32 @@
       :title="title"
       :visible.sync="FormVisible"
       width="30%"
-      v-if="FormVisible"
       center>
       <span>
-        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm" >
+        <el-form :model="categoryForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm" v-if="!showFlag">
+          <el-form-item label="列表名称" prop="category_name">
+              <el-input v-model="categoryForm.category_name"></el-input>
+          </el-form-item>
+            <el-form-item label="列表说明" prop="category_info">
+              <el-input
+                type="textarea"
+                :rows="2"
+                placeholder="请输入内容"
+                :autosize="{ minRows:6,maxRows: 6}"
+                v-model="categoryForm.category_info">
+              </el-input>
+            </el-form-item>
+        </el-form>
+        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm" v-else>
           <el-form-item label="配件名称" prop="material_name">
               <el-input v-model="ruleForm.material_name"></el-input>
           </el-form-item>
-          <el-form-item label="配件单价" prop="material_price">
+          <el-form-item label="配件单价" prop="material_price" >
               <el-input v-model="ruleForm.material_price" class="goods_price"></el-input>
           </el-form-item>
-          <el-form-item label="配件库存" prop="material_num">
-            <el-input v-model="ruleForm.material_num"></el-input>
+          <el-form-item label="配件库存" prop="material_num" >
+            <el-input-number v-model="ruleForm.material_num" :min="0">
+          </el-input-number>
           </el-form-item>
             <el-form-item label="配件说明" prop="material_info">
               <el-input
@@ -23,7 +37,7 @@
                 :rows="2"
                 placeholder="请输入内容"
                 :autosize="{ minRows:6,maxRows: 6}"
-                v-model="ruleForm.goods_info">
+                v-model="ruleForm.material_info">
               </el-input>
             </el-form-item>
         </el-form>
@@ -43,7 +57,7 @@
         data(){
           return {
               id:'',
-              showFlag:0,
+              showFlag:false,
               title:'添加列表',
               FormVisible:false,
               ruleForm:{
@@ -51,6 +65,10 @@
                 material_info:'',
                 material_price:'',
                 material_num:''
+              },
+              categoryForm:{
+                category_name:'',
+                category_info:''
               },
               rules:{
                 material_name:[{
@@ -71,6 +89,16 @@
                     message:'请输入配件说明！'
                   }
                 ],
+                category_name:[
+                  { required:true,
+                    message:'请输入列表名称！'}
+                ],
+                category_info:[
+                  {
+                    required:true,
+                    message:'请输入列表说明！'
+                  }
+                ]
             }
           }
         },
@@ -83,8 +111,12 @@
          confirm(){
            this.$refs['ruleForm'].validate((boolean)=>{
              if (boolean===true){
-               this.$emit('tableChange',this.ruleForm,this.resetFileList,this.resetFields,this.id);
-               this.$emit('visibleChange');
+               if (!this.showFlag){
+                 this.$emit('tableChange',this.categoryForm);
+               }else{
+                 this.$emit('tableChange',this.ruleForm,this.id);
+               }
+
              }else{
                Message.error('请您输入正确的信息！');
              }
