@@ -68,6 +68,7 @@ class CategoryController extends Controller{
               }
           }
       }
+
       async deleteCategory(){
           const {ctx}=this;
           try {
@@ -75,6 +76,22 @@ class CategoryController extends Controller{
               ctx.body={
                   code:0,
                   message:'删除成功！'
+              }
+          }catch (e) {
+              ctx.body={
+                  code:5,
+                  message:e
+              }
+          }
+      }
+      async searchCategory(){
+          const {ctx}=this;
+          try {
+             const result=await this.service.category.searchCategory();
+              ctx.body={
+                  code:0,
+                  message:'查询成功！',
+                  data:result
               }
           }catch (e) {
               ctx.body={

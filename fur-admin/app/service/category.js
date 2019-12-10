@@ -3,13 +3,14 @@
 const {Service}=require('egg');
 
 class CategoryService extends Service{
+
     async getCategory(){
-        let {id,pageSize,currentPage}=this.ctx.query;
+        const {pageSize,currentPage}=this.ctx.query;
+        const {id}=this.ctx.params;
             let result;
             if (!id){
                 const offset=(currentPage-1)*pageSize;
                 const limit=parseInt(pageSize);
-                console.log(offset,limit)
                 const total=await this.ctx.model.Category.count();
                 result=await this.ctx.model.Category.findAll({
                     offset,
@@ -18,13 +19,14 @@ class CategoryService extends Service{
                 });
                 return {result,total}
             }
-                result=await this.ctx.model.Category.findAll({
+                result=await this.ctx.model.Category.findOne({
                     where:{
                         id
                     }
                 })
                 return result;
     }
+
     async addCategory(){
         let {category_name,category_info}=this.ctx.request.body;
         category_name=category_name.trim();
@@ -44,11 +46,13 @@ class CategoryService extends Service{
             return false;
         }
     }
+
     async updateCategory(){
-        let {id,category_name}=this.ctx.request.body;
+        let {id,category_name,category_info}=this.ctx.request.body;
         category_name=category_name.trim();
+
         if (Number(id) && category_name){
-                const result=await this.ctx.model.Category.update({category_name},{
+                const result=await this.ctx.model.Category.update({category_name,category_info},{
                                 where: {
                                     id
                                 }
@@ -58,6 +62,7 @@ class CategoryService extends Service{
             return false;
         }
     }
+
     async deleteCategory(){
         const {id}=this.ctx.request.body;
         if (Number(id)){
@@ -70,6 +75,37 @@ class CategoryService extends Service{
         }else {
             return false
         }
+    }
+
+    async searchCategory(){
+        const {pageSize,currentPage,select,values}=this.ctx.query;
+        const offset=(currentPage-1)*pageSize;
+        const limit=parseInt(pageSize);
+        let result;
+        if (select=='id'){
+            result=await this.ctx.model.Category.findAndCountAll({
+                where:{
+                    id:{
+                        [this.app.Sequelize.Op.like]:`%${values}%`
+                    }
+                },
+                offset,
+                limit,
+                raw:true
+            })
+        }else{
+            result=await this.ctx.model.Category.findAndCountAll({
+                where:{
+                    category_name:{
+                        [this.app.Sequelize.Op.like]:`%${values}%`
+                    }
+                },
+                offset,
+                limit,
+                raw:true
+            })
+        }
+        return result;
     }
 }
 module.exports=CategoryService;
