@@ -30,10 +30,10 @@ class UserController extends Controller {
     async registor(){
         const { ctx }=this;
         let result=await this.service.user.registor();
-        const {code,res}=result;
-        if (code===0){
+        const {code,res,data}=result;
+        if (code === 0){
             const token=this.app.jwt.sign({
-                data:result.data
+                data
             },this.app.config.jwt.secret,{expiresIn:'1h'});
             ctx.body={
                 code,
@@ -51,7 +51,6 @@ class UserController extends Controller {
     //通过token获取用户信息
     async getUserInfo(){
         const { ctx,app }=this;
-        console.log(ctx.body)
         ctx.body={
             code:0,
             message:'获取用户信息成功!',

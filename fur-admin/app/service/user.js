@@ -4,7 +4,7 @@
  */
 const Service=require('egg').Service;
 const svgCaptcha=require('svg-captcha');  //验证码生成插件引入
-const bcrypt=require('bcrypt');    //加密插件引入
+const bcrypt=require('bcryptjs');    //加密插件引入
 
 class UserService extends Service{
     //用户登录service操作
@@ -72,7 +72,8 @@ class UserService extends Service{
                     if (res){
                         return {
                             code:0,
-                            res:'注册成功！将自动跳转到主页！'
+                            res:'注册成功！将自动跳转到主页！',
+                            data:res.dataValues
                         }
                     } else {
                         return {

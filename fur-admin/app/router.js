@@ -11,5 +11,5 @@ module.exports = app => {
   require('./router/goods')(app);
   require('./router/upload')(app);
   require('./router/category')(app);
-  app.io.route('chat', app.io.controller.chat.ping);
+  require('./router/io')(app);
 };

@@ -1,9 +1,78 @@
+
 module.exports = app => {
     class Controller extends app.Controller {
-        async ping() {
-            const message = this.ctx.args[0];
-             this.ctx.socket.emit('customEmit', `你当前发送的信息是:${message}`);
+        //聊天框消息接收操作
+        async sendMessage() {
+
+            const {content,friend_id,is_mine} = this.ctx.args[0];
+            const nbsp=app.io.of('/');
+            let result={};
+
+            const userData=this.ctx.payload.data;
+            for (let i in userData) {
+                if (i != 'id' && i !='username') {
+                    delete userData[i];
+                }
+            }
+
+            userData.user_id=userData.id;
+            userData.user_name=userData.username;
+            delete userData.id;
+            delete userData.username;
+
+            try {
+                result=await this.ctx.model.Message.create({
+                    user_id:userData.user_id,
+                    user_name:userData.user_name,
+                    content,
+                    friend_id,
+                    is_mine
+                });
+                nbsp.emit('inChat',{code:0,userMes:result.dataValues,message:"发送成功！"})
+            }catch (e) {
+                nbsp.emit('inChat',{code:5,message:"发送失败！"});
+                throw e;
+            }
+                    /*this.ctx.socket.emit('inChat',{code:0,userMes:payload,message,dateTime:moment(Date.now()).format('YYYY-MM-DD HH:mm')});*/
         }
+
+        //页面获取聊天记录
+      async getMessage(){
+          const userData = this.ctx.payload.data;
+          const {id} = userData;
+          const friend_id = this.ctx.args[0];
+
+         try {
+             const result = await this.ctx.model.Message.findAll({
+                 where:{
+                     user_id:id,
+                     friend_id
+                 },
+                 raw:true
+             })
+             this.ctx.socket.emit('getMessage',result);
+         }catch (e) {
+             this.ctx.socket.emit('getMessage',e);
+         }
+      }
+      //获取好友列表
+      async getList(){
+            const { data } = this.ctx.payload;
+            const { id } = data;
+
+            try {
+                const result = await this.ctx.model.FriendList.findAll({
+                    where:{
+                        user_id:id
+                    }
+                })
+
+                this.ctx.socket.emit('getList',result);
+            }catch (e) {
+                this.ctx.socket.emit('getList',e);
+            }
+
+      }
     }
     return Controller
 };

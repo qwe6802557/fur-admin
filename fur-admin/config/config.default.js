@@ -54,7 +54,9 @@ module.exports = appInfo => {
           return field.string();
         }
         return next();
-      }
+      },
+      charset: "utf8mb4",
+      collate: "utf8mb4_unicode_ci"
     }
   };
   //暂时关闭crsf验证
@@ -68,7 +70,7 @@ module.exports = appInfo => {
 
   //跨域配置
   config.cors = {
-    origin:'http://192.168.1.115:8080',
+    origin:'http://localhost:8080',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
     credentials:true
   };
@@ -94,7 +96,7 @@ module.exports = appInfo => {
     namespace: {
       '/': {
         connectionMiddleware: ['auth'],
-        packetMiddleware: ['filter']
+        packetMiddleware: ['filter','token']
       }
     }
   }

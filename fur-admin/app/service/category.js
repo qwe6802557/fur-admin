@@ -50,8 +50,8 @@ class CategoryService extends Service{
     async updateCategory(){
         let {id,category_name,category_info}=this.ctx.request.body;
         category_name=category_name.trim();
-
-        if (Number(id) && category_name){
+        category_info=category_info.trim();
+        if (category_name){
                 const result=await this.ctx.model.Category.update({category_name,category_info},{
                                 where: {
                                     id
@@ -64,17 +64,13 @@ class CategoryService extends Service{
     }
 
     async deleteCategory(){
-        const {id}=this.ctx.request.body;
-        if (Number(id)){
+        const {id}=this.ctx.params;
                 const result=await this.ctx.model.Category.destroy({
                     where:{
                         id
                     }
                 })
-                return result;
-        }else {
-            return false
-        }
+                return true;
     }
 
     async searchCategory(){

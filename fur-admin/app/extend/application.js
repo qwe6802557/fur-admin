@@ -1,6 +1,6 @@
 'use strict';
 
-const bcrypt=require('bcrypt');
+const bcrypt=require('bcryptjs');
 const path=require('path');
 module.exports={
     encryptPw(STENTH,password){

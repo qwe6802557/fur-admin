@@ -7,7 +7,6 @@
     "declarations": true
   },
   "dependencies": {
-    "bcrypt": "^3.0.6",
     "bcryptjs": "^2.4.3",
     "egg": "^2.15.1",
     "egg-cors": "^2.2.2",
