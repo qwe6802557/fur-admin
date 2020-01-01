@@ -43,13 +43,30 @@ module.exports = app => {
           const friend_id = this.ctx.args[0];
 
          try {
-             const result = await this.ctx.model.Message.findAll({
+             const result_mine = await this.ctx.model.Message.findAll({
                  where:{
                      user_id:id,
                      friend_id
                  },
                  raw:true
              })
+             const result_friends = await this.ctx.model.Message.findAll({
+                 where:{
+                     user_id:friend_id,
+                     friend_id:id
+                 },
+                 raw:true
+             })
+
+             let result = result_mine.concat(result_friends);
+             result.forEach((item,index,arr)=>{
+                 if ((index>0) && (arr[index-1].id>item.id)){
+                     const temp = arr[index-1];
+                     arr[index-1] = item;
+                     arr[index] = temp;
+                 }
+             })
+
              this.ctx.socket.emit('getMessage',result);
          }catch (e) {
              this.ctx.socket.emit('getMessage',e);
