@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="">
+    <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/controller/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/controller/verify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/router/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/router/verify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/router.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/router.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +48,19 @@
     <property name="ts.external.directory.path" value="D:\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\plFurniture" />
-      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\static" />
-      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\static\images" />
-      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\assets" />
-      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\views\product\material" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\components" />
       <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\views" />
       <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\views\product\list" />
       <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\static\images" />
       <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\views\main\reset" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\plFurniture" />
+      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\static" />
+      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\static\images" />
+      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\assets" />
+      <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\views\product\material" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -163,7 +172,8 @@
       <workItem from="1577982349307" duration="1033000" />
       <workItem from="1578118762927" duration="5000" />
       <workItem from="1578212275334" duration="6832000" />
-      <workItem from="1578222754860" duration="40000" />
+      <workItem from="1578222754860" duration="784000" />
+      <workItem from="1578233044279" duration="8136000" />
     </task>
     <task id="LOCAL-00001" summary="封装与BUG发现 dialog表单重置（待解决）">
       <created>1575454228600</created>
@@ -285,6 +295,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="361" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578213028073" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1578234835430">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578234835430" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578234543517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578234543517" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

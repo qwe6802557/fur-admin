@@ -4,6 +4,16 @@
       <div class="left-content">
         <i class="el-icon-search"></i>
         <el-input class="contact-input" v-model="search"  placeholder="search user..." @input="searchList" ></el-input>
+        <div class="left-list">
+          <el-checkbox-group v-model="checkedList" @change="handleCheckedListChange">
+            <ul>
+              <li v-for="(item,index) in boxList">
+                <img src="../../../../static/images/logo.png" alt="">
+                <el-checkbox  :label="item.id" :key="item.id">{{item.user_name}}</el-checkbox>
+              </li>
+            </ul>
+          </el-checkbox-group>
+        </div>
       </div>
     </div>
     <div class="add-dialog-right">
@@ -17,8 +27,11 @@
     export default {
         name: "ContactAddDialog",
         data(){
+          const list = ['上海','北京','北京','北京']
           return {
-            search:''
+            search:'',
+            boxList:[{id:1,img:'',user_name:'张三'},{id:2,img:'',user_name:'李四'},{id:3,img:'',user_name:'王五'}],
+            checkedList:[]
           }
         },
         methods:{
@@ -27,6 +40,9 @@
           },
           searchList(){
 
+          },
+          handleCheckedListChange(val){
+            console.log(val);
           }
         }
     }

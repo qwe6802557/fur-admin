@@ -1,6 +1,0 @@
-2020-01-05 17:13:45,461 INFO 12328 [egg-schedule]: register schedule C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-05 17:13:45,461 INFO 12328 [egg-schedule]: register schedule C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-05 17:13:45,461 INFO 12328 [egg-schedule]: register schedule C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-05 17:13:46,545 INFO 12724 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 40573456ms at 2020-01-06 04:30:00.001
-2020-01-05 17:13:46,546 INFO 12724 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 24373455ms at 2020-01-06 00:00:00.001
-2020-01-05 17:13:46,546 INFO 12724 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 24374454ms at 2020-01-06 00:00:01.000

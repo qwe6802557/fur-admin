@@ -2,7 +2,6 @@ module.exports=(options,app)=>{
   return async function valiateToken(ctx,next) {
       try {
           const token=ctx.header.authorization;
-          console.log(token);
           if (token){
               let payload=app.jwt.verify(token.split(' ')[1],app.config.jwt.secret);
               if (payload){

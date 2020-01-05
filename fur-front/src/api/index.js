@@ -5,6 +5,8 @@ const LOCALURL='http://127.0.0.1:7001';
 /**
  *登录及产品管理区域
  */
+//token是否过期验证请求
+export const reqValiateToken=()=>ajax(LOCALURL+'/verify/token',{},"POST",Memory.token);
 //获取验证码请求 不用token验证
 export const reqValiateImg=()=>ajax(LOCALURL+'/verify/verify_code');
 //找回密码获取验证码请求 不用token验证

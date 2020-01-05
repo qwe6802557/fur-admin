@@ -17,11 +17,11 @@ import {Form,FormItem,Input,RadioGroup,Radio,
         Submenu,Avatar,Row,RadioButton,Card,Table,
         TableColumn,Popover,Tag,Select,Option,Divider,
         Pagination,Loading,Dialog,DatePicker,Col,TimePicker,
-        InputNumber,Upload,Drawer,Scrollbar}from "element-ui";
+        InputNumber,Upload,Drawer,Scrollbar,checkboxGroup,checkbox}from "element-ui";
 Vue.use(Form).use(FormItem).use(Input).use(RadioGroup).use(Radio).use(Button).use(Icon).use(Menu).use(MenuItem).use(MenuItemGroup).use(Submenu).use(RadioButton)
    .use(Avatar).use(Row).use(RadioButton).use(Card).use(Table).use(TableColumn).use(Popover).use(Tag).use(Select).use(Option).use(Divider)
    .use(Pagination).use(Loading).use(Dialog).use(DatePicker).use(Col).use(TimePicker).use(InputNumber).use(Upload).use(Drawer).use(VueLazyLoad)
-   .use(VueQuillEditor).use(GeminiScrollbar).use(Scrollbar);
+   .use(VueQuillEditor).use(GeminiScrollbar).use(Scrollbar).use(checkboxGroup).use(checkbox);
 Vue.config.productionTip = false
 memoryUntil.token=storeUntil.getToken();
 /* eslint-disable no-new */

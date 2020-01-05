@@ -5,6 +5,14 @@
 const Controller = require('egg').Controller;
 
 class VerifyController extends Controller {
+    //token过期验证
+    async valiateToken(){
+        const { ctx } = this;
+        ctx.body={
+            code:0,
+            message:'验证成功！'
+        }
+    }
     //生成并返回验证码
     async getVerCode() {
         const { ctx } = this;

@@ -91,6 +91,18 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/verify/token",
+    "regexp": "/^\\/verify\\/token(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/goods/add",
     "regexp": "/^\\/goods\\/add(?:\\/(?=$))?$/",
     "stack": [

@@ -13,13 +13,24 @@
 
 <script>
     import memoryUntil from '@/untils/memoryUntil';
+    import storeUntil from "@/untils/storeUntil";
+    import {valiateToken} from "../../untils/valiateUntil";
+
     export default {
         name: "Main",
         beforeMount() {
           if (!memoryUntil.token){
             return;
           }
-          this.$router.push({name:'Admin'});
+          valiateToken().then(res=>{
+            const {code} = res.data;
+            if (code == 0){
+              this.$router.push({name:'Admin'});
+            }else {
+              memoryUntil.token = '';
+              storeUntil.delToken();
+            }
+          })
         }
     }
 </script>
