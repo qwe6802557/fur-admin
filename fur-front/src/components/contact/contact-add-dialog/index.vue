@@ -1,11 +1,13 @@
 <template>
   <div class="add-dialog">
     <div class="add-dialog-left">
-      1
-
+      <div class="left-content">
+        <i class="el-icon-search"></i>
+        <el-input class="contact-input" v-model="search"  placeholder="search user..." @input="searchList" ></el-input>
+      </div>
     </div>
     <div class="add-dialog-right">
-      2
+      <i class="el-icon-close" @click="addClose"></i>
 
     </div>
   </div>
@@ -13,7 +15,20 @@
 
 <script>
     export default {
-        name: "ContactAddDialog"
+        name: "ContactAddDialog",
+        data(){
+          return {
+            search:''
+          }
+        },
+        methods:{
+          addClose(){
+            this.$emit('addClose');
+          },
+          searchList(){
+
+          }
+        }
     }
 </script>
 
