@@ -1,0 +1,12 @@
+2020-01-02 23:02:00,902 INFO 10756 [egg-schedule]: register schedule C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-01-02 23:02:00,902 INFO 10756 [egg-schedule]: register schedule C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-01-02 23:02:00,902 INFO 10756 [egg-schedule]: register schedule C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-01-02 23:02:01,888 INFO 2364 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 19678113ms at 2020-01-03 04:30:00.001
+2020-01-02 23:02:01,888 INFO 2364 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 3478112ms at 2020-01-03 00:00:00.000
+2020-01-02 23:02:01,888 INFO 2364 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 3479112ms at 2020-01-03 00:00:01.000
+2020-01-03 00:00:00,004 INFO 10756 [Job#15779808000021778076092001] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2020-01-03 00:00:00,007 INFO 10756 [Job#15779808000021778076092001] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 3ms
+2020-01-03 00:00:00,004 INFO 2364 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86399997ms at 2020-01-04 00:00:00.001
+2020-01-03 00:00:01,003 INFO 2364 [Timer] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86399998ms at 2020-01-04 00:00:01.001
+2020-01-03 00:00:01,002 INFO 10756 [Job#15779808010021778167977001] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2020-01-03 00:00:01,008 INFO 10756 [Job#15779808010021778167977001] C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 6ms

@@ -1,0 +1,349 @@
+{
+  "keys": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+  "middleware": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+  "sequelize": {
+    "dialect": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "database": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "host": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "port": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "username": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "password": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "timezone": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "dialectOptions": {
+      "dateStrings": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+      "typeCast": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+      "charset": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+      "collate": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js"
+    }
+  },
+  "security": {
+    "csrf": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+      "ignoreJSON": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+      "type": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "protocolWhiteList": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "allowMethods": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "credentials": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js"
+  },
+  "jwt": {
+    "secret": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-jwt\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "fileSize": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "autoFields": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "token": {
+    "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+    "ignore": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js"
+  },
+  "io": {
+    "namespace": {
+      "/": {
+        "connectionMiddleware": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js",
+        "packetMiddleware": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config\\config.default.js"
+      }
+    },
+    "init": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-socket.io\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "development": {
+    "watchDirs": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "mysql": {
+    "default": {
+      "database": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js"
+    },
+    "app": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js",
+    "agent": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js"
+  },
+  "env": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "name": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "version": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "description": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "private": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "bcryptjs": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-jwt": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-multipart": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-mysql": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-scripts": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-sequelize": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-socket.io": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "md5": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "moment": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "mysql2": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "stream-wormhole": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "svg-captcha": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "autod-egg": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-ci": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "stop": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "dev": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "debug": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "test": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "test-local": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "cov": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "lint": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "ci": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "autod": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "url": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "license": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "baseDir": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "strict": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "depth": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "env": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "level": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "logging": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "port": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+}

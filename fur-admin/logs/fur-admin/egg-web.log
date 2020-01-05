@@ -1,0 +1,28 @@
+2020-01-03 00:00:01,010 INFO 10756 [egg-logrotator] app logger reload: got log-reload message
+2020-01-03 00:11:52,880 ERROR 10756 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+name: "TokenExpiredError"
+message: "jwt expired"
+expiredAt: "2020-01-02T16:05:26.000Z"
+pid: 10756
+hostname: PS2019NMKIZIZR
+
