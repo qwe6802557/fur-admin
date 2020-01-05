@@ -2,7 +2,7 @@ import axios from 'axios';
 import {Message} from "element-ui";
 import memoryUntil from '@/untils/memoryUntil';
 import storeUntil from '@/untils/storeUntil';
-import router from '@/router/index.js'
+import router from '@/router/index.js';
 import Vue from 'vue'
 
 const vue=new Vue({

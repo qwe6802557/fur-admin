@@ -8,6 +8,7 @@
        <span>
          <i class="el-icon-search"></i>
          <el-input class="contact-input" v-model="search"  placeholder="search user..." @input="searchList" ></el-input>
+         <i class="el-icon-circle-plus-outline" @click="addFriends"></i>
        </span>
      </div>
       <div class="contact-list">
@@ -53,7 +54,13 @@
                 return item;
               }
             });
-          }
+          },
+        /**
+         * 添加好友
+         */
+        addFriends(){
+          this.$emit('addFriends');
+        }
       },
       computed:{
           classChange(){

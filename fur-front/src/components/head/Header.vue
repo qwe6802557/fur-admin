@@ -16,17 +16,10 @@
           <template slot="title">
             <span class="header-myself"><el-avatar :size="40" :src="circleUrl" class="avatar"></el-avatar>{{this.userMes.username}}</span>
             </template>
-          <el-menu-item index="2-1">选项1</el-menu-item>
-          <el-menu-item index="2-2">选项2</el-menu-item>
-          <el-menu-item index="2-3">选项3</el-menu-item>
-          <el-submenu index="2-4">
-            <template slot="title">选项4</template>
-            <el-menu-item index="2-4-1">选项1</el-menu-item>
-            <el-menu-item index="2-4-2">选项2</el-menu-item>
-            <el-menu-item index="2-4-3">选项3</el-menu-item>
-          </el-submenu>
+          <el-menu-item index="2-1">个人资料</el-menu-item>
+          <el-menu-item index="2-2" @click="ToContact">在线交流</el-menu-item>
+          <el-menu-item index="2-3">退出系统</el-menu-item>
         </el-submenu>
-
     </el-menu>
   </div>
 
@@ -34,8 +27,8 @@
 <script>
   import {reqLoginMes} from "../../api";
   import {Message} from 'element-ui'
-  import {valiateToken} from "../../untils/valiateUntil";
   import memoryUntil from '@/untils/memoryUntil';
+
     export default {
         name: "Header",
         data() {
@@ -50,29 +43,29 @@
         handleSelect(key, keyPath) {
           console.log(key, keyPath);
         },
+        //加载在线交流聊天框
+        ToContact(){
+          this.$emit('contactChange');
+        },
         //通过token获取用户信息
         getUserMes(){
           return reqLoginMes().then(res=>{
             const {code,data,message}=res.data;
-            const result=valiateToken(code,message,this.$router);
-            if (result){
               if (code===0){
                 this.userMes=data.data;
+                this.$emit('getUserMes',this.userMes);
                 return true;
               }else {
                 Message.error(message);
                 return false;
               }
-            }
           }).catch(err=>{
             Message.error(err);
           })
         }
       },
       created(){
-        if (memoryUntil.token){
           this.getUserMes();
-        }
       },
       watch:{
           userMes(val){

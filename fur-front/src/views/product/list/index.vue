@@ -158,7 +158,11 @@
         //每页条数改变触发函数
         handleSizeChange(val) {
           this.pageSize=val;
-          this.getProducts();
+          if (this.pagination===0){
+            this.getProducts();
+            return;
+          }
+          this.searchProducts();
         },
         //当前页数改变触发函数
         handleCurrentChange(val) {
@@ -172,7 +176,6 @@
         //获取产品数据
         getProducts(){
           this.loading=true;
-          this.pagination=0;
           const {currentPage,pageSize}=this;
           reqProduct({currentPage,pageSize}).then(res=>{
             const {code,message,data}=res.data;
@@ -298,6 +301,9 @@
           this.pagination=1;
           const {pageSize,currentPage}=this;
           const {select,value}=this.formInline;
+          if (!value){
+            this.pagination=0;
+          }
           reqSearch({select,value:value.trim(),pageSize,currentPage}).then(res=>{
             const {code,data,message}=res.data;
               if (code===0){

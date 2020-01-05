@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/plFurniture.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log.2020-01-01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log.2020-01-02" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log.2020-01-01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log.2020-01-02" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log.2020-01-01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log.2020-01-02" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log.2020-01-01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log.2020-01-02" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log.2020-01-01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log.2020-01-02" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/run/agent_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/run/agent_timing_2364.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/run/application_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/run/application_timing_10756.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/run/router.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/controller/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/application.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/context.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/helper.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/middleware/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/app/service/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/config/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fur-admin/typings/config/plugin.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +162,7 @@
       <workItem from="1577977154713" duration="5179000" />
       <workItem from="1577982349307" duration="1033000" />
       <workItem from="1578118762927" duration="5000" />
-      <workItem from="1578212275334" duration="265000" />
+      <workItem from="1578212275334" duration="1612000" />
     </task>
     <task id="LOCAL-00001" summary="封装与BUG发现 dialog表单重置（待解决）">
       <created>1575454228600</created>
@@ -244,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577896118845</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add io chat functions">
+      <created>1578212754320</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578212754320</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -272,22 +241,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#更新/0.0.1920.1040@0.0.1920.1040" timestamp="1577154368578" />
-    <state x="554" y="109" key="CommitChangelistDialog2" timestamp="1578212648279">
+    <state x="554" y="109" key="CommitChangelistDialog2" timestamp="1578213171459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="554" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578212648279" />
+    <state x="554" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578213171459" />
     <state x="596" y="93" width="994" height="733" key="SettingsEditor" timestamp="1577156551320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="93" width="994" height="733" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577156551320" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577983448029">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578213049755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577983448029" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578213049755" />
     <state x="609" y="108" width="628" height="801" key="find.popup" timestamp="1577545261707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="108" width="628" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577545261707" />
+    <state x="760" y="361" key="git4idea.ui.GitTagDialog" timestamp="1578213028073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="361" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578213028073" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -38,8 +38,16 @@ export const reqDeletePic=picture=>ajax(LOCALURL+'/upload/delete',picture,'POST'
 /**
  *配件管理区域
  */
-
 //获取配件一级列表 需要token验证
 export const reqCategory=page=>ajax(LOCALURL+'/category/list',page,'GET',Memory.token);
 //添加配件一级列表 需要token验证
 export const reqAddCategory=category=>ajax(LOCALURL+'/category/add',category,'POST',Memory.token);
+//编辑获取配件一级列表 需要token验证
+export const reqGetCategory=id=>ajax(LOCALURL+'/category/update/'+id,{},'GET',Memory.token);
+//编辑提交配件一级列表 需要token验证
+export const reqEditCategory=category=>ajax(LOCALURL+'/category/update',category,'POST',Memory.token);
+//删除配件列表 需要token验证
+export const reqDeleteCategory=id=>ajax(LOCALURL+'/category/delete/'+id,{},'POST',Memory.token);
+//模糊搜索配件 需要token验证
+export const reqSearchCategory=condition=>ajax(LOCALURL+'/category/search',condition,'GET',Memory.token);
+

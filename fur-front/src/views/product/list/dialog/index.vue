@@ -60,11 +60,16 @@
         props:['FormVisible','flag','singleData'],
         data(){
           return {
-              id:'',
               title:'添加产品',
               token:Memory.token,
               fileList: [{name: '默认图片.jpeg', url: 'http://127.0.0.1:7001/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}],
-              ruleForm:{},
+              ruleForm:{
+                goods_name:'',
+                goods_material:'',
+                goods_info:'',
+                goods_price:'',
+                goods_image:'http://127.0.0.1:7001/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'
+              },
               rules:{
               goods_name:[{
                 required:true,

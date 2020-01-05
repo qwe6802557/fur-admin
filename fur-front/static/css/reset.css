@@ -4,7 +4,7 @@ html,body{
     height: 100%;
     overflow-y: hidden;
     overflow-x: auto;
-    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif;
 }
 html{
   overflow: hidden;

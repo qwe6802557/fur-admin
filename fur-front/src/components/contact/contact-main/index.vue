@@ -1,6 +1,6 @@
 <template>
     <div class="contact-main-area">
-      <el-scrollbar wrap-class="main-top-scroll" :native="false" @resize="resize" wrap-style="color: red; height:600px;" view-style="height:100%;" view-class="view-box">
+      <el-scrollbar wrap-class="main-top-scroll" :native="false" wrap-style="height:458px;background:#eee;" view-style="" view-class="view-box" ref="scrollBar">
       <div class="main-top">
           <transition-group name="el-zoom-in-center">
           <div v-for="(item,index) in contentMes" :key="item.id">
@@ -66,8 +66,15 @@
           send(){
               this.$socket.emit('sendMessage',{friend_id:this.friend_id,content:this.myText,is_mine: true});
           },
-          resize(){
-            alert(1);
+          /**
+           * el-scrollbar滚动条置底
+           * @type {Vue | Element | Vue[] | Element[]}
+           */
+          toBottom(){
+            let scroll = this.$refs.scrollBar.$refs["wrap"];
+            this.$nextTick(()=>{
+              scroll.scrollTop = scroll.scrollHeight;
+            })
           }
         },
         computed:{
@@ -100,6 +107,7 @@
               }
               this.contentMes.push(userMes);
               this.myText='';
+              this.toBottom();
             }else{
               Message.error(message);
               this.$router.push({name:'Main'});
@@ -116,10 +124,8 @@
               }
               return item;
             })
-            this.contentMes=data;
-            //滚动条初始化最下方
-            /*$('.main-top')[0].scrollTop = $('.main-top')[0].scrollHeight;*/
-           /* $('.gm-scrollbar-container')[0].scrollTop=$('.gm-scrollbar-container')[0].offsetHeight;*/
+            this.contentMes = data;
+            this.toBottom();
           })
 
         },

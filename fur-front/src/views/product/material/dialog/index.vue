@@ -106,6 +106,7 @@
         //取消按钮点击函数
         cancel(){
           this.FormVisible=false;
+          this.$refs['ruleForm'].resetFields();
          },
         //确定按钮点击函数
          confirm(){
@@ -114,9 +115,8 @@
                if (!this.showFlag){
                  this.$emit('tableChange',this.categoryForm);
                }else{
-                 this.$emit('tableChange',this.ruleForm,this.id);
+                 this.$emit('tableChange',this.ruleForm);
                }
-
              }else{
                Message.error('请您输入正确的信息！');
              }
