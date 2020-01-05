@@ -1,1 +1,12 @@
 2020-01-03 00:00:01,010 INFO 2364 [egg-logrotator] agent logger reload: got log-reload message
+2020-01-05 17:13:44,067 INFO 12724 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-01-05 17:13:43,659 INFO 12724 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-01-05 17:13:43,942 INFO 12724 [egg:core] dump config after load, 7ms
+2020-01-05 17:13:43,980 INFO 12724 [egg-watcher] Start watching: ["C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\app","C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config","C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\mocks","C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\mocks_proxy","C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\app.js"]
+2020-01-05 17:13:43,980 INFO 12724 [egg-watcher] Start watching: "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\app"
+2020-01-05 17:13:43,980 INFO 12724 [egg-watcher] Start watching: "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\config"
+2020-01-05 17:13:43,980 INFO 12724 [egg-watcher] Start watching: "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\mocks"
+2020-01-05 17:13:43,980 INFO 12724 [egg-watcher] Start watching: "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\mocks_proxy"
+2020-01-05 17:13:43,980 INFO 12724 [egg-watcher] Start watching: "C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\app.js"
+2020-01-05 17:13:43,981 INFO 12724 [egg-watcher:agent] watcher start success
+2020-01-05 17:13:44,074 INFO 12724 [egg:core] dump config after ready, 4ms
