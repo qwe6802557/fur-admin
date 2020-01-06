@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/controller/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/controller/verify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/router/verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/router/verify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/run/router.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/router.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +166,8 @@
       <workItem from="1578118762927" duration="5000" />
       <workItem from="1578212275334" duration="6832000" />
       <workItem from="1578222754860" duration="784000" />
-      <workItem from="1578233044279" duration="8136000" />
+      <workItem from="1578233044279" duration="8346000" />
+      <workItem from="1578324166694" duration="3126000" />
     </task>
     <task id="LOCAL-00001" summary="封装与BUG发现 dialog表单重置（待解决）">
       <created>1575454228600</created>
