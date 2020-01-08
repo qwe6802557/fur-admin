@@ -1,0 +1,21 @@
+2020-01-08 14:49:09,178 INFO 16188 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-01-08 14:49:09,178 INFO 16188 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-01-08 14:49:09,178 INFO 16188 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-01-08 14:49:10,648 INFO 17328 [Timer] C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 49249358ms at 2020-01-09 04:30:00.006
+2020-01-08 14:49:10,649 INFO 17328 [Timer] C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 33049351ms at 2020-01-09 00:00:00.000
+2020-01-08 14:49:10,650 INFO 17328 [Timer] C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 33050351ms at 2020-01-09 00:00:01.001
+2020-01-08 16:09:59,263 INFO 10732 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-01-08 16:09:59,263 INFO 10732 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-01-08 16:09:59,263 INFO 10732 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-01-08 16:10:02,677 INFO 8556 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-01-08 16:10:02,677 INFO 8556 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-01-08 16:10:02,677 INFO 8556 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-01-08 16:14:04,484 INFO 11552 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-01-08 16:14:04,484 INFO 11552 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-01-08 16:14:04,484 INFO 11552 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-01-08 16:15:33,280 INFO 12628 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-01-08 16:15:33,280 INFO 12628 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-01-08 16:15:33,280 INFO 12628 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-01-08 16:18:11,772 INFO 3560 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-01-08 16:18:11,772 INFO 3560 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-01-08 16:18:11,772 INFO 3560 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

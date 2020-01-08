@@ -2,14 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/router/io.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/router/io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/router.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/router.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/controller/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/controller/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/extend/application.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/application.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/extend/context.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/context.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/extend/helper.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/helper.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/middleware/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/middleware/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/service/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/service/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/config/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/config/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/typings/config/plugin.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/config/plugin.d.ts" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="378" column="15" selection-start-line="378" selection-start-column="15" selection-end-line="378" selection-end-column="15" />
+              <folding>
+                <element signature="e#5469#5535#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/contact-main/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1416">
+              <caret line="131" column="22" lean-forward="true" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+              <folding>
+                <element signature="e#1822#1867#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/contact-add-dialog/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+              <folding>
+                <element signature="n#style#0;n#el-button#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-button#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/contact-left-bar/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-admin/app/io/middleware/token.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-admin/app/io/controller/chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1328">
+              <caret line="108" column="17" lean-forward="true" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-admin/app/router/io.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fur-front/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#513#544#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -19,11 +128,107 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.el-icon-close</find>
+      <find>handleCheckedListChange</find>
+      <find>checkedGroupList</find>
+      <find>checkedList</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" />
+        <option value="$PROJECT_DIR$/fur-admin/app/router/io.js" />
+        <option value="$PROJECT_DIR$/fur-front/src/components/contact/index.vue" />
+        <option value="$PROJECT_DIR$/fur-front/src/components/contact/contact-add-dialog/index.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="691" />
+    <option name="y" value="15" />
+    <option name="width" value="974" />
+    <option name="height" value="1044" />
+  </component>
   <component name="ProjectId" id="1VPSwJpQd2Up4HD59fdcLG8TbSM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-add-dialog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-left-bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fur-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fur-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="fur-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -55,6 +260,18 @@
       <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\assets" />
       <recent name="C:\Users\Administrator\WebstormProjects\plFurniture\fur-front\src\views\product\material" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -168,6 +385,7 @@
       <workItem from="1578222754860" duration="784000" />
       <workItem from="1578233044279" duration="8346000" />
       <workItem from="1578324166694" duration="3126000" />
+      <workItem from="1578465985596" duration="11112000" />
     </task>
     <task id="LOCAL-00001" summary="封装与BUG发现 dialog表单重置（待解决）">
       <created>1575454228600</created>
@@ -228,6 +446,9 @@
     <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11112000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -236,6 +457,48 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17123288" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49947312" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17123288" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -328,5 +591,78 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#513#544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-admin/app/io/middleware/token.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-admin/app/router/io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-admin/app/io/controller/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1328">
+          <caret line="108" column="17" lean-forward="true" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="378" column="15" selection-start-line="378" selection-start-column="15" selection-end-line="378" selection-end-column="15" />
+          <folding>
+            <element signature="e#5469#5535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/contact-main/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1416">
+          <caret line="131" column="22" lean-forward="true" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+          <folding>
+            <element signature="e#1822#1867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/contact-add-dialog/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#el-button#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-button#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fur-front/src/components/contact/contact-left-bar/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216" />
+      </provider>
+    </entry>
   </component>
 </project>

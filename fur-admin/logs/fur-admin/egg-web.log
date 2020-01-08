@@ -1,1 +1,187 @@
 2020-01-07 00:00:01,015 INFO 10684 [egg-logrotator] app logger reload: got log-reload message
+2020-01-08 14:49:09,142 INFO 16188 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-08 14:49:09,179 INFO 16188 [egg-multipart] stream mode enable
+2020-01-08 14:49:09,733 INFO 16188 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
+2020-01-08 14:49:09,736 INFO 16188 [egg-security] use methodnoallow middleware
+2020-01-08 14:49:09,737 INFO 16188 [egg-security] use noopen middleware
+2020-01-08 14:49:09,738 INFO 16188 [egg-security] use nosniff middleware
+2020-01-08 14:49:09,738 INFO 16188 [egg-security] use xssProtection middleware
+2020-01-08 14:49:09,739 INFO 16188 [egg-security] use xframe middleware
+2020-01-08 14:49:09,739 INFO 16188 [egg-security] use dta middleware
+2020-01-08 14:49:09,739 INFO 16188 [egg-security] compose 6 middlewares into one security middleware
+2020-01-08 14:49:09,762 INFO 16188 [egg:core] dump config after load, 8ms
+2020-01-08 14:49:09,814 INFO 16188 [egg-watcher:application] watcher start success
+2020-01-08 14:49:10,636 INFO 16188 [egg:core] dump config after ready, 9ms
+2020-01-08 15:26:10,788 ERROR 16188 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+name: "TokenExpiredError"
+message: "jwt expired"
+expiredAt: "2020-01-08T07:21:07.000Z"
+pid: 16188
+hostname: Asiainfo-Luoyang
+
+2020-01-08 15:58:29,343 ERROR 16188 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+name: "TokenExpiredError"
+message: "jwt expired"
+expiredAt: "2020-01-08T07:56:08.000Z"
+pid: 16188
+hostname: Asiainfo-Luoyang
+
+2020-01-08 16:09:59,224 INFO 10732 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-08 16:09:59,264 INFO 10732 [egg-multipart] stream mode enable
+2020-01-08 16:10:00,025 INFO 10732 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
+2020-01-08 16:10:00,029 INFO 10732 [egg-security] use methodnoallow middleware
+2020-01-08 16:10:00,030 INFO 10732 [egg-security] use noopen middleware
+2020-01-08 16:10:00,031 INFO 10732 [egg-security] use nosniff middleware
+2020-01-08 16:10:00,032 INFO 10732 [egg-security] use xssProtection middleware
+2020-01-08 16:10:00,033 INFO 10732 [egg-security] use xframe middleware
+2020-01-08 16:10:00,034 INFO 10732 [egg-security] use dta middleware
+2020-01-08 16:10:00,034 INFO 10732 [egg-security] compose 6 middlewares into one security middleware
+2020-01-08 16:10:00,068 INFO 10732 [egg:core] dump config after load, 11ms
+2020-01-08 16:10:00,123 INFO 10732 [egg-watcher:application] watcher start success
+2020-01-08 16:10:00,947 INFO 10732 [egg:core] dump config after ready, 10ms
+2020-01-08 16:10:02,641 INFO 8556 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-08 16:10:02,678 INFO 8556 [egg-multipart] stream mode enable
+2020-01-08 16:10:03,245 INFO 8556 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
+2020-01-08 16:10:03,247 INFO 8556 [egg-security] use methodnoallow middleware
+2020-01-08 16:10:03,248 INFO 8556 [egg-security] use noopen middleware
+2020-01-08 16:10:03,250 INFO 8556 [egg-security] use nosniff middleware
+2020-01-08 16:10:03,251 INFO 8556 [egg-security] use xssProtection middleware
+2020-01-08 16:10:03,251 INFO 8556 [egg-security] use xframe middleware
+2020-01-08 16:10:03,252 INFO 8556 [egg-security] use dta middleware
+2020-01-08 16:10:03,252 INFO 8556 [egg-security] compose 6 middlewares into one security middleware
+2020-01-08 16:10:03,276 INFO 8556 [egg:core] dump config after load, 8ms
+2020-01-08 16:10:03,331 INFO 8556 [egg-watcher:application] watcher start success
+2020-01-08 16:10:04,125 INFO 8556 [egg:core] dump config after ready, 11ms
+2020-01-08 16:14:04,449 INFO 11552 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-08 16:14:04,485 INFO 11552 [egg-multipart] stream mode enable
+2020-01-08 16:14:05,053 INFO 11552 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
+2020-01-08 16:14:05,056 INFO 11552 [egg-security] use methodnoallow middleware
+2020-01-08 16:14:05,057 INFO 11552 [egg-security] use noopen middleware
+2020-01-08 16:14:05,059 INFO 11552 [egg-security] use nosniff middleware
+2020-01-08 16:14:05,060 INFO 11552 [egg-security] use xssProtection middleware
+2020-01-08 16:14:05,060 INFO 11552 [egg-security] use xframe middleware
+2020-01-08 16:14:05,061 INFO 11552 [egg-security] use dta middleware
+2020-01-08 16:14:05,061 INFO 11552 [egg-security] compose 6 middlewares into one security middleware
+2020-01-08 16:14:05,088 INFO 11552 [egg:core] dump config after load, 9ms
+2020-01-08 16:14:05,139 INFO 11552 [egg-watcher:application] watcher start success
+2020-01-08 16:14:05,985 INFO 11552 [egg:core] dump config after ready, 14ms
+2020-01-08 16:15:33,243 INFO 12628 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-08 16:15:33,281 INFO 12628 [egg-multipart] stream mode enable
+2020-01-08 16:15:33,892 INFO 12628 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
+2020-01-08 16:15:33,895 INFO 12628 [egg-security] use methodnoallow middleware
+2020-01-08 16:15:33,896 INFO 12628 [egg-security] use noopen middleware
+2020-01-08 16:15:33,897 INFO 12628 [egg-security] use nosniff middleware
+2020-01-08 16:15:33,897 INFO 12628 [egg-security] use xssProtection middleware
+2020-01-08 16:15:33,898 INFO 12628 [egg-security] use xframe middleware
+2020-01-08 16:15:33,898 INFO 12628 [egg-security] use dta middleware
+2020-01-08 16:15:33,898 INFO 12628 [egg-security] compose 6 middlewares into one security middleware
+2020-01-08 16:15:33,922 INFO 12628 [egg:core] dump config after load, 8ms
+2020-01-08 16:15:33,972 INFO 12628 [egg-watcher:application] watcher start success
+2020-01-08 16:15:34,751 INFO 12628 [egg:core] dump config after ready, 13ms
+2020-01-08 16:18:11,718 INFO 3560 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-08 16:18:11,773 INFO 3560 [egg-multipart] stream mode enable
+2020-01-08 16:18:12,387 INFO 3560 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
+2020-01-08 16:18:12,389 INFO 3560 [egg-security] use methodnoallow middleware
+2020-01-08 16:18:12,390 INFO 3560 [egg-security] use noopen middleware
+2020-01-08 16:18:12,391 INFO 3560 [egg-security] use nosniff middleware
+2020-01-08 16:18:12,392 INFO 3560 [egg-security] use xssProtection middleware
+2020-01-08 16:18:12,392 INFO 3560 [egg-security] use xframe middleware
+2020-01-08 16:18:12,393 INFO 3560 [egg-security] use dta middleware
+2020-01-08 16:18:12,393 INFO 3560 [egg-security] compose 6 middlewares into one security middleware
+2020-01-08 16:18:12,416 INFO 3560 [egg:core] dump config after load, 8ms
+2020-01-08 16:18:12,468 INFO 3560 [egg-watcher:application] watcher start success
+2020-01-08 16:18:13,302 INFO 3560 [egg:core] dump config after ready, 9ms
+2020-01-08 17:05:52,866 ERROR 3560 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+name: "TokenExpiredError"
+message: "jwt expired"
+expiredAt: "2020-01-08T09:01:44.000Z"
+pid: 3560
+hostname: Asiainfo-Luoyang
+
+2020-01-08 17:06:18,281 ERROR 3560 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+name: "TokenExpiredError"
+message: "jwt expired"
+expiredAt: "2020-01-08T09:01:44.000Z"
+pid: 3560
+hostname: Asiainfo-Luoyang
+

@@ -59,6 +59,7 @@ module.exports = app => {
              })
 
              let result = result_mine.concat(result_friends);
+             //id排序
              result.forEach((item,index,arr)=>{
                  if ((index>0) && (arr[index-1].id>item.id)){
                      const temp = arr[index-1];
@@ -90,6 +91,24 @@ module.exports = app => {
             }
 
       }
+      //获取除本人以外的添加列表
+        async getUserList(){
+            const { ctx } = this;
+            const { data } = ctx.payload;
+            const { id } = data;
+
+            try {
+                let result = await ctx.model.User.findAll({
+                    raw:true
+                });
+                result.filter((item)=>{
+                    return item.id != id;
+                })
+                ctx.socket.emit('getUserList',result);
+            }catch (e) {
+                ctx.socket.emit('getUserList',e);
+            }
+        }
     }
     return Controller
 };
