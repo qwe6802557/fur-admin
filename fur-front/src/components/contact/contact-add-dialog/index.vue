@@ -18,20 +18,9 @@
         </el-scrollbar>
       </div>
     </div>
-
     <div class="add-dialog-right" style="color: black;">
       <i class="el-icon-close" @click="addClose"></i>
       <div class="title">请勾选需要添加的好友</div>
-      <!--<el-scrollbar wrap-class="main-top-scroll" :native="false" wrap-style="height:500px;" view-style="" view-class="view-box" ref="scrollBar">
-        <div class="left-list">
-            <ul>
-              <li v-for="(item,index) in boxList">
-                <img src="../../../../static/images/logo.png" alt="">
-                <el-checkbox  :label="item.id" :key="item.id" disabled>{{item.user_name}}</el-checkbox>
-              </li>
-            </ul>
-        </div>
-      </el-scrollbar>-->
       <el-scrollbar wrap-class="main-top-scroll" :native="false" wrap-style="height:470px;" view-style="" view-class="view-box" ref="scrollBar">
       <div class="add-dialog-list-all">
         <transition-group name="el-zoom-in-bottom" mode="in-out">
@@ -45,15 +34,16 @@
       </div>
       </el-scrollbar>
       <div class="btn-area">
-        <el-button type="primary" round style="padding: 8px 18px;">提交</el-button>
-        <el-button style="padding: 8px 18px;" round>取消</el-button>
+        <el-button type="primary" round style="padding: 8px 18px;" @click="addSubmit">提交</el-button>
+        <el-button style="padding: 8px 18px;" round @click="addClose">取消</el-button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import {tag} from 'element-ui'
+  import { tag } from 'element-ui'
+  import { Message } from 'element-ui'
     export default {
         name: "ContactAddDialog",
         data(){
@@ -62,7 +52,7 @@
             search:'',
             boxList:[],
             checkedList:[],
-            checkedGroupList: [],
+            checkedGroupList: []
           }
         },
         methods:{
@@ -82,6 +72,7 @@
             })
             this.checkedList = checkedList;
           },
+          //取消选择过滤
           removeList(val){
             this.checkedList = this.checkedList.filter((item)=>{
               return item.id != val;
@@ -89,12 +80,21 @@
             this.checkedGroupList = this.checkedGroupList.filter((item)=>{
               return item != val;
             })
+          },
+          //添加列表提交
+          addSubmit(){
+            this.$socket.emit('addSubmit',this.checkedList);
           }
         },
       mounted() {
+          //初始化可添加好友列表
           this.$socket.emit('getUserList');
           this.sockets.subscribe('getUserList',(data)=>{
             this.boxList = data;
+          })
+          this.sockets.subscribe('addSubmit',(data)=>{
+            /*const { code,message } = data;*/
+            /*code === 0 && Message.success('message') || Message.error(message);*/
             console.log(data);
           })
       },
