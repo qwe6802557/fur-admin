@@ -109,6 +109,14 @@ module.exports = app => {
                 ctx.socket.emit('getUserList',e);
             }
         }
+        //添加好友请求
+        async addSubmit(){
+            const { ctx } = this;
+            const { socket,payload } = ctx;
+
+            /*socket.emit("addSubmit",payload); //发送给自己
+            socket.broadcast.emit("addSubmit",payload); //发给除了自己的其他人*/
+        }
     }
     return Controller
 };

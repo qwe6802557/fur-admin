@@ -1,187 +1,541 @@
-2020-01-07 00:00:01,015 INFO 10684 [egg-logrotator] app logger reload: got log-reload message
-2020-01-08 14:49:09,142 INFO 16188 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-01-08 14:49:09,179 INFO 16188 [egg-multipart] stream mode enable
-2020-01-08 14:49:09,733 INFO 16188 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
-2020-01-08 14:49:09,736 INFO 16188 [egg-security] use methodnoallow middleware
-2020-01-08 14:49:09,737 INFO 16188 [egg-security] use noopen middleware
-2020-01-08 14:49:09,738 INFO 16188 [egg-security] use nosniff middleware
-2020-01-08 14:49:09,738 INFO 16188 [egg-security] use xssProtection middleware
-2020-01-08 14:49:09,739 INFO 16188 [egg-security] use xframe middleware
-2020-01-08 14:49:09,739 INFO 16188 [egg-security] use dta middleware
-2020-01-08 14:49:09,739 INFO 16188 [egg-security] compose 6 middlewares into one security middleware
-2020-01-08 14:49:09,762 INFO 16188 [egg:core] dump config after load, 8ms
-2020-01-08 14:49:09,814 INFO 16188 [egg-watcher:application] watcher start success
-2020-01-08 14:49:10,636 INFO 16188 [egg:core] dump config after ready, 9ms
-2020-01-08 15:26:10,788 ERROR 16188 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
+2020-01-10 00:00:01,009 INFO 16560 [egg-logrotator] app logger reload: got log-reload message
+2020-01-10 00:02:51,946 INFO 16032 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:02:51,970 INFO 16032 [egg-multipart] stream mode enable
+2020-01-10 00:02:52,338 INFO 16032 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:02:52,340 INFO 16032 [egg-security] use methodnoallow middleware
+2020-01-10 00:02:52,341 INFO 16032 [egg-security] use noopen middleware
+2020-01-10 00:02:52,342 INFO 16032 [egg-security] use nosniff middleware
+2020-01-10 00:02:52,342 INFO 16032 [egg-security] use xssProtection middleware
+2020-01-10 00:02:52,343 INFO 16032 [egg-security] use xframe middleware
+2020-01-10 00:02:52,343 INFO 16032 [egg-security] use dta middleware
+2020-01-10 00:02:52,344 INFO 16032 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:02:52,361 INFO 16032 [egg:core] dump config after load, 4ms
+2020-01-10 00:02:52,392 INFO 16032 [egg-watcher:application] watcher start success
+2020-01-10 00:02:52,856 INFO 16032 [egg:core] dump config after ready, 6ms
+2020-01-10 00:17:39,863 INFO 12604 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:17:39,887 INFO 12604 [egg-multipart] stream mode enable
+2020-01-10 00:17:40,242 INFO 12604 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:17:40,244 INFO 12604 [egg-security] use methodnoallow middleware
+2020-01-10 00:17:40,245 INFO 12604 [egg-security] use noopen middleware
+2020-01-10 00:17:40,246 INFO 12604 [egg-security] use nosniff middleware
+2020-01-10 00:17:40,246 INFO 12604 [egg-security] use xssProtection middleware
+2020-01-10 00:17:40,247 INFO 12604 [egg-security] use xframe middleware
+2020-01-10 00:17:40,247 INFO 12604 [egg-security] use dta middleware
+2020-01-10 00:17:40,247 INFO 12604 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:17:40,262 INFO 12604 [egg:core] dump config after load, 4ms
+2020-01-10 00:17:40,295 INFO 12604 [egg-watcher:application] watcher start success
+2020-01-10 00:17:40,770 INFO 12604 [egg:core] dump config after ready, 5ms
+2020-01-10 00:17:41,945 INFO 15096 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:17:41,970 INFO 15096 [egg-multipart] stream mode enable
+2020-01-10 00:17:42,387 INFO 15096 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:17:42,389 INFO 15096 [egg-security] use methodnoallow middleware
+2020-01-10 00:17:42,390 INFO 15096 [egg-security] use noopen middleware
+2020-01-10 00:17:42,391 INFO 15096 [egg-security] use nosniff middleware
+2020-01-10 00:17:42,391 INFO 15096 [egg-security] use xssProtection middleware
+2020-01-10 00:17:42,392 INFO 15096 [egg-security] use xframe middleware
+2020-01-10 00:17:42,392 INFO 15096 [egg-security] use dta middleware
+2020-01-10 00:17:42,392 INFO 15096 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:17:42,409 INFO 15096 [egg:core] dump config after load, 5ms
+2020-01-10 00:17:42,445 INFO 15096 [egg-watcher:application] watcher start success
+2020-01-10 00:17:42,925 INFO 15096 [egg:core] dump config after ready, 5ms
+2020-01-10 00:18:07,831 INFO 15920 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:18:07,855 INFO 15920 [egg-multipart] stream mode enable
+2020-01-10 00:18:08,216 INFO 15920 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:18:08,218 INFO 15920 [egg-security] use methodnoallow middleware
+2020-01-10 00:18:08,218 INFO 15920 [egg-security] use noopen middleware
+2020-01-10 00:18:08,219 INFO 15920 [egg-security] use nosniff middleware
+2020-01-10 00:18:08,220 INFO 15920 [egg-security] use xssProtection middleware
+2020-01-10 00:18:08,220 INFO 15920 [egg-security] use xframe middleware
+2020-01-10 00:18:08,221 INFO 15920 [egg-security] use dta middleware
+2020-01-10 00:18:08,221 INFO 15920 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:18:08,236 INFO 15920 [egg:core] dump config after load, 4ms
+2020-01-10 00:18:08,268 INFO 15920 [egg-watcher:application] watcher start success
+2020-01-10 00:18:08,721 INFO 15920 [egg:core] dump config after ready, 5ms
+2020-01-10 00:20:14,818 INFO 14828 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:20:14,843 INFO 14828 [egg-multipart] stream mode enable
+2020-01-10 00:20:15,210 INFO 14828 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:20:15,212 INFO 14828 [egg-security] use methodnoallow middleware
+2020-01-10 00:20:15,213 INFO 14828 [egg-security] use noopen middleware
+2020-01-10 00:20:15,214 INFO 14828 [egg-security] use nosniff middleware
+2020-01-10 00:20:15,214 INFO 14828 [egg-security] use xssProtection middleware
+2020-01-10 00:20:15,215 INFO 14828 [egg-security] use xframe middleware
+2020-01-10 00:20:15,215 INFO 14828 [egg-security] use dta middleware
+2020-01-10 00:20:15,215 INFO 14828 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:20:15,231 INFO 14828 [egg:core] dump config after load, 5ms
+2020-01-10 00:20:15,262 INFO 14828 [egg-watcher:application] watcher start success
+2020-01-10 00:20:15,797 INFO 14828 [egg:core] dump config after ready, 6ms
+2020-01-10 00:21:10,110 ERROR 14828 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
 name: "TokenExpiredError"
 message: "jwt expired"
-expiredAt: "2020-01-08T07:21:07.000Z"
-pid: 16188
-hostname: Asiainfo-Luoyang
+expiredAt: "2020-01-09T16:19:38.000Z"
+pid: 14828
+hostname: PS2019NMKIZIZR
 
-2020-01-08 15:58:29,343 ERROR 16188 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
+2020-01-10 00:21:20,504 ERROR 14828 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:25)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 14828
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:21:49,422 INFO 15416 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:21:49,446 INFO 15416 [egg-multipart] stream mode enable
+2020-01-10 00:21:49,819 INFO 15416 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:21:49,821 INFO 15416 [egg-security] use methodnoallow middleware
+2020-01-10 00:21:49,822 INFO 15416 [egg-security] use noopen middleware
+2020-01-10 00:21:49,822 INFO 15416 [egg-security] use nosniff middleware
+2020-01-10 00:21:49,823 INFO 15416 [egg-security] use xssProtection middleware
+2020-01-10 00:21:49,823 INFO 15416 [egg-security] use xframe middleware
+2020-01-10 00:21:49,824 INFO 15416 [egg-security] use dta middleware
+2020-01-10 00:21:49,824 INFO 15416 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:21:49,839 INFO 15416 [egg:core] dump config after load, 4ms
+2020-01-10 00:21:49,871 INFO 15416 [egg-watcher:application] watcher start success
+2020-01-10 00:21:50,334 INFO 15416 [egg:core] dump config after ready, 5ms
+2020-01-10 00:22:01,067 ERROR 15416 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:24)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 15416
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:22:14,217 INFO 15364 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:22:14,241 INFO 15364 [egg-multipart] stream mode enable
+2020-01-10 00:22:14,609 INFO 15364 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:22:14,611 INFO 15364 [egg-security] use methodnoallow middleware
+2020-01-10 00:22:14,611 INFO 15364 [egg-security] use noopen middleware
+2020-01-10 00:22:14,612 INFO 15364 [egg-security] use nosniff middleware
+2020-01-10 00:22:14,613 INFO 15364 [egg-security] use xssProtection middleware
+2020-01-10 00:22:14,613 INFO 15364 [egg-security] use xframe middleware
+2020-01-10 00:22:14,614 INFO 15364 [egg-security] use dta middleware
+2020-01-10 00:22:14,614 INFO 15364 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:22:14,630 INFO 15364 [egg:core] dump config after load, 5ms
+2020-01-10 00:22:14,662 INFO 15364 [egg-watcher:application] watcher start success
+2020-01-10 00:22:15,108 INFO 15364 [egg:core] dump config after ready, 5ms
+2020-01-10 00:22:23,012 ERROR 15364 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:27)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 15364
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:22:42,585 INFO 14852 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:22:42,608 INFO 14852 [egg-multipart] stream mode enable
+2020-01-10 00:22:42,968 INFO 14852 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:22:42,970 INFO 14852 [egg-security] use methodnoallow middleware
+2020-01-10 00:22:42,971 INFO 14852 [egg-security] use noopen middleware
+2020-01-10 00:22:42,972 INFO 14852 [egg-security] use nosniff middleware
+2020-01-10 00:22:42,972 INFO 14852 [egg-security] use xssProtection middleware
+2020-01-10 00:22:42,973 INFO 14852 [egg-security] use xframe middleware
+2020-01-10 00:22:42,974 INFO 14852 [egg-security] use dta middleware
+2020-01-10 00:22:42,974 INFO 14852 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:22:42,989 INFO 14852 [egg:core] dump config after load, 4ms
+2020-01-10 00:22:43,021 INFO 14852 [egg-watcher:application] watcher start success
+2020-01-10 00:22:43,471 INFO 14852 [egg:core] dump config after ready, 5ms
+2020-01-10 00:23:16,840 ERROR 14852 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
 name: "TokenExpiredError"
 message: "jwt expired"
-expiredAt: "2020-01-08T07:56:08.000Z"
-pid: 16188
-hostname: Asiainfo-Luoyang
+expiredAt: "2020-01-09T16:19:38.000Z"
+pid: 14852
+hostname: PS2019NMKIZIZR
 
-2020-01-08 16:09:59,224 INFO 10732 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-01-08 16:09:59,264 INFO 10732 [egg-multipart] stream mode enable
-2020-01-08 16:10:00,025 INFO 10732 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
-2020-01-08 16:10:00,029 INFO 10732 [egg-security] use methodnoallow middleware
-2020-01-08 16:10:00,030 INFO 10732 [egg-security] use noopen middleware
-2020-01-08 16:10:00,031 INFO 10732 [egg-security] use nosniff middleware
-2020-01-08 16:10:00,032 INFO 10732 [egg-security] use xssProtection middleware
-2020-01-08 16:10:00,033 INFO 10732 [egg-security] use xframe middleware
-2020-01-08 16:10:00,034 INFO 10732 [egg-security] use dta middleware
-2020-01-08 16:10:00,034 INFO 10732 [egg-security] compose 6 middlewares into one security middleware
-2020-01-08 16:10:00,068 INFO 10732 [egg:core] dump config after load, 11ms
-2020-01-08 16:10:00,123 INFO 10732 [egg-watcher:application] watcher start success
-2020-01-08 16:10:00,947 INFO 10732 [egg:core] dump config after ready, 10ms
-2020-01-08 16:10:02,641 INFO 8556 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-01-08 16:10:02,678 INFO 8556 [egg-multipart] stream mode enable
-2020-01-08 16:10:03,245 INFO 8556 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
-2020-01-08 16:10:03,247 INFO 8556 [egg-security] use methodnoallow middleware
-2020-01-08 16:10:03,248 INFO 8556 [egg-security] use noopen middleware
-2020-01-08 16:10:03,250 INFO 8556 [egg-security] use nosniff middleware
-2020-01-08 16:10:03,251 INFO 8556 [egg-security] use xssProtection middleware
-2020-01-08 16:10:03,251 INFO 8556 [egg-security] use xframe middleware
-2020-01-08 16:10:03,252 INFO 8556 [egg-security] use dta middleware
-2020-01-08 16:10:03,252 INFO 8556 [egg-security] compose 6 middlewares into one security middleware
-2020-01-08 16:10:03,276 INFO 8556 [egg:core] dump config after load, 8ms
-2020-01-08 16:10:03,331 INFO 8556 [egg-watcher:application] watcher start success
-2020-01-08 16:10:04,125 INFO 8556 [egg:core] dump config after ready, 11ms
-2020-01-08 16:14:04,449 INFO 11552 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-01-08 16:14:04,485 INFO 11552 [egg-multipart] stream mode enable
-2020-01-08 16:14:05,053 INFO 11552 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
-2020-01-08 16:14:05,056 INFO 11552 [egg-security] use methodnoallow middleware
-2020-01-08 16:14:05,057 INFO 11552 [egg-security] use noopen middleware
-2020-01-08 16:14:05,059 INFO 11552 [egg-security] use nosniff middleware
-2020-01-08 16:14:05,060 INFO 11552 [egg-security] use xssProtection middleware
-2020-01-08 16:14:05,060 INFO 11552 [egg-security] use xframe middleware
-2020-01-08 16:14:05,061 INFO 11552 [egg-security] use dta middleware
-2020-01-08 16:14:05,061 INFO 11552 [egg-security] compose 6 middlewares into one security middleware
-2020-01-08 16:14:05,088 INFO 11552 [egg:core] dump config after load, 9ms
-2020-01-08 16:14:05,139 INFO 11552 [egg-watcher:application] watcher start success
-2020-01-08 16:14:05,985 INFO 11552 [egg:core] dump config after ready, 14ms
-2020-01-08 16:15:33,243 INFO 12628 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-01-08 16:15:33,281 INFO 12628 [egg-multipart] stream mode enable
-2020-01-08 16:15:33,892 INFO 12628 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
-2020-01-08 16:15:33,895 INFO 12628 [egg-security] use methodnoallow middleware
-2020-01-08 16:15:33,896 INFO 12628 [egg-security] use noopen middleware
-2020-01-08 16:15:33,897 INFO 12628 [egg-security] use nosniff middleware
-2020-01-08 16:15:33,897 INFO 12628 [egg-security] use xssProtection middleware
-2020-01-08 16:15:33,898 INFO 12628 [egg-security] use xframe middleware
-2020-01-08 16:15:33,898 INFO 12628 [egg-security] use dta middleware
-2020-01-08 16:15:33,898 INFO 12628 [egg-security] compose 6 middlewares into one security middleware
-2020-01-08 16:15:33,922 INFO 12628 [egg:core] dump config after load, 8ms
-2020-01-08 16:15:33,972 INFO 12628 [egg-watcher:application] watcher start success
-2020-01-08 16:15:34,751 INFO 12628 [egg:core] dump config after ready, 13ms
-2020-01-08 16:18:11,718 INFO 3560 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\板式家具生产管理系统\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2020-01-08 16:18:11,773 INFO 3560 [egg-multipart] stream mode enable
-2020-01-08 16:18:12,387 INFO 3560 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\public
-2020-01-08 16:18:12,389 INFO 3560 [egg-security] use methodnoallow middleware
-2020-01-08 16:18:12,390 INFO 3560 [egg-security] use noopen middleware
-2020-01-08 16:18:12,391 INFO 3560 [egg-security] use nosniff middleware
-2020-01-08 16:18:12,392 INFO 3560 [egg-security] use xssProtection middleware
-2020-01-08 16:18:12,392 INFO 3560 [egg-security] use xframe middleware
-2020-01-08 16:18:12,393 INFO 3560 [egg-security] use dta middleware
-2020-01-08 16:18:12,393 INFO 3560 [egg-security] compose 6 middlewares into one security middleware
-2020-01-08 16:18:12,416 INFO 3560 [egg:core] dump config after load, 8ms
-2020-01-08 16:18:12,468 INFO 3560 [egg-watcher:application] watcher start success
-2020-01-08 16:18:13,302 INFO 3560 [egg:core] dump config after ready, 9ms
-2020-01-08 17:05:52,866 ERROR 3560 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
+2020-01-10 00:24:33,652 INFO 17048 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:24:33,678 INFO 17048 [egg-multipart] stream mode enable
+2020-01-10 00:24:34,036 INFO 17048 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:24:34,038 INFO 17048 [egg-security] use methodnoallow middleware
+2020-01-10 00:24:34,038 INFO 17048 [egg-security] use noopen middleware
+2020-01-10 00:24:34,039 INFO 17048 [egg-security] use nosniff middleware
+2020-01-10 00:24:34,040 INFO 17048 [egg-security] use xssProtection middleware
+2020-01-10 00:24:34,040 INFO 17048 [egg-security] use xframe middleware
+2020-01-10 00:24:34,041 INFO 17048 [egg-security] use dta middleware
+2020-01-10 00:24:34,041 INFO 17048 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:24:34,056 INFO 17048 [egg:core] dump config after load, 4ms
+2020-01-10 00:24:34,087 INFO 17048 [egg-watcher:application] watcher start success
+2020-01-10 00:24:34,530 INFO 17048 [egg:core] dump config after ready, 5ms
+2020-01-10 00:24:39,272 ERROR 17048 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
 name: "TokenExpiredError"
 message: "jwt expired"
-expiredAt: "2020-01-08T09:01:44.000Z"
-pid: 3560
-hostname: Asiainfo-Luoyang
+expiredAt: "2020-01-09T16:24:38.000Z"
+pid: 17048
+hostname: PS2019NMKIZIZR
 
-2020-01-08 17:06:18,281 ERROR 3560 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\板式家具生产管理系统\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
+2020-01-10 00:25:03,382 ERROR 17048 nodejs.TokenExpiredError: jwt expired
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
+    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
+    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
+    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
+    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
+    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
+    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
+    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
+    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
 name: "TokenExpiredError"
 message: "jwt expired"
-expiredAt: "2020-01-08T09:01:44.000Z"
-pid: 3560
-hostname: Asiainfo-Luoyang
+expiredAt: "2020-01-09T16:24:38.000Z"
+pid: 17048
+hostname: PS2019NMKIZIZR
 
+2020-01-10 00:25:53,087 INFO 4088 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:25:53,112 INFO 4088 [egg-multipart] stream mode enable
+2020-01-10 00:25:53,487 INFO 4088 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:25:53,489 INFO 4088 [egg-security] use methodnoallow middleware
+2020-01-10 00:25:53,490 INFO 4088 [egg-security] use noopen middleware
+2020-01-10 00:25:53,491 INFO 4088 [egg-security] use nosniff middleware
+2020-01-10 00:25:53,491 INFO 4088 [egg-security] use xssProtection middleware
+2020-01-10 00:25:53,492 INFO 4088 [egg-security] use xframe middleware
+2020-01-10 00:25:53,492 INFO 4088 [egg-security] use dta middleware
+2020-01-10 00:25:53,492 INFO 4088 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:25:53,508 INFO 4088 [egg:core] dump config after load, 5ms
+2020-01-10 00:25:53,539 INFO 4088 [egg-watcher:application] watcher start success
+2020-01-10 00:25:54,002 INFO 4088 [egg:core] dump config after ready, 5ms
+2020-01-10 00:26:46,650 INFO 15364 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:26:46,674 INFO 15364 [egg-multipart] stream mode enable
+2020-01-10 00:26:47,031 INFO 15364 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:26:47,033 INFO 15364 [egg-security] use methodnoallow middleware
+2020-01-10 00:26:47,034 INFO 15364 [egg-security] use noopen middleware
+2020-01-10 00:26:47,035 INFO 15364 [egg-security] use nosniff middleware
+2020-01-10 00:26:47,035 INFO 15364 [egg-security] use xssProtection middleware
+2020-01-10 00:26:47,036 INFO 15364 [egg-security] use xframe middleware
+2020-01-10 00:26:47,036 INFO 15364 [egg-security] use dta middleware
+2020-01-10 00:26:47,036 INFO 15364 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:26:47,051 INFO 15364 [egg:core] dump config after load, 4ms
+2020-01-10 00:26:47,082 INFO 15364 [egg-watcher:application] watcher start success
+2020-01-10 00:26:47,531 INFO 15364 [egg:core] dump config after ready, 5ms
+2020-01-10 00:27:36,451 INFO 16884 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:27:36,476 INFO 16884 [egg-multipart] stream mode enable
+2020-01-10 00:27:36,835 INFO 16884 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:27:36,837 INFO 16884 [egg-security] use methodnoallow middleware
+2020-01-10 00:27:36,837 INFO 16884 [egg-security] use noopen middleware
+2020-01-10 00:27:36,838 INFO 16884 [egg-security] use nosniff middleware
+2020-01-10 00:27:36,839 INFO 16884 [egg-security] use xssProtection middleware
+2020-01-10 00:27:36,839 INFO 16884 [egg-security] use xframe middleware
+2020-01-10 00:27:36,840 INFO 16884 [egg-security] use dta middleware
+2020-01-10 00:27:36,840 INFO 16884 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:27:36,855 INFO 16884 [egg:core] dump config after load, 5ms
+2020-01-10 00:27:36,885 INFO 16884 [egg-watcher:application] watcher start success
+2020-01-10 00:27:37,337 INFO 16884 [egg:core] dump config after ready, 5ms
+2020-01-10 00:28:41,107 INFO 15236 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:28:41,132 INFO 15236 [egg-multipart] stream mode enable
+2020-01-10 00:28:41,512 INFO 15236 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:28:41,514 INFO 15236 [egg-security] use methodnoallow middleware
+2020-01-10 00:28:41,515 INFO 15236 [egg-security] use noopen middleware
+2020-01-10 00:28:41,516 INFO 15236 [egg-security] use nosniff middleware
+2020-01-10 00:28:41,516 INFO 15236 [egg-security] use xssProtection middleware
+2020-01-10 00:28:41,517 INFO 15236 [egg-security] use xframe middleware
+2020-01-10 00:28:41,517 INFO 15236 [egg-security] use dta middleware
+2020-01-10 00:28:41,518 INFO 15236 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:28:41,535 INFO 15236 [egg:core] dump config after load, 5ms
+2020-01-10 00:28:41,568 INFO 15236 [egg-watcher:application] watcher start success
+2020-01-10 00:28:42,098 INFO 15236 [egg:core] dump config after ready, 5ms
+2020-01-10 00:28:43,240 INFO 16864 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:28:43,264 INFO 16864 [egg-multipart] stream mode enable
+2020-01-10 00:28:43,639 INFO 16864 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:28:43,641 INFO 16864 [egg-security] use methodnoallow middleware
+2020-01-10 00:28:43,642 INFO 16864 [egg-security] use noopen middleware
+2020-01-10 00:28:43,642 INFO 16864 [egg-security] use nosniff middleware
+2020-01-10 00:28:43,643 INFO 16864 [egg-security] use xssProtection middleware
+2020-01-10 00:28:43,643 INFO 16864 [egg-security] use xframe middleware
+2020-01-10 00:28:43,644 INFO 16864 [egg-security] use dta middleware
+2020-01-10 00:28:43,644 INFO 16864 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:28:43,659 INFO 16864 [egg:core] dump config after load, 4ms
+2020-01-10 00:28:43,703 INFO 16864 [egg-watcher:application] watcher start success
+2020-01-10 00:28:44,156 INFO 16864 [egg:core] dump config after ready, 6ms
+2020-01-10 00:28:50,644 ERROR 16864 nodejs.TypeError: [egg-socket.io] controller execute error: socket.socket is not a function
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:120:20)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 16864
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:29:16,460 INFO 15792 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:29:16,485 INFO 15792 [egg-multipart] stream mode enable
+2020-01-10 00:29:16,848 INFO 15792 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:29:16,850 INFO 15792 [egg-security] use methodnoallow middleware
+2020-01-10 00:29:16,851 INFO 15792 [egg-security] use noopen middleware
+2020-01-10 00:29:16,851 INFO 15792 [egg-security] use nosniff middleware
+2020-01-10 00:29:16,852 INFO 15792 [egg-security] use xssProtection middleware
+2020-01-10 00:29:16,852 INFO 15792 [egg-security] use xframe middleware
+2020-01-10 00:29:16,853 INFO 15792 [egg-security] use dta middleware
+2020-01-10 00:29:16,853 INFO 15792 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:29:16,869 INFO 15792 [egg:core] dump config after load, 5ms
+2020-01-10 00:29:16,902 INFO 15792 [egg-watcher:application] watcher start success
+2020-01-10 00:29:17,360 INFO 15792 [egg:core] dump config after ready, 6ms
+2020-01-10 00:29:35,394 INFO 16428 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:29:35,418 INFO 16428 [egg-multipart] stream mode enable
+2020-01-10 00:29:35,777 INFO 16428 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:29:35,779 INFO 16428 [egg-security] use methodnoallow middleware
+2020-01-10 00:29:35,780 INFO 16428 [egg-security] use noopen middleware
+2020-01-10 00:29:35,780 INFO 16428 [egg-security] use nosniff middleware
+2020-01-10 00:29:35,781 INFO 16428 [egg-security] use xssProtection middleware
+2020-01-10 00:29:35,781 INFO 16428 [egg-security] use xframe middleware
+2020-01-10 00:29:35,782 INFO 16428 [egg-security] use dta middleware
+2020-01-10 00:29:35,782 INFO 16428 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:29:35,797 INFO 16428 [egg:core] dump config after load, 4ms
+2020-01-10 00:29:35,828 INFO 16428 [egg-watcher:application] watcher start success
+2020-01-10 00:29:36,266 INFO 16428 [egg:core] dump config after ready, 5ms
+2020-01-10 00:29:39,062 ERROR 16428 nodejs.TypeError: [egg-socket.io] controller execute error: socket.socket is not a function
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:120:20)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 16428
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:29:57,654 INFO 2840 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:29:57,679 INFO 2840 [egg-multipart] stream mode enable
+2020-01-10 00:29:58,039 INFO 2840 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:29:58,041 INFO 2840 [egg-security] use methodnoallow middleware
+2020-01-10 00:29:58,042 INFO 2840 [egg-security] use noopen middleware
+2020-01-10 00:29:58,042 INFO 2840 [egg-security] use nosniff middleware
+2020-01-10 00:29:58,043 INFO 2840 [egg-security] use xssProtection middleware
+2020-01-10 00:29:58,043 INFO 2840 [egg-security] use xframe middleware
+2020-01-10 00:29:58,044 INFO 2840 [egg-security] use dta middleware
+2020-01-10 00:29:58,044 INFO 2840 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:29:58,059 INFO 2840 [egg:core] dump config after load, 4ms
+2020-01-10 00:29:58,090 INFO 2840 [egg-watcher:application] watcher start success
+2020-01-10 00:29:58,534 INFO 2840 [egg:core] dump config after ready, 5ms
+2020-01-10 00:30:03,772 INFO 15080 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:30:03,799 INFO 15080 [egg-multipart] stream mode enable
+2020-01-10 00:30:04,191 INFO 15080 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:30:04,193 INFO 15080 [egg-security] use methodnoallow middleware
+2020-01-10 00:30:04,194 INFO 15080 [egg-security] use noopen middleware
+2020-01-10 00:30:04,194 INFO 15080 [egg-security] use nosniff middleware
+2020-01-10 00:30:04,195 INFO 15080 [egg-security] use xssProtection middleware
+2020-01-10 00:30:04,195 INFO 15080 [egg-security] use xframe middleware
+2020-01-10 00:30:04,196 INFO 15080 [egg-security] use dta middleware
+2020-01-10 00:30:04,196 INFO 15080 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:30:04,213 INFO 15080 [egg:core] dump config after load, 4ms
+2020-01-10 00:30:04,248 INFO 15080 [egg-watcher:application] watcher start success
+2020-01-10 00:30:04,770 INFO 15080 [egg:core] dump config after ready, 5ms
+2020-01-10 00:30:10,841 ERROR 15080 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'socket' of undefined
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:120:21)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 15080
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:30:31,123 INFO 12596 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:30:31,149 INFO 12596 [egg-multipart] stream mode enable
+2020-01-10 00:30:31,517 INFO 12596 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:30:31,519 INFO 12596 [egg-security] use methodnoallow middleware
+2020-01-10 00:30:31,519 INFO 12596 [egg-security] use noopen middleware
+2020-01-10 00:30:31,520 INFO 12596 [egg-security] use nosniff middleware
+2020-01-10 00:30:31,520 INFO 12596 [egg-security] use xssProtection middleware
+2020-01-10 00:30:31,521 INFO 12596 [egg-security] use xframe middleware
+2020-01-10 00:30:31,521 INFO 12596 [egg-security] use dta middleware
+2020-01-10 00:30:31,522 INFO 12596 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:30:31,537 INFO 12596 [egg:core] dump config after load, 4ms
+2020-01-10 00:30:31,569 INFO 12596 [egg-watcher:application] watcher start success
+2020-01-10 00:30:32,014 INFO 12596 [egg:core] dump config after ready, 5ms
+2020-01-10 00:30:41,095 ERROR 12596 nodejs.TypeError: [egg-socket.io] controller execute error: socket.socket is not a function
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:20)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 12596
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:30:47,956 INFO 15116 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:30:47,982 INFO 15116 [egg-multipart] stream mode enable
+2020-01-10 00:30:48,348 INFO 15116 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:30:48,350 INFO 15116 [egg-security] use methodnoallow middleware
+2020-01-10 00:30:48,351 INFO 15116 [egg-security] use noopen middleware
+2020-01-10 00:30:48,351 INFO 15116 [egg-security] use nosniff middleware
+2020-01-10 00:30:48,352 INFO 15116 [egg-security] use xssProtection middleware
+2020-01-10 00:30:48,352 INFO 15116 [egg-security] use xframe middleware
+2020-01-10 00:30:48,353 INFO 15116 [egg-security] use dta middleware
+2020-01-10 00:30:48,353 INFO 15116 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:30:48,368 INFO 15116 [egg:core] dump config after load, 5ms
+2020-01-10 00:30:48,399 INFO 15116 [egg-watcher:application] watcher start success
+2020-01-10 00:30:48,853 INFO 15116 [egg:core] dump config after ready, 6ms
+2020-01-10 00:31:45,938 INFO 16232 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:31:45,962 INFO 16232 [egg-multipart] stream mode enable
+2020-01-10 00:31:46,328 INFO 16232 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:31:46,330 INFO 16232 [egg-security] use methodnoallow middleware
+2020-01-10 00:31:46,330 INFO 16232 [egg-security] use noopen middleware
+2020-01-10 00:31:46,331 INFO 16232 [egg-security] use nosniff middleware
+2020-01-10 00:31:46,331 INFO 16232 [egg-security] use xssProtection middleware
+2020-01-10 00:31:46,332 INFO 16232 [egg-security] use xframe middleware
+2020-01-10 00:31:46,332 INFO 16232 [egg-security] use dta middleware
+2020-01-10 00:31:46,332 INFO 16232 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:31:46,348 INFO 16232 [egg:core] dump config after load, 4ms
+2020-01-10 00:31:46,380 INFO 16232 [egg-watcher:application] watcher start success
+2020-01-10 00:31:46,832 INFO 16232 [egg:core] dump config after ready, 6ms
+2020-01-10 00:31:57,613 ERROR 16232 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:31)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 16232
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:32:09,559 INFO 15912 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:32:09,585 INFO 15912 [egg-multipart] stream mode enable
+2020-01-10 00:32:09,951 INFO 15912 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:32:09,953 INFO 15912 [egg-security] use methodnoallow middleware
+2020-01-10 00:32:09,953 INFO 15912 [egg-security] use noopen middleware
+2020-01-10 00:32:09,954 INFO 15912 [egg-security] use nosniff middleware
+2020-01-10 00:32:09,955 INFO 15912 [egg-security] use xssProtection middleware
+2020-01-10 00:32:09,955 INFO 15912 [egg-security] use xframe middleware
+2020-01-10 00:32:09,956 INFO 15912 [egg-security] use dta middleware
+2020-01-10 00:32:09,956 INFO 15912 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:32:09,971 INFO 15912 [egg:core] dump config after load, 4ms
+2020-01-10 00:32:10,003 INFO 15912 [egg-watcher:application] watcher start success
+2020-01-10 00:32:10,448 INFO 15912 [egg:core] dump config after ready, 5ms
+2020-01-10 00:32:16,809 ERROR 15912 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'socket' of undefined
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:25)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 15912
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:32:23,013 INFO 5136 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:32:23,037 INFO 5136 [egg-multipart] stream mode enable
+2020-01-10 00:32:23,392 INFO 5136 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:32:23,394 INFO 5136 [egg-security] use methodnoallow middleware
+2020-01-10 00:32:23,395 INFO 5136 [egg-security] use noopen middleware
+2020-01-10 00:32:23,396 INFO 5136 [egg-security] use nosniff middleware
+2020-01-10 00:32:23,396 INFO 5136 [egg-security] use xssProtection middleware
+2020-01-10 00:32:23,397 INFO 5136 [egg-security] use xframe middleware
+2020-01-10 00:32:23,397 INFO 5136 [egg-security] use dta middleware
+2020-01-10 00:32:23,397 INFO 5136 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:32:23,412 INFO 5136 [egg:core] dump config after load, 4ms
+2020-01-10 00:32:23,444 INFO 5136 [egg-watcher:application] watcher start success
+2020-01-10 00:32:23,884 INFO 5136 [egg:core] dump config after ready, 6ms
+2020-01-10 00:32:33,294 ERROR 5136 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:31)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 5136
+hostname: PS2019NMKIZIZR
+
+2020-01-10 00:32:40,831 INFO 9496 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Admin\\Desktop\\plFurniture\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-10 00:32:40,856 INFO 9496 [egg-multipart] stream mode enable
+2020-01-10 00:32:41,222 INFO 9496 [egg-static] starting static serve /public/ -> C:\Users\Admin\Desktop\plFurniture\fur-admin\app\public
+2020-01-10 00:32:41,224 INFO 9496 [egg-security] use methodnoallow middleware
+2020-01-10 00:32:41,224 INFO 9496 [egg-security] use noopen middleware
+2020-01-10 00:32:41,225 INFO 9496 [egg-security] use nosniff middleware
+2020-01-10 00:32:41,225 INFO 9496 [egg-security] use xssProtection middleware
+2020-01-10 00:32:41,226 INFO 9496 [egg-security] use xframe middleware
+2020-01-10 00:32:41,226 INFO 9496 [egg-security] use dta middleware
+2020-01-10 00:32:41,226 INFO 9496 [egg-security] compose 6 middlewares into one security middleware
+2020-01-10 00:32:41,241 INFO 9496 [egg:core] dump config after load, 4ms
+2020-01-10 00:32:41,273 INFO 9496 [egg-watcher:application] watcher start success
+2020-01-10 00:32:41,730 INFO 9496 [egg:core] dump config after ready, 5ms
