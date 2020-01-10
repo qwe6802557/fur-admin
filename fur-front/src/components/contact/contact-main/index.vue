@@ -46,7 +46,7 @@
     import Memory from '@/untils/memoryUntil'
     import VEmojiPicker from 'v-emoji-picker';
     import packEmoji from "v-emoji-picker/dist/v-emoji-picker.common";;//引入表情包控件
-    import {Message} from 'element-ui'
+    import { Message } from 'element-ui'
     export default {
         name: "ContactMain",
         props:['friend_id','userMes'],

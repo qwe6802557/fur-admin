@@ -26,8 +26,10 @@
     import Header from '@/components/head/Header'
     import LeftBar from '@/components/left-bar/Left-bar'
     import memoryUntil from '@/untils/memoryUntil';
+    import storeUntil from '@/untils/storeUntil';
     import Vue from 'vue'
     import VueSocketIO from 'vue-socket.io'
+    import { Message } from 'element-ui'
 
     Vue.use(
       new VueSocketIO({
@@ -67,6 +69,30 @@
       },
       sockets:{
         customEmit:function (val) {
+          const { code, message } = val;
+          if (!code || code == 0){
+            return false;
+          }
+          Message.error(message);
+          memoryUntil.token=null;
+          storeUntil.delToken();
+          this.$router.push({name:'Main'});
+        },
+        handelEvent(val){
+          const { code, message } = val;
+          if (!code || code == 0){
+            return false;
+          }
+          Message.error(message);
+          memoryUntil.token=null;
+          storeUntil.delToken();
+          this.$router.push({name:'Main'});
+        },
+        online(val){
+          console.log(val);
+        },
+        outline(val){
+          console.log(val);
         }
       }
     }

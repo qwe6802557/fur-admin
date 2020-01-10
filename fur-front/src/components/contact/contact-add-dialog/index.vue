@@ -101,6 +101,7 @@
       beforeDestroy(){
         //销毁组件取消监听 以免发生事件回调的重复调用 **
         this.sockets.unsubscribe('getUserList');
+        this.sockets.unsubscribe('addSubmit');
       }
     }
 </script>
