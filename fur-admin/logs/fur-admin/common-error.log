@@ -685,3 +685,133 @@ name: "unhandledExceptionError"
 pid: 2652
 hostname: Asiainfo-Luoyang
 
+2020-01-11 19:16:08,986 ERROR 15640 nodejs.TypeError: Cannot read property 'data' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:16:62
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:7:5
+    at async session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:7)
+
+pid: 15640
+hostname: PS2019NMKIZIZR
+
+2020-01-11 19:16:31,844 ERROR 15640 nodejs.SequelizeDatabaseError: Unknown column 'add_messages.friend_id' in 'where clause'
+    at Query.formatError (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.onPacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:29
+From previous event:
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:12
+From previous event:
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:641:10
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:60:10)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:631:30
+From previous event:
+    at Sequelize.query (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:580:23)
+    at QueryInterface.select (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\query-interface.js:1121:27)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1757:34
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at Function.findAll (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1755:8)
+    at Function.findOne (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1924:17)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:122:53
+    at Array.map (<anonymous>)
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:121:16)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 1 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 1 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
+sql: "SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 1 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"
+parameters: undefined
+pid: 15640
+hostname: PS2019NMKIZIZR
+
+2020-01-11 19:16:31,845 ERROR 15640 nodejs.SequelizeDatabaseError: Unknown column 'add_messages.friend_id' in 'where clause'
+    at Query.formatError (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.onPacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:29
+From previous event:
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:12
+From previous event:
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:641:10
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:60:10)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:631:30
+From previous event:
+    at Sequelize.query (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:580:23)
+    at QueryInterface.select (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\query-interface.js:1121:27)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1757:34
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at Function.findAll (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1755:8)
+    at Function.findOne (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1924:17)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:122:53
+    at Array.map (<anonymous>)
+    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:121:16)
+    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
+    at Socket.emit (events.js:210:5)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 2 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 2 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
+sql: "SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 2 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"
+parameters: undefined
+pid: 15640
+hostname: PS2019NMKIZIZR
+
+2020-01-11 19:18:43,572 ERROR 19252 nodejs.TypeError: this.build(...).save is not a function
+    at Function.create (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:2226:8)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:129:49
+
+pid: 19252
+hostname: PS2019NMKIZIZR
+
+2020-01-11 19:18:43,572 ERROR 19252 nodejs.TypeError: this.build(...).save is not a function
+    at Function.create (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:2226:8)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:129:49
+
+pid: 19252
+hostname: PS2019NMKIZIZR
+
+2020-01-11 20:18:14,329 ERROR 18176 nodejs.TypeError: Cannot read property 'data' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:15:62
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:7:5
+    at async session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:7)
+
+pid: 18176
+hostname: PS2019NMKIZIZR
+

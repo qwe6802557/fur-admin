@@ -1,6 +1,6 @@
 'use strict';
 module.exports = app => {
-  const { ENUM, INTEGER } = app.Sequelize;
+  const { ENUM, INTEGER, STRING } = app.Sequelize;
   const addMessage = app.model.define('add_messages', {
     id: {
       type: INTEGER,
@@ -13,10 +13,15 @@ module.exports = app => {
       fields: 'user_id',
       allowNull: false,
     },
-    friends_id: {
+    friend_id: {
       type: INTEGER,
-      fields: 'friends_id',
+      fields: 'friend_id',
       allowNull: false,
+    },
+    friend_name:{
+      type:STRING,
+      fields:'friend_name',
+      allowNull:false
     },
     is_allowed: {
       type: ENUM([ '0', '1' ]),

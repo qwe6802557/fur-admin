@@ -93,9 +93,13 @@
             this.boxList = data;
           })
           this.sockets.subscribe('addSubmit',(data)=>{
-            /*const { code,message } = data;*/
-            /*code === 0 && Message.success('message') || Message.error(message);*/
-            console.log(data);
+            const { code,message } = data;
+           if (code == 5){
+             Message['error'](message);
+           }else {
+             Message['success'](message);
+             this.addClose();
+           }
           })
       },
       beforeDestroy(){

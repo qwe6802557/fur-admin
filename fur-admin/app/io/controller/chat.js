@@ -106,13 +106,52 @@ module.exports = app => {
     async addSubmit() {
       const { ctx } = this;
       const { payload, socket } = ctx;
+      const data = ctx.args[0];
       const nsp = app.io.of('/');
+      const { id } = payload.data;
+      let addArr = [];
+      let haveArr = [];
+      let eachFlag = 0;
 
-      console.log(socket);
+      data.forEach((item) => {
+        let addObj = {};
+        addObj.user_id = id;
+        addObj.friend_id = item.id;
+        addObj.friend_name = item.username;
+        addArr.push(addObj);
+      })
+      try{
+        addArr.map(async (item) => {
+          const result = await ctx.model.AddMessage.findOne({
+            where:{
+              user_id:item.user_id,
+              friend_id:item.friend_id,
+              is_allowed: '0'
+            },
+            raw:true
+          })
+          result && haveArr.push(result);
+          !result && await ctx.model.AddMessage.create(item);
+          eachFlag++;
+          if ( eachFlag != addArr.length){
+            return ;
+          }
+          if (haveArr.length !=0){
+            haveArr = haveArr.map((item) => {
+              return item.friend_name;
+            })
+            socket.emit('addSubmit',{code:1, message:'添加成功！您已经对' + haveArr.join(',') + '发送过好友请求,请耐心等待!'});
+          } else {
+            socket.emit('addSubmit',{code:0, message:'添加成功！'});
+          }
+        })
+      }catch (e) {
+        socket.emit('addSubmit',{code:5, message:'添加出错！'});
+      }
       /* socket.emit("addSubmit",payload); //发送给自己
          socket.broadcast.emit("addSubmit",payload); //发给除了自己的其他人*/
       /* nsp.to(room).emit('addSubmit', payload);*/ // 给指定房间的人发送消息
-      nsp.sockets[socket.id].emit('addSubmit', payload);// 发送给指定ID的人
+     /* nsp.sockets[socket.id].emit('addSubmit', payload);*/// 发送给指定ID的人
     }
   }
   return Controller;

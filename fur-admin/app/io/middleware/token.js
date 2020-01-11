@@ -8,7 +8,6 @@ module.exports = (options, app) => {
     try {
       const payload = ctx.app.jwt.verify(token.split(' ')[1], ctx.app.config.jwt.secret);
       ctx.payload = payload; // 验证通过
-      ctx.socket.emit('customEmit', { code: 0, message: '验证成功！' });
       await next();
     } catch (e) {
       await ctx.socket.emit('handelEvent', { code: 1, message: '登录状态发生变化，请重新登录！' });

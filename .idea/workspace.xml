@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/io/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/io/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/io/middleware/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/io/middleware/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/model/addMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/model/addMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
@@ -16,17 +15,7 @@
       <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/run/router.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/router.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/controller/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/controller/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/extend/application.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/application.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/extend/context.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/context.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/extend/helper.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/extend/helper.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/middleware/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/middleware/index.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/service/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/service/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/config/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/config/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/config/plugin.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/config/plugin.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +29,6 @@
         <option value="Vue Single File Component" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>.el-icon-close</find>
-      <find>handleCheckedListChange</find>
-      <find>checkedGroupList</find>
-      <find>checkedList</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -359,7 +340,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/fur-front/src/views/admin/index.vue</url>
-          <line>44</line>
+          <line>46</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
