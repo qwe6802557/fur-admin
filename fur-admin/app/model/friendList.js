@@ -25,7 +25,6 @@ module.exports=app=>{
             allowNull: false,
             fields:'friend_name'
         }
-
     },{
         timestamps: false, // 自动维护时间戳 [ created_at、updated_at ]
         freezeTableName: true,// 禁止修改表名，默认情况下，sequelize将自动将所有传递的模型名称（define的第一个参数）转换为复数

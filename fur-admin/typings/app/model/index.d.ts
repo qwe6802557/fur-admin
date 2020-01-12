@@ -9,6 +9,7 @@ import ExportGoods = require('../../../app/model/goods');
 import ExportList = require('../../../app/model/list');
 import ExportMessage = require('../../../app/model/message');
 import ExportOrders = require('../../../app/model/orders');
+import ExportSocketUser = require('../../../app/model/socket-user');
 import ExportSpends = require('../../../app/model/spends');
 import ExportUser = require('../../../app/model/user');
 
@@ -21,6 +22,7 @@ declare module 'egg' {
     List: ReturnType<typeof ExportList>;
     Message: ReturnType<typeof ExportMessage>;
     Orders: ReturnType<typeof ExportOrders>;
+    SocketUser: ReturnType<typeof ExportSocketUser>;
     Spends: ReturnType<typeof ExportSpends>;
     User: ReturnType<typeof ExportUser>;
   }

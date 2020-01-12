@@ -1,817 +1,89 @@
-2020-01-10 00:21:10,109 ERROR 14828 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-09T16:19:38.000Z"
-pid: 14828
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:21:20,503 ERROR 14828 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:25)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 14828
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:22:01,066 ERROR 15416 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:24)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 15416
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:22:23,011 ERROR 15364 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:27)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 15364
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:23:16,838 ERROR 14852 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-09T16:19:38.000Z"
-pid: 14852
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:24:39,269 ERROR 17048 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-09T16:24:38.000Z"
-pid: 17048
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:25:03,380 ERROR 17048 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.<computed>.verify (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-09T16:24:38.000Z"
-pid: 17048
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:28:50,643 ERROR 16864 nodejs.TypeError: [egg-socket.io] controller execute error: socket.socket is not a function
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:120:20)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 16864
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:29:39,060 ERROR 16428 nodejs.TypeError: [egg-socket.io] controller execute error: socket.socket is not a function
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:120:20)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 16428
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:30:10,840 ERROR 15080 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'socket' of undefined
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:120:21)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 15080
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:30:41,094 ERROR 12596 nodejs.TypeError: [egg-socket.io] controller execute error: socket.socket is not a function
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:20)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 12596
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:31:57,611 ERROR 16232 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:31)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 16232
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:32:16,808 ERROR 15912 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'socket' of undefined
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:25)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 15912
-hostname: PS2019NMKIZIZR
-
-2020-01-10 00:32:33,293 ERROR 5136 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'emit' of undefined
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:119:31)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-
-pid: 5136
-hostname: PS2019NMKIZIZR
-
-2020-01-10 11:46:39,036 ERROR 9776 nodejs.TypeError: [egg-socket.io] controller execute error: socket.id.emit is not a function
-    at Controller.addSubmit (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\controller\chat.js:119:23)
-    at Object.callFn (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.socket.on.args (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:198:13)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-
-pid: 9776
-hostname: Asiainfo-Luoyang
-
-2020-01-10 11:53:48,089 ERROR 16124 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property 'id' of undefined
-    at Controller.addSubmit (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\controller\chat.js:120:25)
-    at Object.callFn (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.socket.on.args (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:198:13)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-
-pid: 16124
-hostname: Asiainfo-Luoyang
-
-2020-01-10 11:54:26,113 ERROR 1884 nodejs.TypeError: [egg-socket.io] controller execute error: Cannot read property '0RpvzfS-2MTZlvW9AAAB' of undefined
-    at Controller.addSubmit (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\controller\chat.js:120:24)
-    at Object.callFn (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.socket.on.args (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:198:13)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-
-pid: 1884
-hostname: Asiainfo-Luoyang
-
-2020-01-10 12:25:47,295 ERROR 5540 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-10T03:57:25.000Z"
-pid: 5540
-hostname: Asiainfo-Luoyang
-
-2020-01-10 12:27:17,527 ERROR 5540 nodejs.JsonWebTokenError: jwt must be provided
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:53:17)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\token.js:7:37
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-name: "JsonWebTokenError"
-message: "jwt must be provided"
-pid: 5540
-hostname: Asiainfo-Luoyang
-
-2020-01-10 12:35:03,707 ERROR 14132 nodejs.ReferenceError: socket is not defined
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\auth.js:6:9
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\connectionMiddlewareInit.js:14:3)
-    at Array.nsp.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:121:7)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:124:11)
-    at Namespace.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:136:3)
-    at Namespace.add (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:164:8)
-    at Client.doConnect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:97:20)
-    at Client.connect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:66:17)
-    at Server.onconnection (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:435:10)
-    at Server.emit (events.js:198:13)
-    at Server.handshake (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:341:8)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:234:12
-    at Server.checkRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:76:51)
-    at Server.verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:170:17)
-    at Server.handleRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:224:8)
-    at Server.<anonymous> (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:469:14)
-    at Server.emit (events.js:198:13)
-    at parserOnIncoming (_http_server.js:677:12)
-
-pid: 14132
-hostname: Asiainfo-Luoyang
-
-2020-01-10 12:35:03,981 ERROR 14132 nodejs.ReferenceError: socket is not defined
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\auth.js:6:9
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\connectionMiddlewareInit.js:14:3)
-    at Array.nsp.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:121:7)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:124:11)
-    at Namespace.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:136:3)
-    at Namespace.add (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:164:8)
-    at Client.doConnect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:97:20)
-    at Client.connect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:66:17)
-    at Server.onconnection (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:435:10)
-    at Server.emit (events.js:198:13)
-    at Server.handshake (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:341:8)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:234:12
-    at Server.checkRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:76:51)
-    at Server.verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:170:17)
-    at Server.handleRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:224:8)
-    at Server.<anonymous> (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:469:14)
-    at Server.emit (events.js:198:13)
-    at parserOnIncoming (_http_server.js:677:12)
-
-pid: 14132
-hostname: Asiainfo-Luoyang
-
-2020-01-10 14:12:29,010 ERROR 5376 nodejs.TypeError: Cannot read property 'io' of undefined
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\auth.js:9:21
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\connectionMiddlewareInit.js:14:3)
-    at Array.nsp.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:121:7)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:124:11)
-    at Namespace.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:136:3)
-    at Namespace.add (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:164:8)
-    at Client.doConnect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:97:20)
-    at Client.connect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:66:17)
-    at Server.onconnection (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:435:10)
-    at Server.emit (events.js:198:13)
-    at Server.handshake (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:341:8)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:234:12
-    at Server.checkRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:76:51)
-    at Server.verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:170:17)
-    at Server.handleRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:224:8)
-    at Server.<anonymous> (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:469:14)
-    at Server.emit (events.js:198:13)
-    at parserOnIncoming (_http_server.js:677:12)
-
-pid: 5376
-hostname: Asiainfo-Luoyang
-
-2020-01-10 14:46:57,393 ERROR 9536 nodejs.TypeError: Cannot read property 'clients' of undefined
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\token.js:16:34
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-
-pid: 9536
-hostname: Asiainfo-Luoyang
-
-2020-01-10 14:47:00,030 ERROR 9536 nodejs.TypeError: Cannot read property 'clients' of undefined
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\token.js:16:34
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-
-pid: 9536
-hostname: Asiainfo-Luoyang
-
-2020-01-10 14:49:52,192 ERROR 12240 nodejs.TypeError: Cannot read property 'clients' of undefined
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\token.js:16:34
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-
-pid: 12240
-hostname: Asiainfo-Luoyang
-
-2020-01-10 14:50:48,418 ERROR 11692 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\token.js:8:35
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-10T06:50:06.000Z"
-pid: 11692
-hostname: Asiainfo-Luoyang
-
-2020-01-10 14:51:04,742 ERROR 11692 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\token.js:8:35
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\filter.js:6:15
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\packetMiddlewareInit.js:19:3)
-    at Array.socket.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:82:9)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:559:11)
-    at Socket.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:571:3)
-    at Socket.dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:531:8)
-    at Socket.onevent (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:364:8)
-    at Socket.onpacket (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\socket.js:324:12)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:214:16
-    at process._tickCallback (internal/process/next_tick.js:61:11)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-10T06:50:06.000Z"
-pid: 11692
-hostname: Asiainfo-Luoyang
-
-2020-01-10 15:57:48,006 ERROR 12332 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\auth.js:6:35
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\connectionMiddlewareInit.js:14:3)
-    at Array.nsp.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:121:7)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:124:11)
-    at Namespace.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:136:3)
-    at Namespace.add (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:164:8)
-    at Client.doConnect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:97:20)
-    at Client.connect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:66:17)
-    at Server.onconnection (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:435:10)
-    at Server.emit (events.js:198:13)
-    at Server.handshake (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:341:8)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:234:12
-    at Server.checkRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:76:51)
-    at Server.verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:170:17)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-10T07:53:25.000Z"
-pid: 12332
-hostname: Asiainfo-Luoyang
-
-2020-01-10 15:57:48,017 ERROR 12332 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\auth.js:6:35
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\connectionMiddlewareInit.js:14:3)
-    at Array.nsp.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:121:7)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:124:11)
-    at Namespace.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:136:3)
-    at Namespace.add (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:164:8)
-    at Client.doConnect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:97:20)
-    at Client.connect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:66:17)
-    at Server.onconnection (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:435:10)
-    at Server.emit (events.js:198:13)
-    at Server.handshake (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:341:8)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:234:12
-    at Server.checkRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:76:51)
-    at Server.verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:170:17)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-10T07:54:15.000Z"
-pid: 12332
-hostname: Asiainfo-Luoyang
-
-2020-01-10 15:57:48,981 ERROR 12332 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\auth.js:6:35
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\connectionMiddlewareInit.js:14:3)
-    at Array.nsp.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:121:7)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:124:11)
-    at Namespace.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:136:3)
-    at Namespace.add (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:164:8)
-    at Client.doConnect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:97:20)
-    at Client.connect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:66:17)
-    at Server.onconnection (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:435:10)
-    at Server.emit (events.js:198:13)
-    at Server.handshake (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:341:8)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:234:12
-    at Server.checkRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:76:51)
-    at Server.verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:170:17)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-10T07:53:25.000Z"
-pid: 12332
-hostname: Asiainfo-Luoyang
-
-2020-01-10 15:57:57,348 ERROR 12332 nodejs.TokenExpiredError: jwt expired
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:152:21
-    at getSecret (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:90:14)
-    at Object.module.exports [as verify] (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\jsonwebtoken\verify.js:94:10)
-    at AsyncFunction.(anonymous function).verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-jwt\app\extend\application.js:42:20)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\io\middleware\auth.js:6:35
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at session (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\koa-session\index.js:41:13)
-    at dispatch (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\node_modules\koa-compose\index.js:34:12
-    at module.exports (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\connectionMiddlewareInit.js:14:3)
-    at Array.nsp.use (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-socket.io\lib\io.js:121:7)
-    at run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:124:11)
-    at Namespace.run (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:136:3)
-    at Namespace.add (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\namespace.js:164:8)
-    at Client.doConnect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:97:20)
-    at Client.connect (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\client.js:66:17)
-    at Server.onconnection (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:435:10)
-    at Server.emit (events.js:198:13)
-    at Server.handshake (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:341:8)
-    at C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:234:12
-    at Server.checkRequest (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\socket.io\lib\index.js:76:51)
-    at Server.verify (C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\engine.io\lib\server.js:170:17)
-name: "TokenExpiredError"
-message: "jwt expired"
-expiredAt: "2020-01-10T07:54:15.000Z"
-pid: 12332
-hostname: Asiainfo-Luoyang
-
-2020-01-10 17:05:28,473 ERROR 2652 nodejs.EPERMError: EPERM: operation not permitted, watch
-    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:123:28)
-errno: -4048
-syscall: "watch"
-code: "EPERM"
-filename: null
-dir: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app\\model\\category"
-name: "EPERMError"
-pid: 2652
-hostname: Asiainfo-Luoyang
-
-2020-01-10 17:08:20,699 ERROR 2652 nodejs.EPERMError: EPERM: operation not permitted, watch
-    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:123:28)
-errno: -4048
-syscall: "watch"
-code: "EPERM"
-filename: null
-dir: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app\\model\\category"
-name: "EPERMError"
-pid: 2652
-hostname: Asiainfo-Luoyang
-
-2020-01-10 18:14:49,750 ERROR 2652 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 2652
-hostname: Asiainfo-Luoyang
-
-2020-01-10 18:14:49,756 ERROR 2652 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 2652
-hostname: Asiainfo-Luoyang
-
-2020-01-10 18:14:52,157 ERROR 2652 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 2652
-hostname: Asiainfo-Luoyang
-
-2020-01-10 18:14:52,159 ERROR 2652 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 2652
-hostname: Asiainfo-Luoyang
-
-2020-01-11 19:16:08,986 ERROR 15640 nodejs.TypeError: Cannot read property 'data' of undefined
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:16:62
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-    at async C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:7:5
-    at async session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:7)
-
-pid: 15640
-hostname: PS2019NMKIZIZR
-
-2020-01-11 19:16:31,844 ERROR 15640 nodejs.SequelizeDatabaseError: Unknown column 'add_messages.friend_id' in 'where clause'
-    at Query.formatError (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
-    at Query.handler [as onResult] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
-    at Query.execute (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\commands\command.js:30:14)
-    at Connection.handlePacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:408:32)
-    at PacketParser.onPacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:70:12)
-    at PacketParser.executeStart (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\packet_parser.js:75:16)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:77:25)
-    at Socket.emit (events.js:210:5)
-    at addChunk (_stream_readable.js:309:12)
-    at readableAddChunk (_stream_readable.js:290:11)
-    at Socket.Readable.push (_stream_readable.js:224:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
-From previous event:
-    at Query.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:29
-From previous event:
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:12
-From previous event:
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:641:10
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:70:21
-    at new Promise (<anonymous>)
-    at retryAsPromised (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:60:10)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:631:30
-From previous event:
-    at Sequelize.query (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:580:23)
-    at QueryInterface.select (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1757:34
-    at processImmediate (internal/timers.js:439:21)
-From previous event:
-    at Function.findAll (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1755:8)
-    at Function.findOne (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1924:17)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:122:53
+2020-01-13 00:01:13,815 ERROR 1144 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:44
     at Array.map (<anonymous>)
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:121:16)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-name: "SequelizeDatabaseError"
-parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 1 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
-original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 1 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
-sql: "SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 1 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"
-parameters: undefined
-pid: 15640
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:157:27
+
+pid: 1144
 hostname: PS2019NMKIZIZR
 
-2020-01-11 19:16:31,845 ERROR 15640 nodejs.SequelizeDatabaseError: Unknown column 'add_messages.friend_id' in 'where clause'
-    at Query.formatError (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
-    at Query.handler [as onResult] (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
-    at Query.execute (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\commands\command.js:30:14)
-    at Connection.handlePacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:408:32)
-    at PacketParser.onPacket (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:70:12)
-    at PacketParser.executeStart (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\packet_parser.js:75:16)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\mysql2\lib\connection.js:77:25)
-    at Socket.emit (events.js:210:5)
-    at addChunk (_stream_readable.js:309:12)
-    at readableAddChunk (_stream_readable.js:290:11)
-    at Socket.Readable.push (_stream_readable.js:224:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
-From previous event:
-    at Query.run (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:29
-From previous event:
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:645:12
-From previous event:
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:641:10
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:70:21
-    at new Promise (<anonymous>)
-    at retryAsPromised (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\retry-as-promised\index.js:60:10)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:631:30
-From previous event:
-    at Sequelize.query (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\sequelize.js:580:23)
-    at QueryInterface.select (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1757:34
-    at processImmediate (internal/timers.js:439:21)
-From previous event:
-    at Function.findAll (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1755:8)
-    at Function.findOne (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:1924:17)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:122:53
+2020-01-13 00:02:29,126 ERROR 16272 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:159:44
     at Array.map (<anonymous>)
-    at Controller.addSubmit (C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:121:16)
-    at Object.callFn (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Socket.<anonymous> (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\egg-socket.io\lib\io.js:104:23)
-    at Socket.emit (events.js:210:5)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\socket.io\lib\socket.js:528:12
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)
-name: "SequelizeDatabaseError"
-parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 2 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
-original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'add_messages.friend_id' in 'where clause'","sql":"SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 2 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"}
-sql: "SELECT `id`, `user_id`, `friends_id`, `is_allowed` FROM `add_messages` AS `add_messages` WHERE `add_messages`.`user_id` = 1 AND `add_messages`.`friend_id` = 2 AND `add_messages`.`is_allowed` = '0' LIMIT 1;"
-parameters: undefined
-pid: 15640
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
+
+pid: 16272
 hostname: PS2019NMKIZIZR
 
-2020-01-11 19:18:43,572 ERROR 19252 nodejs.TypeError: this.build(...).save is not a function
-    at Function.create (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:2226:8)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:129:49
+2020-01-13 00:04:24,132 ERROR 14776 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:160:44
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
 
-pid: 19252
+pid: 14776
 hostname: PS2019NMKIZIZR
 
-2020-01-11 19:18:43,572 ERROR 19252 nodejs.TypeError: this.build(...).save is not a function
-    at Function.create (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\sequelize\lib\model.js:2226:8)
-    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:129:49
+2020-01-13 00:06:40,254 ERROR 11764 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:159:52
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
 
-pid: 19252
+pid: 11764
 hostname: PS2019NMKIZIZR
 
-2020-01-11 20:18:14,329 ERROR 18176 nodejs.TypeError: Cannot read property 'data' of undefined
+2020-01-13 00:08:59,235 ERROR 2644 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:159:44
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
+
+pid: 2644
+hostname: PS2019NMKIZIZR
+
+2020-01-13 00:11:20,569 ERROR 16776 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:159:44
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
+
+pid: 16776
+hostname: PS2019NMKIZIZR
+
+2020-01-13 00:19:00,890 ERROR 3076 nodejs.TypeError: Cannot read property 'data' of undefined
     at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\token.js:15:62
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
     at async C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\middleware\filter.js:7:5
     at async session (C:\Users\Admin\Desktop\plFurniture\fur-admin\node_modules\koa-session\index.js:41:7)
 
-pid: 18176
+pid: 3076
+hostname: PS2019NMKIZIZR
+
+2020-01-13 00:20:36,788 ERROR 15056 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:159:52
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
+
+pid: 15056
+hostname: PS2019NMKIZIZR
+
+2020-01-13 00:25:00,665 ERROR 16180 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:159:52
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
+
+pid: 16180
+hostname: PS2019NMKIZIZR
+
+2020-01-13 00:46:57,707 ERROR 14900 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:159:44
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:27
+
+pid: 14900
+hostname: PS2019NMKIZIZR
+
+2020-01-13 00:47:50,588 ERROR 2632 nodejs.TypeError: Cannot read property 'emit' of undefined
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:158:44
+    at Array.map (<anonymous>)
+    at C:\Users\Admin\Desktop\plFurniture\fur-admin\app\io\controller\chat.js:157:27
+
+pid: 2632
 hostname: PS2019NMKIZIZR
 

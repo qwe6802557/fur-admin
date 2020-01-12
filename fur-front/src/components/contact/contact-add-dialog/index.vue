@@ -94,12 +94,7 @@
           })
           this.sockets.subscribe('addSubmit',(data)=>{
             const { code,message } = data;
-           if (code == 5){
-             Message['error'](message);
-           }else {
-             Message['success'](message);
-             this.addClose();
-           }
+            code == 5 && Message['error'](message) || Message['success'](message) && this.addClose();
           })
       },
       beforeDestroy(){

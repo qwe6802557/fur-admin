@@ -112,6 +112,8 @@ module.exports = app => {
       let addArr = [];
       let haveArr = [];
       let eachFlag = 0;
+      let socketArr = [];
+      let socketFlag = 0;
 
       data.forEach((item) => {
         let addObj = {};
@@ -142,7 +144,21 @@ module.exports = app => {
             })
             socket.emit('addSubmit',{code:1, message:'添加成功！您已经对' + haveArr.join(',') + '发送过好友请求,请耐心等待!'});
           } else {
-            socket.emit('addSubmit',{code:0, message:'添加成功！'});
+            addArr.map(async (item)=>{
+            const result_socket = await ctx.model.SocketUser.findOne({
+              where:{
+                user_id:item.friend_id
+              },
+              raw:true
+            })
+             result_socket.socket_id && socketArr.push(result_socket);
+             socketFlag++;
+             socketFlag == addArr.length
+             && socketArr.map((item) => {
+               nsp.sockets[item.socket_id].emit('addMessages',{type:'添加好友信息',message:payload.data.username+'希望添加您为好友，请处理。'})
+             })
+             && socket.emit('addSubmit',{code:0, message:'添加成功！'});
+            })
           }
         })
       }catch (e) {

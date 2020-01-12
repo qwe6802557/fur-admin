@@ -93,6 +93,9 @@
         },
         outline(val){
           console.log(val);
+        },
+        addMessages(data){
+          console.log(data);
         }
       }
     }
