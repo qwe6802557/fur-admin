@@ -1,0 +1,443 @@
+mysql -hlocalhost -uroot -p666
+
+
+BOM：浏览器对象模型
+BOM可以使我们通过JS来操作浏览器
+在BOM中为我们提供了一组对象用来完成对浏览器的操作
+window--代表整个浏览器的窗口，也是网页中的全局对象。
+Navigator--代表的是当前浏览器的信息，通过该对象可以来识别不同的浏览器。一般我们只会使用userAgent来判断浏览器信息，userAgent是一个字符串，这个字符串包含有用来描述浏览器信息的内容。
+Location--代表当前浏览器的地址栏信息，通过location可以获取地址栏信息，或者操作浏览器跳转页面：
+若直接打印location，则可以获取地址栏的信息。（当前页面的完整路径）
+方法：
+assign()：用来跳转到其它页面，作用和直接修改location一样。
+reload(): 用来重新加载当前页面，作用和刷新按钮一样，如果在方法中传递一个true;则会强制清空缓存刷新页面。
+replace():可以用一个新页面来替换当前页面，调用完毕后跳转。//不会生成历史记录，不能使用回退按钮。
+Screen--代表用户的屏幕的信息，通过该对象可以获取到用户的显示器的相关信息。
+History--代表浏览器的历史记录，通过该对象来操作浏览器的历史记录，由于隐私原因，该对象不能获取到具体的历史记录，只能操作浏览器向前或者向后翻页，而且该操作值在当次访问时有效：
+back()方法，后退到前一个页面，forward()方；前进到下一个页面，作用和浏览器的前进按钮一样
+length属性，可以获取到当成访问的连接数量。
+go()方法，可以用来跳转到指定的页面，他需要一个整数作为参数。
+1:表示向前跳转一个页面；
+2:表示向前跳转两个页面;
+-1:表示向后跳转一个页面；
+-2:表示向后跳转两个页面;
+
+JS笔记：
+1.obj.style.left=A+"px";
+此种方式修改的是内联样式的值，并不是css样式的值，若用此种方式获取left或者其它样式，则返回空。一般用到的获取为offsetleft,offsetwidth类似四个值，若要获取CSS样式其它值，便要定义一个获取css样式的方法。
+方法如下（兼容IE）:
+function getStyle(el,style){
+ if(window.getComputedStyle()){
+return getComputedStyle(el,null)【style】
+}
+return el.currentstyle;
+}
+//注意：若获取未设置的样式值，比如width,current返回的是auto,getComputedStyle返回的是当前视口的具体宽度值；并且两种方法都是只读不能写，需要写只能用obj.style的方式；
+
+
+2.原生AJAX的实现：
+var xhr=new XMLHttpRequest();
+	xhr.open("GET",URL,ture);
+	xhr.send();
+	xhr.onreadystatechange=function(){
+		if(xhr.readyState==4 && xhr.status==200){
+			var data=xhr.responseText;
+			return data;
+		}
+	}
+
+//readyState的四种状态：
+0: 请求未初始化
+1: 服务器连接已建立
+2: 请求已接收
+3: 请求处理中
+4: 请求已完成，且响应已就绪
+//status的两个值：
+200: "OK"
+404: 未找到页面
+
+3.jsonp的实现
+//同源策略：它是由Netscape提出的一个著名的安全策略。
+现在所有支持JavaScript 的浏览器都会使用这个策略。所谓同源是指，域名，协议，端口相同。
+当一个浏览器的两个tab页中分别打开百度和谷歌的页面
+当一个百度浏览器执行一个脚本的时候会检查这个脚本是属于哪个页面的
+即检查是否同源，只有和百度同源的脚本才会被执行。
+解决这种同源策略的方法称之为跨域。
+同源策略限制以下几种行为：
+1.) Cookie、LocalStorage 和 IndexDB 无法读取
+2.) DOM 和 Js对象无法获得
+3.) AJAX 请求不能发送
+//json:一种轻量级的数据交换格式.
+//jsonp:JSON with Padding的略称,它是一个非官方的协议,通过javascript callback的形式实现跨域访问.将JSON数据填充进回调函数.
+<script>标签的src属性并不被同源策略所约束，所以可以获取任何服务器上脚本并执行。
+
+
+4.clientWidth与clientHeight返回元素的可见宽度与高度，包括内容区与内边距，不包括边框,读取的属性只读 不能修改.
+offsetparent为定位父元素，obj.offsetparent会获取到离它最近的开启了定位的祖先元素，如果都没有定位，则返回body。
+offsetTop,offsetLeft等是获取元素相对于offsetparent的偏移量。
+当obj.scrollHeight-window.scrollTop=obj.clientHeigt的时候，滚动条滚动到底了
+
+
+5.事件对象：当指定的事件被触发时，浏览器会默认向回调函数里传一个Event 称为事件对象，在事件对象中封装了当前事件相关的一切信息，比如：鼠标的坐标，按键的状态，鼠标滚轮的方向等。需要兼容IE8及以下浏览器记得写event=event || window.event.
+clientX与clientY是相对于窗口获取的鼠标坐标，而pageX与pageY是相对于页面左上角的。
+
+6.跨域的实现方法及其优缺点。
+  1）.Ajax的jsonp: 缺点：请求方式只能是get请求。
+  2）.Jquery的jsonp插件:特点：与方式一相比，请求方式不只局限于get请求，还可以是post请求，但从服务器从获取的数据依然是jsonp格式。
+  3）.使用cors：也就是设置Access-Control-Allow-origin"头来处理Session问题。特点：与前两种方式相比，前端代码和未处理跨域前一样，即普通的ajax请求，但服务器代码添加了一段解决跨域的代码。
+  4）.postMessage跨域：postMessage是HTML5 XMLHttpRequest Level 2中的API，且是为数不多可以跨域操作的window属性之一，它用于解决以下问题：
+a.） 页面和其打开的新窗口的数据传递
+b.） 多窗口之间消息传递
+c.） 页面与嵌套的iframe消息传递
+d.） 上面三个场景的跨域数据传递
+用法：postMessage(data,origin)方法接受两个参数
+data： html5规范支持任意基本类型或可复制的对象，但部分浏览器只支持字符串，所以传参时最好用JSON.stringify()序列化。
+origin： 协议+主机+端口号，也可以设置为"*"，表示可以传递给任意窗口，如果要指定和当前窗口同源的话设置为"/"。
+ 5）、 nginx代理跨域：nginx配置解决iconfont跨域 ，nginx反向代理接口跨域
+ 6）、 nodejs中间件代理跨域： vue框架的跨域webpack.config.js部分配置
+ 7）、 WebSocket协议跨域
+
+7.rest及Restful。
+Rest是web服务的一种架构风格;使用HTTP,URI,XML,JSON,HTML等广泛流行的标准和协议;轻量级,跨平台,跨语言的架构设计;它是一种设计风格,不是一种标准,是一种思想。
+RESTful是一种针对Web，iOS，Android和第三方开发者变为平等的角色通过一套API来共同消费Server提供的服务的协议。（符合rest原则的架构方式便是restful）
+
+8.GET与POST的区别
+GET 用于获取信息，是无副作用的，且可缓存，对数据长度类型有限制。 POST 用于修改服务器上的数据，有副作用，不可缓存，长度无限制。（这是w3school给出的标准答案）
+请求报文上的区别：GET 和 POST 只是 HTTP 协议中两种请求方式，在传输上并没有区别，但是带参数的报文中，GET方法的参数应该放在url中，POST方法参数应该放在body中
+常见问题：
+1.Get方法参数写法是固定的吗？
+在约定中，我们的参数是写在？后面，用&分割。
+解析报文的过程是通过获取TCP数据，用正则等工具从数据中获取Header和body，从而提取数据，也就是说我们也可以自己约定参数的写法，只要服务器能够解释出来就行了，目前比较流行的一种写法是：
+Http://www.example.com/user/name/tyrion/age/24
+2.Post方法比Get方法安全？
+Post相较于Get是稍微安全一些的，因为数据在地址栏是不可见的。
+然后，从传输的角度来说，他们都是不安全的，因为HTTP在网络上都是明文传输的，只要在网络节点上捉包，就能完整的获取数据报文。
+想要安全的传输，就只有加密，使用HTTPS。
+3.Get方法的长度限制是怎么回事？
+我们在网络上看到大多数文章都有提到这一点，浏览器地址栏输入的参数是有限的。
+首先说明这一点，HTTP协议没有body和url的长度限制，对url限制的大多是浏览器和服务器的原因。
+服务器是因为处理长url要消耗比较多的资源，为了性能和安全（防止恶意构造长url来攻击）考虑，会给url长度加限制。
+4.Post方法会产生两个TCP数据包？
+有些文章当中提到，post会将header和body分开发送，先发送header，服务端返回100状态码在发送body。
+HTTP协议中没有明确说明Post会产生两个TCP数据包，而且实际测试chrome发现，header和body不会分开发送。
+所以，header和body分开发送是部分浏览器或框架的请求方法，不属于Post必然行为。
+
+9.事件的冒泡与委派与捕获：
+冒泡：就是指事件的向上传导，当后代元素上的事件被触发时，其祖先元素身上相同的事件也会触发。 取消冒泡的方法：event.cancelBubble=true.
+委派：指将事件统一绑定给元素的共同祖先元素，这样当后代元素上的事件被触发时，会一直冒泡到祖先元素，从而通过祖先元素的相应函数，若需要判断子元素，则要用到event.target来获取点击的元素。
+IE绑定事件的attachEvent()中的this，是window，若需要将this改为绑定事件的对象，需要封装:
+
+function bind(obj,eventStr,callback){
+if(obj.addEventlistener){
+   obj.addEventListener(eventStr,callback)
+}else {
+ obj.attachEvent('on'+eventStr,function(){
+  this.callback.call(obj).
+})
+}
+}
+IE8以下是没有事件的捕获阶段。
+10.CSS，JS代码压缩，以及代码CDN托管，图片整合：
+
+1）CSS,JS 代码压缩：
+
+可以应用gulp的gulp-uglify，gulp-minify-css模块完成；可以应用webpack的 UglifyJsPlugin压缩插件完成。
+
+（2）CDN：
+
+内容分发网络(CDN)是一个经策略性部署的整体系统，包括分布式存储、负载均衡、网络请求的重定向和内容管理4个要件。主要特点有：本地Cache加速，镜像服务，远程加速，带宽优化。关键技术有：内容发布，内容路由，内容交换，性能管理。CDN网站加速适合以咨询为主的网站。CDN是对域名加速不是对网站服务器加速。CDN和镜像站比较不需要访客手动选择要访问的镜像站。CDN使用后网站无需任何修改即可使用CDN获得加速效果。如果通过CDN后看到的网页还是旧网页，可以通过URL推送服务解决，新增的网页和图片不需要URL推送。使用动态网页可以不缓存即时性要求很高的网页和图片。CDN可以通过git或SVN来管理。
+
+（3）图片整合
+
+减少网站加载时间的最有效的方式之一就是减少网站的HTTP请求数。实现这一目标的一个有效的方法就是通过CSS Sprites——将多个图片整合到一个图片中，然后再用CSS来定位。缺点是可维护性差。可以使用百度的fis/webpack来自动化管理sprite。
+
+11.项目上线流程是怎样的？
+
+1）流程建议
+
+- 模拟线上的开发环境
+
+本地反向代理线上真实环境开发即可。（apache，nginx，nodejs均可实现）
+
+- 模拟线上的测试环境
+
+模拟线上的测试环境，其实是需要一台有真实数据的测试机，建议没条件搭daily的，就直接用线上数据测好了，只不过程序部分走你们的测试环境而已，有条件搭daily最好。
+
+- 可连调的测试环境
+
+可连调的测试环境，分为2种。一种是开发测试都在一个局域网段，直接绑hosts即可，不在一个网段，就每人分配一台虚拟的测试机，放在大家都可以访问到的公司内网，代码直接往上布即可。
+
+- 自动化的上线系统
+
+自动化的上线系统，可以采用Jenkins。如果没有，可以自行搭建一个简易的上线系统，原理是每次上线时都抽取最新的trunk或master，做一个tag，再打一个时间戳的标记，然后分发到cdn就行了。界面里就2个功能，打tag，回滚到某tag，部署。
+
+- 适合前后端的开发流程
+
+开发流程依据公司所用到的工具，构建，框架。原则就是分散独立开发，互相不干扰，连调时有hosts可绑即可。
+
+（2）简单的可操作流程
+
+- 代码通过git管理，新需求创建新分支，分支开发，主干发布
+
+- 上线走简易上线系统，参见上一节
+
+- 通过gulp+webpack连到发布系统，一键集成，本地只关心原码开发
+
+- 本地环境通过webpack反向代理的server
+
+- 搭建基于linux的本地测试机，自动完成build+push功能
+
+12.如何利用webpack把代码上传服务器以及转码测试？
+
+（1）代码上传：
+
+可以使用sftp-webpack-plugin，但是会把子文件夹给提取出来，不优雅。可以使用gulp+webpack来实现。
+
+（2）转码测试
+
+webpack应用babel来对ES6转码，开启devtool: "source-map" 来进行浏览器测试。应用karma或mocha来做单元测试。
+
+13、工程化怎么管理的?
+
+gulp和webpack
+
+14、git常用命令
+
+Workspace：工作区
+
+Index / Stage：暂存区
+
+Repository：仓库区（或本地仓库）
+
+Remote：远程仓库
+
+14.webpack 和 gulp对比：
+Gulp 就是为了规范前端开发流程，实现前后端分离、模块化开发、版本控制、文件合并与压缩、mock数据等功能的一个前端自动化构建工具。
+Webpack 是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。
+Gulp和Webpack功能实现对比：从基本概念、启动本地Server、sass/less预编译、模块化开发、文件合并与压缩、mock数据、版本控制、组件控制八个方面对Gulp和Webpack进行对比。
+
+15.webpack打包文件太大怎么办?
+
+webpack 把我们所有的文件都打包成一个 JS 文件，这样即使你是小项目，打包后的文件也会非常大。可以从去除不必要的插件，提取第三方库，代码压缩，代码分割，设置缓存几个方面着手优化。
+
+16.不想让别人盗用你的图片，访问你的服务器资源该怎么处理？
+
+目前常用的防盗链方法主要有两种：
+
+（1）设置Referer：适合不想写代码的用户，也适合喜欢开发的用户
+
+（2）签名URL：适合喜欢开发的用户
+
+17.精灵图和base64如何选择？
+
+css精灵，用于一些小的图标不是特别多，一个的体积也稍大，比如大于10K（这个没有严格的界定）。
+
+base64，用于小图标体积较小（相对于css精灵），多少都无所谓。字体图标，用于一些别人做好的图标库（也有少数自己去做的）用起来比较方便，他的图标只能用于单色，图标用只能于一种颜色。
+
+18.实现一个函数，判断输入是不是回文字符串：
+function isPlalindrome(input){
+  if(typeof input !== 'string')return false;
+  return input.split('').reverse().join('') === input;
+}
+console.log(isPlalindrome('level')+'  '+isPlalindrome('abc')+'  '+isPlalindrome('nonon'))
+
+19.几种方式实现已知或者未知宽度的垂直水平居中。
+.box1{
+    position: relative;
+}
+.box1 .inner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}   //已知宽度
+
+/* box2 */
+.box2{
+    position: relative;
+}
+.box2 .inner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}//已知宽度和未知宽度
+
+/* box3 */
+.box3{
+    position: relative;
+}
+.box3 .inner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+} //已知宽度
+
+/* box4 */
+.box4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} //已知宽度和未知宽度
+
+/* box5 */
+.box5{
+    display: table;
+}
+.box5 .inner{
+    display: table-cell;
+    vertical-align: middle;
+} //已知宽度和未知宽度
+
+20.实现Storage，使得该对象为单例，并对localStorage进行封装设置值setItem(key,value)和getItem(key)
+var instance = null;
+
+class Storage {
+    static getInstance() {
+        if (!instance) {
+            instance = new Storage();
+        }
+        return instance;
+    }
+    setItem = (key, value) => localStorage.setItem(key, value)
+    getItem = key => localStorage.getItem(key)
+}
+单例模式: 保证一个类只有一个实例,并提供一个访问它的全局访问点
+
+21.说说从输入URL到看到页面发生的全过程，越详细越好
+1.首先浏览器主线程接管，开一个下载线程。
+
+2.然后进行HTTP请求（DNS查询、IP寻址等等），中间会有三次握手，等待响应，开始现在响应报文。
+
+3.将下载完的内容转交给Renderer进程管理。
+
+4.Renderer进程开始解析css rule tree 和dom tree，这两个过程是并行的，所以一般我会把link标签放到页面的顶部。
+
+5.解析绘制过程中，当浏览器遇到link标签或者script、img等标签，浏览器会去下载这些内容、遇到的时候缓存的使用缓存，不适用缓存的重新下载资源。
+
+6.css rule tree和dom tree生成完了之后，开始合成render tree，这个时候浏览器会进行layout，开始计算每一个节点的位置，然后进行绘制。
+
+绘制结束之后，关闭TCP连接，过程有四次挥手。
+
+22.CSS和JS的位置会影响页面的效率，为什么？
+css加载过程中不会影响到DOM树的生成，但是会影响到Render树的生成，进而影响到layout
+
+所以一般来说，style的link标签尽量放在head里面，因为在解析DOM树的时候是自上而下的，而css样式又是通过异步加载的，这样的话，
+
+解析DOM树的body节点和加载CSS样式尽可能的并行，加快Render树生成的速度。
+
+js脚本应该放在底部，原因在于js线程和GUI渲染是互斥的关系，如果js放在首部。
+
+当下载js的时候，会影响渲染线程绘制页面，js的作用主要是处理交互，而交互必须得先让页面呈现才能进行，所以为了保证用户体验，尽量让页面先绘制出来。
+
+23.display:none 和 visibility:hidden的区别
+
+都是元素隐藏，在文档流中，display:none不占位置。visibility:hidden占位置。
+性能上，display比visibility差。display控制显示隐藏时，页面会产生回流（当页面中的一部分元素需要改变规模尺寸、布局、显示隐藏等，页面重新构建，此时就是回流。所有页面第一次加载时需要产生一次回流）
+
+24.什么是回流和重绘
+重绘（repaints）是一个元素外观的改变所触发的浏览器行为，例如改变vidibility、outline、背景色等属性。浏览器会根据元素的新属性重新绘制，使元素呈现新的外观。重绘不会带来重新布局，并不一定伴随回流。
+回流（reflow）是更明显的一种改变，可以理解为渲染树需要重新计算。
+
+25.div+css 和 table相比有哪些优势
+Table： 结构 table tr td 属性border width align… 在同一个页面中，页面代码冗长，不利于维护，不利于百度搜索引擎优化
+div+css：符合新型的web设计标准，页面结构和表现分离。精简代码便于维护，搜索引擎友好，提升页面加载时速度（用户体验）
+
+26.说你对rem的理解
+相对长度单位，相对于根元素(即html元素)font-size计算值的倍数。简单来说，就是一个相对单位，相对根元素子体大小的倍数。
+例如：html的font-size:12px；那么使用rem作为单位的，1rem等价于12px，2rem等价于24px；
+按定高宽设计出来页面，然后转换为rem单位，配合js查询屏幕大小来改变html的font-size，完美自适应大屏小屏。
+
+27.px，em，rem的联系和区别
+px：相对长度单位。像素px是相对于显示器屏幕分辨率而言的。特点：
+IE无法调整那些使用px作为单位的字体大小；
+国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；
+Firefox能够调整px和em，rem，但是96%以上的中国网民使用IE浏览器(或内核)。
+em：是相对长度单位。相对于当前对象内文本的字体尺寸。如当前未设置，则相对于浏览器的默认字体尺寸。特点：
+em的值并不是固定的；
+em会继承父级元素的字体大小；
+rem：相对长度单位，相对于根元素(即html元素)font-size计算值的倍数。
+
+28.浏览器的内核分别是什么
+1、Trident内核：IE最先开发或使用的，也称IE内核 ，360浏览器使用的也是IE内核；
+2、Webkit内核：谷歌chrome浏览器最先开发或使用，也叫谷歌内核 ，枫树浏览器、太阳花使用的也是谷歌内核；
+3、Gecko内核： Netscape6开始采用的内核，后来的Mozilla FireFox (火狐浏览器) 也采用了该内核，K-Meleon浏览器也是使用这种内核；
+4、Presto内核：目前只有Opera浏览器采用该内核
+
+29.CSS3那些新增属性
+边框：圆角border-radius，阴影box-shadow，边框图片border-image
+背景：背景定位区域background-origin，背景大小支持百分比background-size
+文字效果：文字阴影text-shadow，长单词拆分word-wrap
+2D转换：transform:对元素进行移动translate()，缩放scale()，转动rotate()，拉伸skew()
+3D转换：transform:对元素进行x轴旋转rotateX()，y轴旋转rotateY()
+过渡，动画， 多列等等
+
+30.HTML5那些新增属性
+html5新增：canvas绘画，本地离线存储localStorage，sessionStorage，video和audio元素，语义化元素，表单类型（date，time，email等），地理定位等等
+
+31.cookies , sessionStorage和localStorage区别
+cookies：数据大小不超过4k，cookies过期之前一直有效，会自动传递到服务器
+sessionStorage：存储大小相对cookies大得多（5M或更大），关闭浏览器窗口后自动删除，仅存本地
+localStorage：存储大小相对cookies大得多（5M或更大），除非手动删除，关浏览器后不会删除，仅存本地
+
+31.如何优化网页加载速度：
+1）.减少http请求：图片地图，CSS Sprites（精灵图）。
+2）.使用CDN：内容发布网络（CDN）是一组分布在不同地理位置的Web服务器，用于更加有效的向用户发布内容。
+3）.添加Expires头：告诉客户端可以使用一个组件的当前副本，直到指定时间为止。
+4）.压缩组件，代理缓存
+5）.样式防头部，脚本放底部
+6）.避免CSS表达式
+7）.使用外部的js和css
+8）.减少DNS查找
+9）.精简javascript
+10）.避免重定向
+11）.删除重复脚本
+12）.配置ETag
+13）.使Ajax缓存
+
+32.为什么要用多个域名来存储资源
+1）.CDN缓存更方便。
+2）.突破浏览器并发限制。
+3）.节省cookie带宽，尤其是上行带宽 一般比下行要慢。
+4）.节约主域名的连接数，优化页面响应速度
+5）.防止不必要的安全问题
+
+33.优雅降级和渐进增强？
+优雅降级：一开始就构建站点的完整功能，然后 针对浏览器测试和修复 。比如一开始使用 CSS3 的特性构建了一个应用，然后逐步针对各大浏览器进行 hack 使其可以在低版本浏览器上正常浏览
+渐进增强：一开始就针对低版本浏览器进行构建页面，完成基本功能，然后再针对高级浏览器进行效果、交互、追加功能达到更好的体验。
+
+34.setInterval（）与setTimeout()：
+两个都有返回值，返回值为一个数字，我们通常定义变量来保存用以 标识这个定时器。  
+
+
+35.              <SCRIPT LANGUAGE="JavaScript">
+var bb = 1;
+function aa(bb) {
+    bb = 2;
+    alert(bb);
+};
+aa(bb);
+alert(bb);
+</SCRIPT>   
+运行结果为2，1  注意：第二个bb是局部变量，并不影响全局变量bb的值       
+
+
+35.CSS精灵图详解：
+1.简介
+CSS Sprites在国内很多人叫css精灵，是一种网页图片应用处理方式。它允许将一个页面涉及到的所有零星图片都包含到一张大图中， 利用CSS的“background-image”，“background- repeat”，“background-position”的组合进行背景定位， 访问页面时避免图片载入缓慢的现象。
+2.优点
+（1）CSS Sprites能很好地减少网页的http请求，从而大大的提高页面的性能，这是CSS Sprites最大的优点，也是其被广泛传播和应用的主要原因；
+（2）CSS Sprites能减少图片的字节；
+（3）CSS Sprites解决了网页设计师在图片命名上的困扰，只需对一张集合的图片命名，不需要对每一个小图片进行命名，从而提高了网页制作效率。
+（4）CSS Sprites只需要修改一张或少张图片的颜色或样式来改变整个网页的风格。
+3.缺点
+（1）图片合并麻烦：图片合并时，需要把多张图片有序的合理的合并成一张图片，并留好足够的空间防止版块出现不必要的背景。
+（2）图片适应性差：在高分辨的屏幕下自适应页面，若图片不够宽会出现背景断裂。
+（3）图片定位繁琐：开发时需要通过工具测量计算每个背景单元的精确位置。
+（4）可维护性差：页面背景需要少许改动，可能要修改部分或整张已合并的图片，进而要改动css。在避免改动图片的前提下，又只能（最好）往下追加图片，但这样增加了图片字节。
+
+              

@@ -1,0 +1,215 @@
+变量：
+var：
+1.可以重复声明
+2.无法限制修改
+3.没有块级作用域，只有函数作用域。
+let:不能重复声明，声明变量，块级作用域。
+const:不能重复声明，声明常量，块级作用域。
+
+
+箭头函数：
+（）=>{}
+只有一个参数的情况下（）可以省略。
+只有一个return则可以省略{}。
+
+
+函数参数：
+1.函数扩展/展开。
+2.默认参数。
+参数扩展：
+1.收集剩余的参数
+function show(a,b,...args){} 除a,b外剩余参数都在args中,...args必须为最后一个。
+2.展开数组。
+ 展开后的效果，就跟把数组放在此位置一样。
+let arr=[1,2,3]  function(arr[0],arr[1],arr[2]){} 等价于function(...arr){} 
+3.默认参数：
+function show(a,b=5,c=12){
+console.log(a'+'b'+'c);
+}
+show(12)  //输出：12,5,12
+show(12,21,23) // 输出：12,21,23
+
+
+解构赋值：
+1.左右两边必须结构都一样。 let {a,b}={a:12,b:13};  let [a,b,c]=[1,2,3];
+2.右边必须是个合法数据类型。 错误示例：let {a,b}={12,13};
+3.声明和赋值不能分开。  错误示例：let {a,b};{a,b}={a:12,b:13};
+
+数组：
+map   映射
+reduce 汇总
+filter    过滤器
+forEach 循环（迭代）
+
+map   映射:
+let arr=[12,5,8];
+arr.map(function(item){
+console.log(item)
+})   //12,5,8
+
+let result=arr.map(item=>item)
+console.log(result) //[12,5,8]
+示例：
+let score=[19,85,80,25,90];
+let result=score.map(item=>item>60?'及格'：‘不及格’)；
+console.log(result)  //[‘不及格’，'及格'，'及格'，‘不及格’，‘及格’]
+
+reduce 汇总
+
+求和：
+let arr=[12,89,180,8763]
+let result=arr.reduce(function(tmp,item,index){
+ return tmp+item
+})  其中执行3次相加，tmp为每次相加和，item为下一次相加的数，index为执行的次数。
+求平均数：
+let arr=[12,89,180,8763]
+let result=arr.reduce(function(tmp,item,index){
+ if(index===arr.length-1){
+ return tmp+item;
+}else{
+ return (tmp+item)/arr.length;
+}
+})
+
+filter    过滤器:
+let arr=[74,88,66,20,99]
+let result=arr.filter(item=>{
+return item%3==0;
+})  [66，99]
+
+
+字符串：
+新增了两个方法：
+startWith（''）  用于判断字符串是否以指定的字符开头，通常用于判断http地址。
+endWith （''） 用于判断字符串是否以指定的字符结尾,通常用于判断文件格式
+字符串模板：
+let a='we';
+let b=`ab${a}`;
+console.log(b);  //'abwe'
+
+面向对象：
+1.class关键字，构造器和类分开了。
+2.class里面直接加方法。
+例：
+ES5创建对象写法：
+function user(name,password){
+		this.name=name;
+		this.password=password;
+	}
+	user.prototype.showName=function(){
+		alert(this.name);
+	}
+	user.prototype.showPass=function(){
+		alert(this.password);
+	}
+	var user1=new user('张三',123456);
+	user1.showName();
+	user1.showPass();
+ES6对象写法：
+ 	class user{
+		constructor(name,password) {
+		    this.name=name;
+			this.password=password;
+		}
+		showName(){
+			alert(this.name);
+		}
+		showPass(){
+			alert(this.password);
+		}
+	}
+	var user1=new user('张三',123456);
+		user1.showName();
+		user1.showPass();
+
+继承：
+class VipUser extends user{
+constructor(name,pass,level){
+ super(name,pass);
+ this.level=level;
+}
+showLevel(){
+alert(this.level);
+}
+}
+
+
+JSON对象：
+JSON.stringfy
+JSON.parse
+
+简写：
+名字和值（ke和value）一样的 留一个就行  let a=5;let m=6;let json={a,m,show(){}}; //5,6,funtion
+方法： 删掉function，简写为：
+show(){
+}
+
+Promise  解决回调地狱
+
+Promise.all([new promise,new promise]).then(function(...arr){
+  let [a,b] =...arr;
+},function(err){
+  console.log('失败！');
+})  链式调用 无限then()处理。
+
+generator 生成器函数
+中间可以停 示例：
+funciton * show(){
+alert(a);
+yield;
+alert(b);
+
+}
+let obj=show();
+obj.next(); //a
+obj.next(); //b
+
+
+异步操作：
+1.回调
+2.Promise
+3.generator
+
+
+run(function*(){
+let userdata=yield $.ajax({
+url:'userdata',
+type:'json'
+})
+if(user.type==='vip'){
+let some=yield $.ajax({
+url:'',
+type:''
+
+})
+}else{
+let some1=yield $.ajax({
+url:'',
+type:''
+
+})
+}
+})
+
+ES7 预览：
+1.数组 includes
+ 检查数组是否包含某个东西
+2.数组 keys/values/entries
+for...of  对于数组来说 i是每个成员 无法迭代JS对象 不能用于遍历对象
+for...in  对于数组来说 i是下标 对于对象来说是属性名 也就是key
+
+paddingStart/paddingEnd 补位   var a='asd'; a.paddingStart(2,0); console.log(a); //'00asd'
+
+async await  //与generator yield用法类似
+1.不依赖外部的runner了 --统一丶性能
+2.可以用箭头函数,generator不可用箭头函数。
+
+async function show(){
+let data=await $.ajax({});
+let data1=await $.ajax({});
+let data2=await $.ajax({});
+
+console.log(data,data1,data2);
+}
+show();
+let show=async()=>{}

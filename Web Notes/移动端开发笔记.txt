@@ -1,0 +1,133 @@
+﻿1.获取三个视口的方法：
+布局视口：
+document.documentElement.clientWidth;
+视觉视口：
+window.innerWidth;
+理想视口：
+screen.width; //拿到的是物理像素（分辨率）
+
+2.用户缩放
+PC端缩小与放大改变的是布局视口；
+移动端缩小与放大改变的是视觉视口，布局视口不变；
+
+3.em,rem,与px的区别：
+em是相对于自身字体大小的而言的，1em=1font-size;
+rem是相当于根标签的字体大小的，也就是整个网页的字体大小初始值而言的。
+px是相对于显示器屏幕分辨率而言的。
+
+4.rem适配：
+(function(){
+var styleNode=document.createElement('style');
+var w=document.documentElement.clientWidth/16;
+styleNode.innerHTML="html{font-size:"+w+"px!important}";
+document.head.appentChild(styleNode);
+})()
+优点:没有破坏完美视口。
+缺点：px到rem的转换太复杂。
+
+5.viewport适配：
+原理:viewport适配方案中，每一个元素在不同设备上占据的CSS像素是一样的，但是css像素和物理像素的比例是不一样的，是等比的。
+开头加：<meta name="viewport" content="width=device-width"/>
+JS写：(function(){
+         var targetW=640;
+         var scale=document.documentElement.clientWidth/targetW;
+         var meta=document.querySelector("meta[name='viewport']");
+         meta.content="initial-scale="+scale+",minium-scale="+scale+",maximum-                                 scale="+scale+",user-scalable=no";
+          })()
+优点：所量即所得。
+缺点：破坏了完美视口。
+
+6.queryselectorAll与className的对比：
+queryselectorAll：静态列表，dom结构发生改变失效，拿不到新变化的节点，变化后设置相应的样式不会生效，变化后需要重新获取。
+className：拿到的是动态列表，dom结构发生改变不会失效，变化后设置相应的样式不会失效，能拿到新变化的节点。
+
+7.移动端事件。
+1）.PC端事件可以在移动端触发。
+2）.PC端事件有300ms延迟。
+3）.移动端的事件不会有延迟。
+移动端防止误触方案：
+在touchstart时候设置this.flag=false;
+设置touchmove事件this.flag=true;
+在touchend时候设置if(!this.flag){location.href=this.href;}
+移动端触发回调的event属性：
+changedTouches:触发当前事件的手指列表。
+tagetTouches：触发当前事件时元素上的手指列表。
+touches：触发当前事件时屏幕上的手指列表。
+
+8.移动端常见问题：
+1）.当格式为电话或者邮箱时，会默认认为可以点击弹出打电话或者发邮箱功能。若想要禁止单纯显示文字，则需要：<meta name="format-detection " content="telephone=no,email=no" />
+若在禁止后需要用到功能，则：<a href="tel:110">12354687</a>
+                                             <a href="mailto:13501512@qq.com">1235467@qq.com</a>
+2）.解决链接按钮高亮问题：用-webkit-tap-highlight-color:rgba(0,0,0,0); 
+3）.解决按钮圆角过圆的问题：用-webkit-appearance:none;
+4).Font Boosting 是webkit给移动端浏览器提供的一个特性，当我们在手机浏览网页时，很可能因为原始页面宽度较大，在手机屏幕缩小后就看不清其中的文字了，而font Boosting特性在这时候回自欧东将其中的文字字体变大，保证在即不需要左右滑动屏幕，也不需要双击放大屏幕内容的前提下，让人们可以方便的阅读页面中的文本。  若不需要此功能影响开发,则需要设置max-height：99999px;
+
+微信小程序相关：
+1.什么是小程序？
+ 无需下载，用完即走。（体积太小，刚发布的压缩包体积最大不能超过1M，2017年4月将1M提升为2M）
+
+2.小程序特点？
+1）.体积小。
+2）.同app进行互补的，可以实现app基本的功能。
+3）.微信扫一扫或者是搜索就可以去下载。
+4）.开发周期短，成本较低。
+
+3.适配方案：
+1）.viewport适配 width=device=width  (也就是完美视口)
+2）.单位rpx.
+3).iphone6:1rpx=1物理像素=0.5px  dpr=物理像素/设备独立像素=2
+
+4.重要的组成部分（文件）：
+1）.wxml view结构 --->html
+2）.wxss view样式 --->css
+3）.js view行为 --->js
+4）.json文件：数据 && 配置
+
+5.注册小程序：App()
+
+6.注册页面 Page()
+
+7.数据绑定：
+1）.在data中初始化页面需要的数据，在页面可以直接使用。
+
+8.事件：
+1）.冒泡事件：bind + 事件名
+2）.非冒泡事件：catch + 事件名
+
+模块化：
+将一个大的JS文件根据功能的不同分割成一个个小的JS文件，每个JS文件里的数据是私有的，每一个JS文件便成为一个模块，用模块开发的项目就成为模块化项目。 
+CommonJs通过nodeJs发扬光大，每个js文件就是一个模块，每个模块有单独的作用域。模块以module.exports为出口，输出一个对象。使用require方法读取文件，并返回其内部的module.exports对象。CommonJs的问题在于，他的加载是同步的，这在服务端很正常，但是在充满了异步的浏览器里，就不适用了。为了适应浏览器，社区内部发生了分歧。
+
+AMD：
+AMD 即Asynchronous Module Definition，中文名是异步模块定义的意思。它是一个在浏览器端模块化开发的规范，由于不是JavaScript原生支持，AMD的作者亲自实现了符合AMD规范的RequireJS。 
+AMD规范规定用全局函数define来定义模块，用法为define(id, dependencies, factory);其中，id为模块标识，dependencies是一个数组，数组里边是该模块依赖的其他模块，factory则是一个匿名函数，里边是该模块的逻辑。 
+目前公司使用的就是AMD规范。
+requireJs的问题在于，加在一个模块时，会预先加载该模块的所有依赖模块，但是这些依赖很可能一开始并不用到。同时依赖写起来一长串，也很麻烦。比较好的是AMD保留了commonJs中的require、exprots、module3个功能，可以不把依赖都写在dependencies中，而是在需要时使用require引入。
+CMD：
+既然requirejs有上述种种不甚优雅的地方，所以必然会有新东西来完善它，这就是后起之秀seajs，seajs的作者是国内大牛淘宝前端步道者玉伯。seajs全面拥抱Modules/Wrappings规范，不用requirejs那样回调的方式来编写模块。而它也不是完全按照Modules/Wrappings规范，seajs并没有使用declare来定义模块，而是使用和requirejs一样的define，或许作者本人更喜欢这个名字吧。（然而这或多或少又会给人们造成理解上的混淆）。
+定义模块时无需罗列依赖数组，在factory函数中需传入形参require,exports,module，然后它会调用factory函数的toString方法，对函数的内容进行正则匹配，通过匹配到的require语句来分析依赖，这样就真正实现了commonjs风格的代码。
+
+AMD与CMD的区别
+AMD和CMD最明显的区别就是在模块定义时对依赖的处理不同 
+AMD推崇依赖前置，在定义模块的时候就要声明其依赖的模块 
+CMD推崇就近依赖，只有在用到某个模块的时候再去require 
+这种区别各有优劣，只是语法上的差距，而且requireJS和SeaJS都支持对方的写法
+
+组件：
+具有特定功能效果的代码集合，功能即为JS 效果即为HTML+CSS。
+
+微信小程序绑定事件以key,value形式，key以bind和catch开头，然后跟上事件的类型，如bindtap,catchtouchstart
+
+bind绑定的事件不会阻止冒泡，catchtouchstart绑定的事件会阻止冒泡。
+生命周期，同vue一样，有从开始创建，挂载到页面，数据更新，销毁四个过程。分别对应onload.onshow等钩子函数。
+
+
+
+wx.nevigato()方法跳转的页面会把前一张页面隐藏，触发前一张页面的onHide()生命周期函数。
+
+wx.redirectTo()方法跳转的页面会把前一张页面销毁，触发前一张页面的onUnload()生命周期函数。
+
+event事件对象里target和currentTarget的区别：
+
+target指向的是触发事件的元素
+currentTarget指向的是捕获事件的元素
