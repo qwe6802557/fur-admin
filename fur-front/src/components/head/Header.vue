@@ -77,7 +77,6 @@
               if (code == 0){
                 memoryUntil.token = null;
                 storeUntil.delToken();
-                console.log(memoryUntil);
                 Message.success(message);
                 this.$router.push({name:'Main'});
               }else{

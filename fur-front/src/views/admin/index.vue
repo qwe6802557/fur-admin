@@ -27,8 +27,8 @@
     import LeftBar from '@/components/left-bar/Left-bar'
     import memoryUntil from '@/untils/memoryUntil';
     import storeUntil from '@/untils/storeUntil';
-    import Vue from 'vue'
-    import VueSocketIO from 'vue-socket.io'
+    import Vue from "vue";
+    import VueSocketIO from "vue-socket.io";
     import { Message } from 'element-ui'
 
     Vue.use(
@@ -36,7 +36,7 @@
         debug: true,
         connection: `http://127.0.0.1:7001`,
         options:{
-          /*autoConnect:false,*/
+          autoConnect:false,
           query:`token=Bear ${memoryUntil.token}`
         }
       }));
@@ -62,9 +62,10 @@
         }
       },
       mounted(){
-          /*const token = memoryUntil.token;
-          this.$socket.query = `token=Bear ${token}`;*/
           document.querySelector('.admin-side').style.height=document.documentElement.clientHeight-74+'px';
+          const token = memoryUntil.token;
+          this.$socket.io.opts.query = `token=Bear ${token}`;
+          this.$socket.connect();
           /*this.$socket.disconnected === true && this.$socket.connect();*/
       },
       components:{

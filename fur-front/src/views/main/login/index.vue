@@ -72,9 +72,9 @@
                 const {code,message,token}=res.data;
                 if (code===0){
                   Message.success(message);
-                  this.$router.push({name:'Admin'});
                   memoryUntil.token=token;
                   storeUntil.setToken(token);
+                  this.$router.push({name:'Admin'});
                   setTimeout(()=>{
                     memoryUntil.token=null;
                   },12*60*1000);

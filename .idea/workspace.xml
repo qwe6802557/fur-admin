@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions" />
+    <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/router.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/router.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../shanghai-DMP" />
+    <property name="last_opened_file_path" value="$USER_HOME$/shanghai-DMP" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -260,10 +272,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#更新/0.0.1920.1040@0.0.1920.1040" timestamp="1577154368578" />
-    <state x="554" y="109" key="CommitChangelistDialog2" timestamp="1578222801298">
+    <state x="554" y="109" key="CommitChangelistDialog2" timestamp="1578933105608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="554" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578222801298" />
+    <state x="554" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578933105608" />
     <state x="-47" y="180" width="1736" height="856" key="DiffContextDialog" timestamp="1578219958776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
