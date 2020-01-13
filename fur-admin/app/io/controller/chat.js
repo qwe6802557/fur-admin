@@ -109,65 +109,68 @@ module.exports = app => {
       const data = ctx.args[0];
       const nsp = app.io.of('/');
       const { id } = payload.data;
-      let addArr = [];
+      const addArr = [];
+      const socketArr = [];
       let haveArr = [];
       let eachFlag = 0;
-      let socketArr = [];
       let socketFlag = 0;
+      console.log(app.io.of('/'));
 
-      data.forEach((item) => {
-        let addObj = {};
+      data.forEach(item => {
+        const addObj = {};
         addObj.user_id = id;
         addObj.friend_id = item.id;
         addObj.friend_name = item.username;
         addArr.push(addObj);
-      })
-      try{
-        addArr.map(async (item) => {
+      });
+      try {
+        addArr.map(async item => {
           const result = await ctx.model.AddMessage.findOne({
-            where:{
-              user_id:item.user_id,
-              friend_id:item.friend_id,
-              is_allowed: '0'
+            where: {
+              user_id: item.user_id,
+              friend_id: item.friend_id,
+              is_allowed: '0',
             },
-            raw:true
-          })
+            raw: true,
+          });
           result && haveArr.push(result);
-          !result && await ctx.model.AddMessage.create(item);
+          !result && item.friend_id != item.user_id && await ctx.model.AddMessage.create(item);
           eachFlag++;
-          if ( eachFlag != addArr.length){
-            return ;
+          if (eachFlag !== addArr.length) {
+            return;
           }
-          if (haveArr.length !=0){
-            haveArr = haveArr.map((item) => {
+          if (haveArr.length !== 0) {
+            haveArr = haveArr.map(item => {
               return item.friend_name;
-            })
-            socket.emit('addSubmit',{code:1, message:'添加成功！您已经对' + haveArr.join(',') + '发送过好友请求,请耐心等待!'});
+            });
+            socket.emit('addSubmit', { code: 1, message: '添加成功！您已经对' + haveArr.join(',') + '发送过好友请求,请耐心等待!' });
           } else {
-            addArr.map(async (item)=>{
-            const result_socket = await ctx.model.SocketUser.findOne({
-              where:{
-                user_id:item.friend_id
-              },
-              raw:true
-            })
-             result_socket.socket_id && socketArr.push(result_socket);
-             socketFlag++;
-             socketFlag == addArr.length
-             && socketArr.map((item) => {
-               nsp.sockets[item.socket_id].emit('addMessages',{type:'添加好友信息',message:payload.data.username+'希望添加您为好友，请处理。'})
+            addArr.map(async item => {
+              const result_socket = await ctx.model.SocketUser.findOne({
+                where: {
+                  user_id: item.friend_id,
+                },
+                raw: true,
+              });
+              result_socket.socket_id && socketArr.push(result_socket);
+              socketFlag++;
+              socketFlag === addArr.length
+             && socketArr.map(item => {
+               item.user_id !== payload.data.id && nsp.to(item.socket_id).emit('addMessages', { type: '添加好友信息', message: payload.data.username + '希望添加您为好友，请处理。' });
              })
-             && socket.emit('addSubmit',{code:0, message:'添加成功！'});
-            })
+             && socket.emit('addSubmit', { code: 0, message: '添加成功！' });
+            });
           }
-        })
-      }catch (e) {
-        socket.emit('addSubmit',{code:5, message:'添加出错！'});
+        });
+      } catch (e) {
+        socket.emit('addSubmit', { code: 5, message: '添加出错！' });
       }
       /* socket.emit("addSubmit",payload); //发送给自己
          socket.broadcast.emit("addSubmit",payload); //发给除了自己的其他人*/
       /* nsp.to(room).emit('addSubmit', payload);*/ // 给指定房间的人发送消息
-     /* nsp.sockets[socket.id].emit('addSubmit', payload);*/// 发送给指定ID的人
+      /* nsp.to(socket.id).emit('addSubmit', payload);*/// 发送给指定ID的人
+      /* nsp.sockets[item.socket_id].emit('addMessages',{type:'添加好友信息',message:payload.data.username+'希望添加您为好友，请处理。'})*/
+      // 发送给指定ID的人
     }
   }
   return Controller;

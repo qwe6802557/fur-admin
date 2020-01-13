@@ -17,8 +17,8 @@
             <span class="header-myself"><el-avatar :size="40" :src="circleUrl" class="avatar"></el-avatar>{{this.userMes.username}}</span>
             </template>
           <el-menu-item index="2-1">个人资料</el-menu-item>
-          <el-menu-item index="2-2" @click="ToContact">在线交流</el-menu-item>
-          <el-menu-item index="2-3">退出系统</el-menu-item>
+          <el-menu-item index="2-2" @click="toContact">在线交流</el-menu-item>
+          <el-menu-item index="2-3" @click="loginOut">退出系统</el-menu-item>
         </el-submenu>
     </el-menu>
   </div>
@@ -28,8 +28,11 @@
   import {reqLoginMes} from "../../api";
   import {Message} from 'element-ui'
   import memoryUntil from '@/untils/memoryUntil';
+  import storeUntil from '@/untils/storeUntil';
+  import { MessageBox } from 'element-ui'
+  import { reqLoginOut } from "../../api";
 
-    export default {
+  export default {
         name: "Header",
         data() {
         return {
@@ -44,7 +47,7 @@
           console.log(key, keyPath);
         },
         //加载在线交流聊天框
-        ToContact(){
+        toContact(){
           this.$emit('contactChange');
         },
         //通过token获取用户信息
@@ -62,6 +65,28 @@
           }).catch(err=>{
             Message.error(err);
           })
+        },
+        loginOut(){
+          MessageBox.confirm('您确定要退出系统么？','退出',{
+            confirmButtonText:'确定',
+            cancelButtonText:'取消',
+            type:"warning"
+          }).then(() => {
+            reqLoginOut().then(res=>{
+              const {code, message} = res.data;
+              if (code == 0){
+                memoryUntil.token = null;
+                storeUntil.delToken();
+                console.log(memoryUntil);
+                Message.success(message);
+                this.$router.push({name:'Main'});
+              }else{
+                Message.error(message);
+              }
+            }).catch(err=>{
+              Message.error(err);
+            })
+          }).catch(err => {});
         }
       },
       created(){

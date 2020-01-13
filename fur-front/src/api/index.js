@@ -19,6 +19,8 @@ export const reqReset=message=>ajax(LOCALURL+"/user/reset",message,"POST");
 export const reqLogin=user=>ajax(LOCALURL+'/user/login',user,'POST');
 //注册请求 不用token验证
 export const reqRegistor=user=>ajax(LOCALURL+'/user/registor',user,'POST');
+//退出请求 需要token验证
+export const reqLoginOut=()=>ajax(LOCALURL+'/user/login_out',{}, 'POST',Memory.token);
 //根据token取登录信息请求 需要token验证
 export const reqLoginMes=()=>ajax(LOCALURL+'/user/userInfo',{},'GET',Memory.token);
 //获取产品及分页列表 需要token验证

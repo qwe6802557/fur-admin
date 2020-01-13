@@ -34,7 +34,11 @@
     Vue.use(
       new VueSocketIO({
         debug: true,
-        connection: `http://127.0.0.1:7001?token=Bear ${memoryUntil.token}`
+        connection: `http://127.0.0.1:7001`,
+        options:{
+          /*autoConnect:false,*/
+          query:`token=Bear ${memoryUntil.token}`
+        }
       }));
     export default {
         name: "Admin",
@@ -58,7 +62,10 @@
         }
       },
       mounted(){
-        document.querySelector('.admin-side').style.height=document.documentElement.clientHeight-74+'px';
+          /*const token = memoryUntil.token;
+          this.$socket.query = `token=Bear ${token}`;*/
+          document.querySelector('.admin-side').style.height=document.documentElement.clientHeight-74+'px';
+          /*this.$socket.disconnected === true && this.$socket.connect();*/
       },
       components:{
         Header,
@@ -96,7 +103,13 @@
         },
         addMessages(data){
           console.log(data);
+        },
+        disconnect(val){
+          console.log(val);
         }
+      },
+      beforeDestroy() {
+        this.$socket.disconnect();
       }
     }
 </script>

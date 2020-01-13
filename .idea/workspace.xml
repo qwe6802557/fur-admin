@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
-      <change afterPath="$PROJECT_DIR$/fur-admin/app/model/socket-user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/controller/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/io/controller/chat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/app/io/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/io/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/model/friendList.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/model/friendList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/io/middleware/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/io/middleware/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/middleware/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/router/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/app/service/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/service/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fur-admin/run/router.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/router.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +55,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../shanghai-DMP" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -188,6 +202,7 @@
       <workItem from="1578625998438" duration="512000" />
       <workItem from="1578632793887" duration="167000" />
       <workItem from="1578829760508" duration="9149000" />
+      <workItem from="1578879068338" duration="25583000" />
     </task>
     <task id="LOCAL-00001" summary="封装与BUG发现 dialog表单重置（待解决）">
       <created>1575454228600</created>
@@ -272,18 +287,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-47" y="180" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578219958776" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1578219897476">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1578880397245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578219897476" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578880397245" />
     <state x="750" y="230" key="RollbackChangesDialog" timestamp="1578220431999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="750" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578220431999" />
-    <state x="596" y="93" width="994" height="733" key="SettingsEditor" timestamp="1578632837690">
+    <state x="596" y="93" width="994" height="733" key="SettingsEditor" timestamp="1578897838121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="596" y="93" width="994" height="733" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578632837690" />
+    <state x="596" y="93" width="994" height="733" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578897838121" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578587636095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,10 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="254" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578219956956" />
-    <state x="609" y="108" width="628" height="801" key="find.popup" timestamp="1577545261707">
+    <state x="609" y="108" width="632" height="801" key="find.popup" timestamp="1578886042107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="108" width="628" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577545261707" />
+    <state x="609" y="108" width="632" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578886042107" />
     <state x="655" y="311" key="git4idea.merge.GitPullDialog" timestamp="1578581980779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,10 +319,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="361" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578213028073" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1578234835430">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1578895281095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578234835430" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578895281095" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578234543517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -338,7 +353,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/fur-front/src/views/admin/index.vue</url>
-          <line>46</line>
+          <line>50</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
