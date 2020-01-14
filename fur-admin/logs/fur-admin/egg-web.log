@@ -1,1 +1,14 @@
 2020-01-14 00:00:01,015 INFO 8564 [egg-logrotator] app logger reload: got log-reload message
+2020-01-14 15:56:07,833 INFO 9020 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-14 15:56:07,871 INFO 9020 [egg-multipart] stream mode enable
+2020-01-14 15:56:08,494 INFO 9020 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\app\public
+2020-01-14 15:56:08,497 INFO 9020 [egg-security] use methodnoallow middleware
+2020-01-14 15:56:08,498 INFO 9020 [egg-security] use noopen middleware
+2020-01-14 15:56:08,499 INFO 9020 [egg-security] use nosniff middleware
+2020-01-14 15:56:08,500 INFO 9020 [egg-security] use xssProtection middleware
+2020-01-14 15:56:08,500 INFO 9020 [egg-security] use xframe middleware
+2020-01-14 15:56:08,501 INFO 9020 [egg-security] use dta middleware
+2020-01-14 15:56:08,501 INFO 9020 [egg-security] compose 6 middlewares into one security middleware
+2020-01-14 15:56:08,527 INFO 9020 [egg:core] dump config after load, 10ms
+2020-01-14 15:56:08,578 INFO 9020 [egg-watcher:application] watcher start success
+2020-01-14 15:56:09,517 INFO 9020 [egg:core] dump config after ready, 9ms

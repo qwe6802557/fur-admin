@@ -48,6 +48,9 @@ module.exports = app => {
   });
   User.associate = function() {
     app.model.User.hasMany(app.model.Orders, { foreignKey: 'uid' });
+    app.model.User.hasMany(app.model.FriendList, { foreignKey: 'user_id' });
+    app.model.User.hasMany(app.model.AddMessage, { foreignKey: 'user_id' });
+    app.model.User.hasOne(app.model.SocketUser, { foreignKey: 'user_id' });
   }; // 一对多外键设置
   return User;
 };

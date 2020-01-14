@@ -2,9 +2,9 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
-import ExportAddMessage = require('../../../app/model/addMessage');
+import ExportAddMessage = require('../../../app/model/add-message');
 import ExportCategory = require('../../../app/model/category');
-import ExportFriendList = require('../../../app/model/friendList');
+import ExportFriendList = require('../../../app/model/friend-list');
 import ExportGoods = require('../../../app/model/goods');
 import ExportList = require('../../../app/model/list');
 import ExportMessage = require('../../../app/model/message');

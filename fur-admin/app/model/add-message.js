@@ -18,10 +18,10 @@ module.exports = app => {
       fields: 'friend_id',
       allowNull: false,
     },
-    friend_name:{
-      type:STRING,
-      fields:'friend_name',
-      allowNull:false
+    friend_name: {
+      type: STRING,
+      fields: 'friend_name',
+      allowNull: false,
     },
     is_allowed: {
       type: ENUM([ '0', '1' ]),
@@ -34,5 +34,8 @@ module.exports = app => {
     // 但是为了安全着想，复数的转换可能会发生变化，所以禁止该行为
     underscored: true, // 注意需要加上这个， egg-sequelize只是简单的使用Object.assign对配置和默认配置做了merge, 如果不加这个 update_at会
   });
+  addMessage.associate = function() {
+    app.model.AddMessage.belongsTo(app.model.User, { foreignKey: 'user_id', targetKey: 'id' });
+  };
   return addMessage;
 };

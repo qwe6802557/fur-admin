@@ -1,1 +1,12 @@
 2020-01-14 00:00:01,015 INFO 13588 [egg-logrotator] agent logger reload: got log-reload message
+2020-01-14 15:56:06,136 INFO 16132 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-01-14 15:56:05,467 INFO 16132 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-01-14 15:56:05,973 INFO 16132 [egg:core] dump config after load, 7ms
+2020-01-14 15:56:06,027 INFO 16132 [egg-watcher] Start watching: ["C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks_proxy","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app.js"]
+2020-01-14 15:56:06,027 INFO 16132 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app"
+2020-01-14 15:56:06,027 INFO 16132 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config"
+2020-01-14 15:56:06,027 INFO 16132 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks"
+2020-01-14 15:56:06,027 INFO 16132 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks_proxy"
+2020-01-14 15:56:06,027 INFO 16132 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app.js"
+2020-01-14 15:56:06,029 INFO 16132 [egg-watcher:agent] watcher start success
+2020-01-14 15:56:06,150 INFO 16132 [egg:core] dump config after ready, 10ms
