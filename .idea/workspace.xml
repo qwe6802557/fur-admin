@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="091d8338-2616-4155-baa0-5aaccdec0b27" name="Default Changelist" comment="Add io chat functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web Notes/全栈项目笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/Web Notes/全栈项目笔记.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/model/addMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/model/add-message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/model/friendList.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/model/friend-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/model/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/model/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/model/socket-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/model/socket-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/app/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/app/model/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-agent.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-schedule.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/egg-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/logs/fur-admin/fur-admin-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/agent_config_meta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/run/application_config_meta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fur-admin/typings/app/model/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +186,9 @@
       <workItem from="1578829760508" duration="9149000" />
       <workItem from="1578879068338" duration="25583000" />
       <workItem from="1578909221314" duration="33000" />
-      <workItem from="1578995349648" duration="739000" />
+      <workItem from="1578995349648" duration="967000" />
+      <workItem from="1578997793100" duration="117000" />
+      <workItem from="1579051016329" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="封装与BUG发现 dialog表单重置（待解决）">
       <created>1575454228600</created>
@@ -259,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578220048198</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add io chat functions">
+      <created>1578997534559</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578997534559</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,10 +272,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#更新/0.0.1920.1040@0.0.1920.1040" timestamp="1577154368578" />
-    <state x="554" y="109" key="CommitChangelistDialog2" timestamp="1578997524286">
+    <state x="554" y="109" key="CommitChangelistDialog2" timestamp="1578997533187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="554" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578997524286" />
+    <state x="554" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578997533187" />
     <state x="-47" y="180" width="1736" height="856" key="DiffContextDialog" timestamp="1578219958776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -298,10 +292,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="93" width="994" height="733" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578897838121" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578587636095">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578997858232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578587636095" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578997858232" />
     <state x="667" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1578219956956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -310,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="108" width="632" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578886042107" />
-    <state x="655" y="311" key="git4idea.merge.GitPullDialog" timestamp="1578581980779">
+    <state x="655" y="311" key="git4idea.merge.GitPullDialog" timestamp="1578997842269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578581980779" />
+    <state x="655" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578997842269" />
     <state x="760" y="361" key="git4idea.ui.GitTagDialog" timestamp="1578213028073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

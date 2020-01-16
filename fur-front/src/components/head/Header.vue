@@ -3,7 +3,11 @@
     <h1>
       <span>LOGO</span>
     </h1>
-
+    <div class="announce-box" title="通知消息">
+      <el-badge :value="12" class="item">
+        <i class="el-icon-s-promotion"></i>
+      </el-badge>
+    </div>
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -110,7 +114,22 @@
     align-items: center;
     min-width:718px;
     width: 100%;
+    position: relative;
     background: #ffffff;
+    .announce-box{
+      .el-icon-s-promotion{
+        font-size: 25px;
+        cursor: pointer;
+        transition: .5s color;
+        &:hover{
+          color: #54B2FE;
+        }
+      }
+      position: absolute;
+      right: 180px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
     .avatar{
       margin-right: 10px;
     }
