@@ -1,5 +1,9 @@
-'user strict';
-
+'use strict';
+/**
+ * 用户表
+ * @param app
+ * @returns {*|sequelize.Model<any, any, TAttributes>|void}
+ */
 module.exports = app => {
   const { STRING, INTEGER } = app.Sequelize;
 
@@ -47,10 +51,12 @@ module.exports = app => {
     // 但是为了安全着想，复数的转换可能会发生变化，所以禁止该行为
   });
   User.associate = function() {
+    app.model.User.hasOne(app.model.SocketUser, { foreignKey: 'user_id' });
     app.model.User.hasMany(app.model.Orders, { foreignKey: 'uid' });
     app.model.User.hasMany(app.model.FriendList, { foreignKey: 'user_id' });
-    app.model.User.hasMany(app.model.AddMessage, { foreignKey: 'user_id' });
-    app.model.User.hasOne(app.model.SocketUser, { foreignKey: 'user_id' });
-  }; // 一对多外键设置
+    app.model.User.hasMany(app.model.MessageAdd, { foreignKey: 'user_id' });
+    app.model.User.hasMany(app.model.MessageNotification, { foreignKey: 'user_id' });
+    app.model.User.hasMany(app.model.UserRole, { foreignKey: 'user_id' });
+  }; // 一对多或一对一外键设置
   return User;
 };

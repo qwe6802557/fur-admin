@@ -1,6 +1,6 @@
 <template>
   <div class="admin">
-    <Header @contactChange="contactChange" @getUserMes="getUserMes"></Header>
+    <Header @contactChange="contactChange" @getUserMes="getUserMes" :value="value"></Header>
     <div class="admin-side">
       <div class="admin-left">
         <LeftBar></LeftBar>
@@ -27,6 +27,7 @@
     import LeftBar from '@/components/left-bar/Left-bar'
     import memoryUntil from '@/untils/memoryUntil';
     import storeUntil from '@/untils/storeUntil';
+    import { reqMainMessage } from "../../api";
     import Vue from "vue";
     import VueSocketIO from "vue-socket.io";
     import { Message } from 'element-ui'
@@ -45,7 +46,8 @@
         data(){
           return {
             userMes:{},
-            currentComponent:''
+            currentComponent:'',
+            value:'',
           }
       },
       methods:{
@@ -102,8 +104,13 @@
         outline(val){
           console.log(val);
         },
-        addMessages(data){
-          console.log(data);
+        addMessages(){
+          reqMainMessage().then(res => {
+            const { code, message, data } = res.data;
+            code === 0? this.value = data.length : Message.error(message);
+          }).catch(err => {
+            Message.error(err);
+          });
         },
         disconnect(val){
           console.log(val);

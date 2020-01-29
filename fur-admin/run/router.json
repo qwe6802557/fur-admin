@@ -67,6 +67,19 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/user/main_message",
+    "regexp": "/^\\/user\\/main_message(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/verify/verify_code",
     "regexp": "/^\\/verify\\/verify_code(?:\\/(?=$))?$/",
     "stack": [

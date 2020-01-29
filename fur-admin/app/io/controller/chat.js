@@ -125,7 +125,7 @@ module.exports = app => {
       });
       try {
         addArr.map(async item => {
-          const result = await ctx.model.AddMessage.findOne({
+          const result = await ctx.model.MessageAdd.findOne({
             where: {
               user_id: item.user_id,
               friend_id: item.friend_id,
@@ -134,7 +134,7 @@ module.exports = app => {
             raw: true,
           });
           result && haveArr.push(result);
-          !result && item.friend_id != item.user_id && await ctx.model.AddMessage.create(item);
+          !result && item.friend_id !== item.user_id && await ctx.model.AddMessage.create(item);
           eachFlag++;
           if (eachFlag !== addArr.length) {
             return;
@@ -155,8 +155,18 @@ module.exports = app => {
               result_socket.socket_id && socketArr.push(result_socket);
               socketFlag++;
               socketFlag === addArr.length
+              // eslint-disable-next-line array-callback-return
              && socketArr.map(item => {
-               item.user_id !== payload.data.id && nsp.to(item.socket_id).emit('addMessages', { type: '添加好友信息', message: payload.data.username + '希望添加您为好友，请处理。' });
+               item.user_id !== payload.data.id &&
+               this.ctx.model.MessageNotification.create({
+                 user_id: item.user_id,
+                 message_type: '1',
+                 message_content: payload.data.username + '希望添加您为好友，请处理。',
+               }).then(() => {
+                 nsp.to(item.socket_id).emit('addMessages', { type: '1', message: payload.data.username + '希望添加您为好友，请处理。' });
+               }).catch(() => {
+                 return false;
+               });
              })
              && socket.emit('addSubmit', { code: 0, message: '添加成功！' });
             });

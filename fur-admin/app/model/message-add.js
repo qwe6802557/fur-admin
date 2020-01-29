@@ -35,7 +35,7 @@ module.exports = app => {
     underscored: true, // 注意需要加上这个， egg-sequelize只是简单的使用Object.assign对配置和默认配置做了merge, 如果不加这个 update_at会
   });
   addMessage.associate = function() {
-    app.model.AddMessage.belongsTo(app.model.User, { foreignKey: 'user_id', targetKey: 'id' });
+    app.model.MessageAdd.belongsTo(app.model.User, { foreignKey: 'user_id', targetKey: 'id' });
   };
   return addMessage;
 };

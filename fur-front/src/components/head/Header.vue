@@ -3,11 +3,27 @@
     <h1>
       <span>LOGO</span>
     </h1>
-    <div class="announce-box" title="通知消息">
-      <el-badge :value="12" class="item">
+    <el-popover
+      placement="bottom"
+      width="160"
+      trigger="click"
+      v-model="visible">
+      <div class="announce-content">
+        <div class="content-title">
+          <div class="title">系统消息:<span style="color: red;">{{originMessage}}</span>条</div>
+          <LinkButton :title="'查看'" v-if="originMessage !== 0"></LinkButton>
+        </div>
+        <div class="content-title">
+          <div class="title">好友申请:<span style="color: red;">{{friendMessage}}</span>条</div>
+          <LinkButton :title="'查看'" v-if="friendMessage !== 0"></LinkButton>
+        </div>
+      </div>
+    <div class="announce-box" title="通知消息" slot="reference">
+      <el-badge :value="mainMessage" class="item">
         <i class="el-icon-s-promotion"></i>
       </el-badge>
     </div>
+    </el-popover>
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -33,17 +49,23 @@
   import {Message} from 'element-ui'
   import memoryUntil from '@/untils/memoryUntil';
   import storeUntil from '@/untils/storeUntil';
-  import { MessageBox } from 'element-ui'
-  import { reqLoginOut } from "../../api";
+  import { MessageBox, Popover } from 'element-ui';
+  import LinkButton from '@/components/link-button/link-button';
+  import { reqLoginOut, reqMainMessage } from "../../api";
 
   export default {
         name: "Header",
+        props:['value'],
         data() {
         return {
           isCollapse: true,
           activeIndex: '1',
           circleUrl: "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
-          userMes:{}
+          userMes:{},
+          mainMessage:'',
+          visible:false,
+          originMessage:0,
+          friendMessage:0,
         };
       },
       methods: {
@@ -70,6 +92,7 @@
             Message.error(err);
           })
         },
+        //退出
         loginOut(){
           MessageBox.confirm('您确定要退出系统么？','退出',{
             confirmButtonText:'确定',
@@ -90,21 +113,47 @@
               Message.error(err);
             })
           }).catch(err => {});
-        }
+        },
+        //获取未处理消息列表
+        getMainMessage(){
+          reqMainMessage().then(res => {
+            const { code, message, data } = res.data;
+            code === 0? this.mainMessage = data.length || '' : Message.error(message);
+          }).catch(err => {
+            Message.error(err);
+          })
+        },
       },
+    components:{
+      LinkButton
+    },
       created(){
           this.getUserMes();
+          this.getMainMessage();
       },
       watch:{
           userMes(val){
             this.userMes=val;
+          },
+          value(val){
+            this.mainMessage = val;
           }
       }
     }
 </script>
 
 <style scoped>
-
+.content-title{
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
 </style>
 <style lang="less">
   .header{

@@ -57,6 +57,23 @@ class UserController extends Controller {
       data: ctx.payload,
     };
   }
+  // 查询未处理消息
+  async getMainMessage() {
+    const { ctx } = this;
+    try {
+      const result = await this.service.user.getMainMessage();
+      ctx.body = {
+        code: 0,
+        message: '查询成功！',
+        data: result,
+      };
+    } catch (e) {
+      ctx.body = {
+        code: 5,
+        message: e,
+      };
+    }
+  }
   // 重置密码
   async resetPass() {
     const { ctx } = this;

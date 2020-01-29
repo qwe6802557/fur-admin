@@ -92,6 +92,16 @@ class UserService extends Service {
     };
 
   }
+  // 获取未处理消息
+  async getMainMessage() {
+    const { id } = this.ctx.payload.data;
+    const result = await this.ctx.model.MessageNotification.findAll({
+      where: {
+        user_id: id,
+      },
+    });
+    return result;
+  }
   // 重置密码
   async resetPass() {
     const { mobile, password } = this.ctx.request.body;

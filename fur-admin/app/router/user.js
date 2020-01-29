@@ -10,4 +10,5 @@ module.exports = app => {
   router.get('/user/userInfo', controller.user.getUserInfo);
   router.post('/user/reset', controller.user.resetPass);
   router.post('/user/login_out', controller.user.loginOut);
+  router.get('/user/main_message', controller.user.getMainMessage);
 };
