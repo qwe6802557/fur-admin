@@ -10,6 +10,18 @@
        <span slot="title">首页</span>
       </el-menu-item>
       </router-link>
+      <el-submenu index="5">
+        <template slot="title">
+          <i class="el-icon-location"></i>
+          <span slot="title">订单管理</span>
+        </template>
+        <el-menu-item-group>
+          <router-link to="/admin/produce"><el-menu-item index="5-1">订单列表</el-menu-item></router-link>
+        </el-menu-item-group>
+        <el-menu-item-group>
+          <router-link to="/admin/produce"><el-menu-item index="5-2">我的订单</el-menu-item></router-link>
+        </el-menu-item-group>
+      </el-submenu>
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
@@ -17,17 +29,35 @@
         </template>
         <el-menu-item-group>
           <router-link to="/admin/product"><el-menu-item index="1-1">产品列表</el-menu-item></router-link>
-          <el-menu-item index="1-2">选项2</el-menu-item>
+          <router-link to="/admin/material"><el-menu-item index="1-2">配件列表</el-menu-item></router-link>
+          <router-link to="/admin/product"><el-menu-item index="1-3">机器列表</el-menu-item></router-link>
         </el-menu-item-group>
         <el-submenu index="1-4">
           <span slot="title">选项4</span>
           <el-menu-item index="1-4-1">选项1</el-menu-item>
         </el-submenu>
       </el-submenu>
-      <el-menu-item index="2">
-        <i class="el-icon-menu"></i>
-        <span slot="title">导航二</span>
-      </el-menu-item>
+      <el-submenu index="2">
+        <template slot="title">
+          <i class="el-icon-location"></i>
+          <span slot="title">生产管理</span>
+        </template>
+        <el-menu-item-group>
+          <router-link to="/admin/produce"><el-menu-item index="2-1">生产列表</el-menu-item></router-link>
+        </el-menu-item-group>
+      </el-submenu>
+      <el-submenu index="3">
+        <template slot="title">
+          <i class="el-icon-location"></i>
+          <span slot="title">审批管理</span>
+        </template>
+        <el-menu-item-group>
+          <router-link to="/admin/produce"><el-menu-item index="3-1">流程审批</el-menu-item></router-link>
+        </el-menu-item-group>
+        <el-menu-item-group>
+          <router-link to="/admin/produce"><el-menu-item index="3-2">订单审批</el-menu-item></router-link>
+        </el-menu-item-group>
+      </el-submenu>
       <el-menu-item index="4">
         <i class="el-icon-setting"></i>
         <span slot="title">导航四</span>

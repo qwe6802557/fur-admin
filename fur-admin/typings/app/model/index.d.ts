@@ -2,6 +2,7 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportCategoryDetail = require('../../../app/model/category-detail');
 import ExportCategory = require('../../../app/model/category');
 import ExportFriendList = require('../../../app/model/friend-list');
 import ExportGoods = require('../../../app/model/goods');
@@ -11,16 +12,20 @@ import ExportMessageNotification = require('../../../app/model/message-notificat
 import ExportMessage = require('../../../app/model/message');
 import ExportOrders = require('../../../app/model/orders');
 import ExportPrivilege = require('../../../app/model/privilege');
+import ExportProduceStatus = require('../../../app/model/produce-status');
+import ExportProduce = require('../../../app/model/produce');
 import ExportRolePrivilege = require('../../../app/model/role-privilege');
 import ExportRole = require('../../../app/model/role');
 import ExportSocketUser = require('../../../app/model/socket-user');
 import ExportSpends = require('../../../app/model/spends');
+import ExportStatus = require('../../../app/model/status');
 import ExportUserRole = require('../../../app/model/user-role');
 import ExportUser = require('../../../app/model/user');
 import ExportWoodStandard = require('../../../app/model/wood-standard');
 
 declare module 'egg' {
   interface IModel {
+    CategoryDetail: ReturnType<typeof ExportCategoryDetail>;
     Category: ReturnType<typeof ExportCategory>;
     FriendList: ReturnType<typeof ExportFriendList>;
     Goods: ReturnType<typeof ExportGoods>;
@@ -30,10 +35,13 @@ declare module 'egg' {
     Message: ReturnType<typeof ExportMessage>;
     Orders: ReturnType<typeof ExportOrders>;
     Privilege: ReturnType<typeof ExportPrivilege>;
+    ProduceStatus: ReturnType<typeof ExportProduceStatus>;
+    Produce: ReturnType<typeof ExportProduce>;
     RolePrivilege: ReturnType<typeof ExportRolePrivilege>;
     Role: ReturnType<typeof ExportRole>;
     SocketUser: ReturnType<typeof ExportSocketUser>;
     Spends: ReturnType<typeof ExportSpends>;
+    Status: ReturnType<typeof ExportStatus>;
     UserRole: ReturnType<typeof ExportUserRole>;
     User: ReturnType<typeof ExportUser>;
     WoodStandard: ReturnType<typeof ExportWoodStandard>;

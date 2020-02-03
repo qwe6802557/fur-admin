@@ -275,12 +275,15 @@
         },
         //批量删除点击函数
         delMany(){
+          const {arrId}=this;
+          if (arrId.length === 0 ){
+            return Message.warning('请选择需要删除项！');
+          }
           MessageBox.confirm('确定批量删除商品'+this.arrObj.map(item=>item.goods_name).join(',')+'吗？','提示',{
             confirmButtonText:'确定',
             cancelButtonText: '取消',
             type: 'warning'
           }).then(()=>{
-            const {arrId}=this;
             reqDelMany({arrId}).then(res=>{
               const {code,message}=res.data;
                 if (code===0){

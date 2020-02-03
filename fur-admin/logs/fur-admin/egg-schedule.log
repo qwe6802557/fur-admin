@@ -1,75 +1,27 @@
-2020-01-28 00:53:12,191 INFO 11920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-28 00:53:12,191 INFO 11920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-28 00:53:12,191 INFO 11920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-28 00:53:30,611 INFO 14080 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-28 00:53:30,611 INFO 14080 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-28 00:53:30,611 INFO 14080 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-28 00:53:32,255 INFO 7520 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 12987748ms at 2020-01-28 04:30:00.003
-2020-01-28 00:53:32,256 INFO 7520 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 83187745ms at 2020-01-29 00:00:00.001
-2020-01-28 00:53:32,256 INFO 7520 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 83188744ms at 2020-01-29 00:00:01.000
-2020-01-28 00:55:05,598 INFO 20308 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-28 00:55:05,598 INFO 20308 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-28 00:55:05,598 INFO 20308 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-28 00:58:46,295 INFO 11984 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-28 00:58:46,296 INFO 11984 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-28 00:58:46,296 INFO 11984 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-28 01:03:10,912 INFO 19540 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-28 01:03:10,912 INFO 19540 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-28 01:03:10,912 INFO 19540 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:44:03,468 INFO 19556 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:44:03,468 INFO 19556 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:44:03,468 INFO 19556 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:44:05,500 INFO 9964 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 24354503ms at 2020-01-30 04:30:00.002
-2020-01-29 21:44:05,500 INFO 9964 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 8154500ms at 2020-01-30 00:00:00.000
-2020-01-29 21:44:05,500 INFO 9964 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 8155500ms at 2020-01-30 00:00:01.000
-2020-01-29 21:49:53,934 INFO 12132 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:49:53,935 INFO 12132 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:49:53,935 INFO 12132 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:50:19,254 INFO 4736 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:50:19,254 INFO 4736 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:50:19,254 INFO 4736 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:51:01,237 INFO 19204 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:51:01,237 INFO 19204 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:51:01,237 INFO 19204 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:54:09,392 INFO 13052 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:54:09,392 INFO 13052 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:54:09,392 INFO 13052 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:56:49,688 INFO 12540 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:56:49,688 INFO 12540 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:56:49,688 INFO 12540 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:57:29,672 INFO 10020 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:57:29,672 INFO 10020 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:57:29,672 INFO 10020 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 21:58:59,806 INFO 10088 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 21:58:59,806 INFO 10088 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 21:58:59,806 INFO 10088 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:06:32,149 INFO 12920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:06:32,149 INFO 12920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:06:32,149 INFO 12920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:12:42,392 INFO 6316 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:12:42,392 INFO 6316 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:12:42,392 INFO 6316 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:12:45,004 INFO 8372 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 19034999ms at 2020-01-30 04:30:00.003
-2020-01-29 23:12:45,004 INFO 8372 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 2834996ms at 2020-01-30 00:00:00.000
-2020-01-29 23:12:45,004 INFO 8372 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 2835996ms at 2020-01-30 00:00:01.000
-2020-01-29 23:12:53,729 INFO 9668 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:12:53,729 INFO 9668 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:12:53,730 INFO 9668 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:13:35,760 INFO 10212 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:13:35,760 INFO 10212 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:13:35,760 INFO 10212 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:15:28,302 INFO 1980 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:15:28,302 INFO 1980 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:15:28,302 INFO 1980 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:15:51,614 INFO 17864 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:15:51,614 INFO 17864 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:15:51,614 INFO 17864 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:16:11,651 INFO 15112 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:16:11,651 INFO 15112 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:16:11,651 INFO 15112 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:16:27,077 INFO 2748 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:16:27,077 INFO 2748 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:16:27,077 INFO 2748 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2020-01-29 23:19:09,176 INFO 8140 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2020-01-29 23:19:09,176 INFO 8140 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
-2020-01-29 23:19:09,176 INFO 8140 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 00:00:44,198 INFO 1636 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 00:00:44,198 INFO 1636 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 00:00:44,198 INFO 1636 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 18:42:17,638 INFO 18800 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 18:42:17,638 INFO 18800 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 18:42:17,638 INFO 18800 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 18:42:19,890 INFO 16644 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 35260113ms at 2020-02-04 04:30:00.003
+2020-02-03 18:42:19,891 INFO 16644 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 19060110ms at 2020-02-04 00:00:00.001
+2020-02-03 18:42:19,891 INFO 16644 [Timer] C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 19061109ms at 2020-02-04 00:00:01.000
+2020-02-03 19:05:54,059 INFO 3368 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 19:05:54,059 INFO 3368 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 19:05:54,059 INFO 3368 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 19:11:51,131 INFO 18312 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 19:11:51,131 INFO 18312 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 19:11:51,131 INFO 18312 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 19:16:46,832 INFO 14040 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 19:16:46,832 INFO 14040 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 19:16:46,832 INFO 14040 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 20:13:38,969 INFO 7284 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 20:13:38,969 INFO 7284 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 20:13:38,969 INFO 7284 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 20:23:14,885 INFO 12624 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 20:23:14,885 INFO 12624 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 20:23:14,885 INFO 12624 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-02-03 20:25:32,870 INFO 4968 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-02-03 20:25:32,870 INFO 4968 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-02-03 20:25:32,870 INFO 4968 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\project\fur-admin\fur-admin\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

@@ -26,6 +26,12 @@ module.exports = app => {
       fields: 'category_num',
       defaultValue: 0,
     },
+    category_children_num: {
+      type: INTEGER,
+      allowNull: true,
+      fields: 'category_children_num',
+      defaultValue: 0,
+    },
   }, {
     timestamps: false, // 自动维护时间戳 [ created_at、updated_at ]
     freezeTableName: true, // 禁止修改表名，默认情况下，sequelize将自动将所有传递的模型名称（define的第一个参数）转换为复数
@@ -34,6 +40,7 @@ module.exports = app => {
   });
   Category.associate = function() {
     app.model.Category.hasOne(app.model.List, { foreignKey: 'category_id' });
+    app.model.Category.hasMany(app.model.CategoryDetail, { foreignKey: 'category_id' });
   };
   return Category;
 };

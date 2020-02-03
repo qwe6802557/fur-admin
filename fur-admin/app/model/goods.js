@@ -1,4 +1,4 @@
-'user strict'
+'use strict'
 
 module.exports=app=>{
     const { DATE ,INTEGER,STRING,DOUBLE}=app.Sequelize;

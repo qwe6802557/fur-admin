@@ -66,8 +66,12 @@ class UserService extends Service {
     });
     if (!result) {
       const result_hash = await this.app.encryptPw(FACTORY_STRENTTH, password);
-      return await this.app.model.User.create({ username, password: result_hash, e_mail, mobile }).then(res => {
+      return await this.app.model.User.create({ username, password: result_hash, e_mail, mobile }).then(async res => {
         if (res) {
+          await this.ctx.model.UserRole.create({
+            user_id: res.dataValues.id,
+            role_id: 1,
+          });
           return {
             code: 0,
             res: '注册成功！将自动跳转到主页！',
@@ -78,7 +82,6 @@ class UserService extends Service {
           code: 2,
           res: '注册失败！',
         };
-
       }).catch(err => {
         return {
           code: 5,
@@ -90,7 +93,6 @@ class UserService extends Service {
       code: 1,
       res: '用户名已存在!',
     };
-
   }
   // 获取未处理消息
   async getMainMessage() {

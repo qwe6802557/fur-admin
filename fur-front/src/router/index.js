@@ -22,6 +22,16 @@ export default new Router({
           path:'product',
           name:'Product',
           component:()=>import('@/views/product/index.vue')
+        },
+        {
+          path:'material',
+          name:'Material',
+          component:()=>import('@/views/material/index.vue')
+        },
+        {
+          path:'produce',
+          name:'Produce',
+          component:()=>import('@/views/produce/index.vue')
         }
       ]
     },

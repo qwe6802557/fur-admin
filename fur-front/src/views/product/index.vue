@@ -6,17 +6,17 @@
           <i class="line"></i>
           <h2>产品列表</h2>
         </div>
-        <div class="devider">
+        <!--<div class="devider">
           <span :class="parentId==0?'is-active':''" @click="parentId=0">产品列表</span>
           <el-divider direction="vertical" v-if="showList"></el-divider>
           <span v-if="showList" :class="parentId==1?'is-active':''"@click="parentId=1">配件列表</span>
           <span class="el-icon-right" v-if="showChild"></span>
           <span v-if="showChild" :class="parentId==1?'is-active':''">配件子列表</span>
-        </div>
-        <transition name="el-fade-in-linear" mode="out-in">
-        <List ref="list" v-if="parentId==0"></List>
-        <Material ref="material" v-if="parentId==1"></Material>
-        </transition>
+        </div>-->
+        <!--<transition name="el-fade-in-linear" mode="out-in">-->
+        <List ref="list"></List>
+        <!--<Material ref="material" v-if="parentId==1"></Material>
+        </transition>-->
       </el-card>
     </div>
     </div>
@@ -24,12 +24,11 @@
 
 <script>
   import List from '@/views/product/list/index.vue'
-  import Material from '@/views/product/material/index.vue'
   export default {
         name: "Product",
       data() {
         return {
-          parentId:0,
+          /*parentId:0,*/
           showList:true,
           showChild:false
         }
@@ -38,8 +37,7 @@
 
     },
     components:{
-      List,
-      Material
+      List
     }
   }
 </script>
@@ -70,11 +68,9 @@
   .text {
     font-size: 14px;
   }
-
   .item {
     margin-bottom: 18px;
   }
-
   .clearfix:before,
   .clearfix:after {
     display: table;
@@ -83,13 +79,12 @@
   .clearfix:after {
     clear: both
   }
-
   .box-card {
     width: 100%;
     height: 100%;
   }
   .el-card__body{
-    padding: 10px 45px;
+    padding: 20px 45px;
     height: 100%;
   }
   .table-content{
