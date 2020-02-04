@@ -2,10 +2,10 @@
     <div class="material-detail">
       <div class="form-content">
         <el-form :inline="true" :model="formInline" class="demo-form-inline" label-position="left">
-          <el-row :gutter="23">
+          <el-row :gutter="14">
             <el-col :span="4.5">
               <el-form-item label="类型">
-                <el-select v-model="formInline.select" placeholder="搜索条件">
+                <el-select v-model="formInline.select" placeholder="搜索条件" style="width: 150px;">
                   <el-option label="配件编号" value="id"></el-option>
                   <el-option label="其他条件" value="other_conditions"></el-option>
                 </el-select>
@@ -18,12 +18,12 @@
             </el-col>
             <el-col :span="4.5">
               <el-form-item v-if="formInline.select === 'other_conditions'" label="配件名称">
-                <el-input v-model="formInline.detail_name" placeholder="请输入配件名称"></el-input>
+                <el-input v-model="formInline.detail_name" placeholder="请输入配件名称" style="width: 180px;"></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="4.5">
               <el-form-item v-if="formInline.select === 'other_conditions'" label="配件状态">
-                <el-select v-model="formInline.detail_status" placeholder="请选择配件状态">
+                <el-select v-model="formInline.detail_status" placeholder="请选择配件状态" style="width: 180px;">
                   <el-option label="可用" value="1"></el-option>
                   <el-option label="不可用" value="0"></el-option>
                 </el-select>
@@ -31,7 +31,7 @@
             </el-col>
             <el-col :span="4.5">
               <el-form-item v-if="formInline.select === 'other_conditions'" label="配件用途">
-                <el-select v-model="formInline.detail_use" placeholder="请选择配件用途">
+                <el-select v-model="formInline.detail_use" placeholder="请选择配件用途" style="width: 180px;">
                   <el-option label="可用" value="1"></el-option>
                   <el-option label="不可用" value="0"></el-option>
                 </el-select>
@@ -39,18 +39,27 @@
             </el-col>
             <el-col :span="4.5">
               <el-form-item v-if="formInline.select === 'other_conditions'" label="入库时间">
-                <el-input v-model="formInline.detail_time" placeholder="请选择入库时间"></el-input>
+                <!--<el-input v-model="formInline.detail_time" placeholder="请选择入库时间"></el-input>-->
+                <el-date-picker
+                  v-model="formInline.detail_time"
+                  type="datetimerange"
+                  :picker-options="pickerOptions"
+                  range-separator="-"
+                  start-placeholder="开始日期"
+                  end-placeholder="结束日期"
+                  align="right">
+                </el-date-picker>
               </el-form-item>
             </el-col>
-              <el-form-item>
-                <el-button type="primary" @click="" icon="el-icon-search" @click="searchDetail">{{formInline.select !== 'other_conditions'?'搜索':''}}</el-button>
-              </el-form-item>
-              <el-form-item>
-                <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteMany">{{formInline.select !== 'other_conditions'?'批量删除':''}}</el-button>
-              </el-form-item>
-              <el-form-item>
-                <el-button plain icon="el-icon-plus" @click="addDetail">{{formInline.select !== 'other_conditions'?'添加删除':''}}</el-button>
-              </el-form-item>
+            <el-form-item>
+              <el-button type="primary" @click="" icon="el-icon-search" @click="searchDetail">{{formInline.select !== 'other_conditions'?'搜索':''}}</el-button>
+            </el-form-item>
+            <el-form-item>
+              <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteMany">{{formInline.select !== 'other_conditions'?'批量删除':''}}</el-button>
+            </el-form-item>
+            <el-form-item>
+              <el-button plain icon="el-icon-plus" @click="addDetail">{{formInline.select !== 'other_conditions'?'配件入库':''}}</el-button>
+            </el-form-item>
           </el-row>
         </el-form>
       </div>
@@ -129,14 +138,20 @@
           </el-pagination>
         </div>
       </div>
+      <DetailDialog :formVisible="formVisible" @visibleChange="visibleChange"/>
     </div>
 </template>
-
 <script>
+  import DetailDialog from '@/views/material/detail/dialog'
     export default {
         name: "List",
         data(){
           return {
+            formVisible:false,
+            currentPage:1,
+            total:0,
+            tableData:[],
+            loading:false,
             formInline:{
               select:'id',
               values:'',
@@ -145,10 +160,33 @@
               detail_status:'',
               detail_time:'',
             },
-            currentPage:1,
-            total:0,
-            tableData:[],
-            loading:false,
+            pickerOptions: {
+              shortcuts: [{
+                text: '最近一周',
+                onClick(picker) {
+                  const end = new Date();
+                  const start = new Date();
+                  start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);
+                  picker.$emit('pick', [start, end]);
+                }
+              }, {
+                text: '最近一个月',
+                onClick(picker) {
+                  const end = new Date();
+                  const start = new Date();
+                  start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);
+                  picker.$emit('pick', [start, end]);
+                }
+              }, {
+                text: '最近三个月',
+                onClick(picker) {
+                  const end = new Date();
+                  const start = new Date();
+                  start.setTime(start.getTime() - 3600 * 1000 * 24 * 90);
+                  picker.$emit('pick', [start, end]);
+                }
+              }]
+            },
           }
         },
       methods:{
@@ -156,7 +194,11 @@
 
         },
         addDetail(){
-
+          this.formVisible = true;
+        },
+        //点击取消的回调
+        visibleChange(){
+          this.formVisible = false;
         },
         deleteMany(){
 
@@ -176,10 +218,12 @@
         deleteCategory(){
 
         },
+      },
+      components:{
+          DetailDialog,
       }
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
 </style>

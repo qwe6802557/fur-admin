@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = app => {
-  const { STRING, INTEGER, ENUM } = app.Sequelize;
+  const { STRING, INTEGER, ENUM,} = app.Sequelize;
   const detail = app.model.define('category_detail', {
     id: {
       type: INTEGER,
@@ -25,6 +25,11 @@ module.exports = app => {
       fields: 'detail_info',
       defaultValue: '',
     },
+    detail_price: {
+      type: INTEGER,
+      allowNull: false,
+      fields: 'detail_price',
+    },
     detail_status: {
       type: ENUM([ '0', '1' ]),
       allowNull: true,
@@ -43,8 +48,13 @@ module.exports = app => {
     },
     detail_use: {
       type: STRING,
-      aloowNull: false,
+      allowNull: false,
       fileds: 'detail_use',
+    },
+    detail_time: {
+      type: INTEGER,
+      allowNull: true,
+      defaultValue: Date.now,
     },
   }, {
     timestamps: false, // 自动维护时间戳 [ created_at、updated_at ]
