@@ -14,7 +14,13 @@
               <el-input v-model="ruleForm.detail_price" class="goods_price"></el-input><span>&nbsp;元</span>
           </el-form-item>
           <el-form-item label="配件数量" prop="detail_num">
-              <el-input-number v-model="ruleForm.detail_num" @change="handleChange" :min="1" :max="999" label="配件数量"></el-input-number>
+              <el-input-number v-model="ruleForm.detail_num" @change="handleChange" :min="0" :max="999" label="配件数量"></el-input-number>
+          </el-form-item>
+          <el-form-item label="配件用途" prop="detail_use">
+              <el-select v-model="ruleForm.detail_use" placeholder="请选择配件用途" style="width: 180px;">
+                  <el-option label="可用" value="1"></el-option>
+                  <el-option label="不可用" value="0"></el-option>
+              </el-select>
           </el-form-item>
             <el-form-item label="配件图片" prop="detail_image">
             <el-upload
@@ -60,7 +66,7 @@
     props:['formVisible'/*,'flag','singleData'*/],
     data(){
       return {
-        title:'配件入库',
+        title:'新配件入库',
         token:Memory.token,
         fileList: [{name: '默认图片.jpeg', url: 'http://127.0.0.1:7001/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}],
         ruleForm:{
@@ -69,6 +75,7 @@
           detail_price:'',
           detail_image:'http://127.0.0.1:7001/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg',
           detail_num:'',
+          detail_use:'',
         },
         rules:{
           detail_name:[{
@@ -92,6 +99,10 @@
           detail_num:[{
             required:true,
             message:'请输入配件数量！'
+          }],
+          detail_use:[{
+            required:true,
+            message:'请选择配件用途！'
           }],
         }
       }
@@ -181,30 +192,20 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+  .dialog{
+    /deep/ .el-dialog{
+    min-width: 700px;
+    max-height: 85%;
+    overflow: hidden;
+    margin-top: 8vh !important;
+  }
+  /deep/ .el-dialog--center .el-dialog__body{
+    padding-bottom: 0;
+  }
+  }
 </style>
 <style lang="less">
-  .dialog{
-    .el-dialog{
-      min-width: 700px;
-      max-height: 78%;
-      overflow: hidden;
-    }
-    .demo-ruleForm{
-      width: 80%;
-      margin: 0 auto;
-    }
-    .divide-line{
-      text-align: center;
-    }
-    .is-bordered{
-      margin-right: 7px;
-      margin-left: 0 !important;
-    }
-    .goods_price{
-      width: 50%;
-    }
-  }
+
 
 </style>

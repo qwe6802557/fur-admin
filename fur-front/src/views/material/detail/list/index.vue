@@ -2,7 +2,7 @@
     <div class="material-detail">
       <div class="form-content">
         <el-form :inline="true" :model="formInline" class="demo-form-inline" label-position="left">
-          <el-row :gutter="14">
+          <el-row :gutter="18">
             <el-col :span="4.5">
               <el-form-item label="类型">
                 <el-select v-model="formInline.select" placeholder="搜索条件" style="width: 150px;">
@@ -54,13 +54,19 @@
             <el-form-item>
               <el-button type="primary" @click="" icon="el-icon-search" @click="searchDetail">{{formInline.select !== 'other_conditions'?'搜索':''}}</el-button>
             </el-form-item>
-            <el-form-item>
-              <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteMany">{{formInline.select !== 'other_conditions'?'批量删除':''}}</el-button>
+            <el-form-item v-if="formInline.select !== 'other_conditions'">
+              <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteMany">批量删除</el-button>
             </el-form-item>
-            <el-form-item>
-              <el-button plain icon="el-icon-plus" @click="addDetail">{{formInline.select !== 'other_conditions'?'配件入库':''}}</el-button>
+            <el-form-item v-if="formInline.select !== 'other_conditions'">
+              <el-button plain icon="el-icon-plus" @click="addDetail">新配件入库</el-button>
             </el-form-item>
           </el-row>
+          <el-form-item v-if="formInline.select === 'other_conditions'">
+            <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteMany">批量删除</el-button>
+          </el-form-item>
+          <el-form-item v-if="formInline.select === 'other_conditions'">
+            <el-button plain icon="el-icon-plus" @click="addDetail">新配件入库</el-button>
+          </el-form-item>
         </el-form>
       </div>
       <div class="table-content">

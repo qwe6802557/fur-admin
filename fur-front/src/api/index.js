@@ -42,7 +42,7 @@ export const reqSearch=condition=>ajax(LOCALURL+'/goods/search',condition,'POST'
 //移除图片删除请求 需要token验证
 export const reqDeletePic=picture=>ajax(LOCALURL+'/upload/delete',picture,'POST',Memory.token);
 /**
- *配件管理区域
+ *配件列表区域
  */
 //获取配件一级列表 需要token验证
 export const reqCategory=page=>ajax(LOCALURL+'/category/list',page,'GET',Memory.token);
@@ -56,4 +56,19 @@ export const reqEditCategory=category=>ajax(LOCALURL+'/category/update',category
 export const reqDeleteCategory=id=>ajax(LOCALURL+'/category/delete/'+id,{},'POST',Memory.token);
 //模糊搜索配件 需要token验证
 export const reqSearchCategory=condition=>ajax(LOCALURL+'/category/search',condition,'GET',Memory.token);
+/**
+ * 配件子列表区域
+ */
+//子列表分页与搜索 需要token验证
+export const reqCategoryDetailQuery = pagination => ajax(LOCALURL+'/category/detail', pagination, 'GET', Memory.token);
+//子列表配件入库 需要token验证
+export const reqCategoryDetailAdd = formData => ajax(LOCALURL+'/category/detail/add', formData, 'POST', Memory.token);
+//子列表单个删除 需要token验证
+export const reqCategoryDetailDelete = id => ajax('/category/detail/delete/' + id, {}, 'POST', Memory.token);
+//子列表批量删除 需要token验证
+export const reqCategoryDetailDeleteMany = idArr => ajax('/category/detail/delete', {idArr}, 'POST', Memory.token);
+//子列表单个编辑获取信息 需要token验证
+export const reqCategoryDetailEditGet = id => ajax('/category/detail/edit/' + id, {}, 'GET', Memory.token);
+//子列表单个编辑完成 需要token验证
+export const reqCategoryDetailEditPost = formData => ajax('/category/detail/edit', formData, 'POST', Memory.token);
 
