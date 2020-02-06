@@ -51,7 +51,7 @@
       </span>
       <span slot="footer" class="dialog-footer">
     <el-button @click="cancel">取 消</el-button>
-    <el-button type="primary" @click="confirm">入库</el-button>
+    <el-button type="primary" @click="confirm" :loading="loading">入库</el-button>
   </span>
     </el-dialog>
   </div>
@@ -63,19 +63,19 @@
   import Memory from '@/untils/memoryUntil'
   export default {
     name: "DetailDialog",
-    props:['formVisible'/*,'flag','singleData'*/],
+    props:['formVisible'/*,'flag','singleData'*/,'loading', 'rowData'],
     data(){
       return {
         title:'新配件入库',
         token:Memory.token,
-        fileList: [{name: '默认图片.jpeg', url: 'http://127.0.0.1:7001/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}],
+        fileList: [{name: '默认图片.jpeg', url: '/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}],
         ruleForm:{
-          detail_name:'',
-          detail_info:'',
-          detail_price:'',
-          detail_image:'http://127.0.0.1:7001/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg',
-          detail_num:'',
-          detail_use:'',
+          detail_name:this.rowData.detail_name || '',
+          detail_info:this.rowData.detail_info || '',
+          detail_price:this.rowData.detail_price || '',
+          detail_image:this.rowData.detail_image || '/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg',
+          detail_num:this.rowData.detail_num || '',
+          detail_use:this.rowData.detail_use || '',
         },
         rules:{
           detail_name:[{
@@ -110,7 +110,7 @@
     methods:{
       //重置上传列表函数
       resetFileList(){
-        this.fileList=[{name: '默认图片.jpeg', url: 'http://127.0.0.1:7001/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}];
+        this.fileList=[{name: '默认图片.jpeg', url: '/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}];
         this.ruleForm.detail_image=this.fileList[0].url;
       },
       //取消按钮点击函数
@@ -122,6 +122,7 @@
       confirm(){
         this.$refs['ruleForm'].validate((boolean)=>{
           if (boolean===true){
+            this.$emit('dialogAdd', this.ruleForm);
             /*this.$emit('tableChange',this.ruleForm,this.resetFileList,this.resetFields,this.id);
             this.$emit('visibleChange');*/
           }else{

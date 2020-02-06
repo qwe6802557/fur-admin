@@ -144,12 +144,14 @@
           </el-pagination>
         </div>
       </div>
-      <DetailDialog :formVisible="formVisible" @visibleChange="visibleChange"/>
+      <DetailDialog :formVisible="formVisible" @visibleChange="visibleChange" @dialogAdd="dialogAdd" ref="DetailDialog" :loading="loading" :rowData="rowData"/>
     </div>
 </template>
 <script>
   import DetailDialog from '@/views/material/detail/dialog'
-    export default {
+  import { reqCategoryDetailAdd, reqCategoryDetailEditGet, reqCategoryDetailEditPost } from "@/api";
+  import { Message } from 'element-ui';
+  export default {
         name: "List",
         data(){
           return {
@@ -158,6 +160,7 @@
             total:0,
             tableData:[],
             loading:false,
+            rowData:{},
             formInline:{
               select:'id',
               values:'',
@@ -201,10 +204,38 @@
         },
         addDetail(){
           this.formVisible = true;
+          this.$nextTick(() => {
+            this.$refs.DetailDialog.resetFields();
+          })
         },
         //点击取消的回调
         visibleChange(){
           this.formVisible = false;
+        },
+        //弹框点击确定
+        dialogAdd(formData, confirmFlag){
+          this.loading = true;
+          if (!confirmFlag){
+            reqCategoryDetailAdd(formData).then(res => {
+              const { code, message } = res.data;
+              code === 0 && Message.success(message);
+              this.loading = false;
+              this.formVisible = false;
+            }).catch(err => {
+              Message.error(err);
+              this.loading = false;
+            })
+          }else {
+            reqCategoryDetailEditPost(formData).then(res => {
+              const { code, message } = res;
+              code === 0 && Message.success(message);
+              this.loading = false;
+              this.formVisible = false;
+            }).catch(err => {
+              Message.error(err);
+              this.loading = false;
+            });
+          }
         },
         deleteMany(){
 
@@ -218,8 +249,21 @@
         handleSelectionChange(){
 
         },
-        editCategory(){
-
+        editCategory(rowData){
+          reqCategoryDetailEditGet({
+            id:rowData.id,
+          }).then(res => {
+            const { code, message, data } = res.data;
+            if (code === 0){
+              Message.success(message);
+              this.formVisible = true;
+              this.$nextTick(() => {
+                this.rowData = data;
+              });
+            }
+          }).catch(err => {
+            Message.error(err);
+          })
         },
         deleteCategory(){
 

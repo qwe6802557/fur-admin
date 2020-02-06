@@ -40,3 +40,14 @@
 2020-02-06 00:05:00,266 INFO 7336 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app.js"
 2020-02-06 00:05:00,267 INFO 7336 [egg-watcher:agent] watcher start success
 2020-02-06 00:05:00,351 INFO 7336 [egg:core] dump config after ready, 8ms
+2020-02-07 00:22:00,011 INFO 16192 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-07 00:21:59,317 INFO 16192 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\logs\\fur-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"fur-admin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-02-07 00:21:59,880 INFO 16192 [egg:core] dump config after load, 9ms
+2020-02-07 00:21:59,933 INFO 16192 [egg-watcher] Start watching: ["C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks_proxy","C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app.js"]
+2020-02-07 00:21:59,933 INFO 16192 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app"
+2020-02-07 00:21:59,933 INFO 16192 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config"
+2020-02-07 00:21:59,933 INFO 16192 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks"
+2020-02-07 00:21:59,933 INFO 16192 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\mocks_proxy"
+2020-02-07 00:21:59,933 INFO 16192 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\app.js"
+2020-02-07 00:21:59,934 INFO 16192 [egg-watcher:agent] watcher start success
+2020-02-07 00:22:00,026 INFO 16192 [egg:core] dump config after ready, 11ms
