@@ -14,12 +14,11 @@
               <el-input v-model="ruleForm.detail_price" class="goods_price"></el-input><span>&nbsp;元</span>
           </el-form-item>
           <el-form-item label="配件数量" prop="detail_num">
-              <el-input-number v-model="ruleForm.detail_num" @change="handleChange" :min="0" :max="999" label="配件数量"></el-input-number>
+              <el-input-number v-model="ruleForm.detail_num" @change="handleChange" :min="1" :max="999" label="配件数量"></el-input-number>
           </el-form-item>
           <el-form-item label="配件用途" prop="detail_use">
               <el-select v-model="ruleForm.detail_use" placeholder="请选择配件用途" style="width: 180px;">
-                  <el-option label="可用" value="1"></el-option>
-                  <el-option label="不可用" value="0"></el-option>
+                  <el-option  v-for="item in detailUseArr" :label="item.use_name" :value="item.id" :key="item.id"></el-option>
               </el-select>
           </el-form-item>
             <el-form-item label="配件图片" prop="detail_image">
@@ -58,18 +57,19 @@
 </template>
 
 <script>
-  import {reqDeletePic} from "../../../../api";
+  import {reqDeletePic} from "@/api";
   import {Message} from 'element-ui';
   import Memory from '@/untils/memoryUntil'
   export default {
     name: "DetailDialog",
-    props:['formVisible'/*,'flag','singleData'*/,'loading', 'rowData'],
+    props:['formVisible'/*,'flag','singleData'*/,'loading', 'rowData', 'detailUseArr', 'category_id'],
     data(){
       return {
         title:'新配件入库',
         token:Memory.token,
         fileList: [{name: '默认图片.jpeg', url: '/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}],
         ruleForm:{
+          category_id: this.category_id || 0,
           detail_name:this.rowData.detail_name || '',
           detail_info:this.rowData.detail_info || '',
           detail_price:this.rowData.detail_price || '',

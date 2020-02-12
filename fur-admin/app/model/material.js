@@ -1,8 +1,9 @@
 'use strict';
 
 module.exports = app => {
-  const { STRING, INTEGER, ENUM,} = app.Sequelize;
-  const detail = app.model.define('category_detail', {
+  const { STRING, INTEGER, ENUM, BIGINT } = app.Sequelize;
+  const moment = require('moment');
+  const detail = app.model.define('materials', {
     id: {
       type: INTEGER,
       primaryKey: true,
@@ -33,7 +34,8 @@ module.exports = app => {
     detail_status: {
       type: ENUM([ '0', '1' ]),
       allowNull: true,
-      defaultValue: '0',
+      fields: 'detail_status',
+      defaultValue: '1',
     },
     detail_num: {
       type: INTEGER,
@@ -41,20 +43,23 @@ module.exports = app => {
       fields: 'detail_num',
       defaultValue: 0,
     },
-    detail_img: {
+    detail_image: {
       type: STRING,
       allowNull: false,
       fields: 'detail_img',
     },
     detail_use: {
-      type: STRING,
-      allowNull: false,
-      fileds: 'detail_use',
-    },
-    detail_time: {
       type: INTEGER,
+      allowNull: false,
+      fields: 'detail_use',
+    },
+    detail_time: { // 存入的时间戳
+      type: BIGINT,
       allowNull: true,
       defaultValue: Date.now,
+      get() {
+        return moment(this.getDataValue('detail_time')).format('YYYY-MM-DD HH:mm:ss');
+      },
     },
   }, {
     timestamps: false, // 自动维护时间戳 [ created_at、updated_at ]
@@ -63,7 +68,8 @@ module.exports = app => {
     underscored: true, // 注意需要加上这个， egg-sequelize只是简单的使用Object.assign对配置和默认配置做了merge, 如果不加这个 update_at会被转变成 updateAt故报错
   });
   detail.associate = function() {
-    app.model.CategoryDetail.belongsTo(app.model.Category, { foreignKey: 'category_id', targetKey: 'id' });
+    app.model.Material.belongsTo(app.model.Category, { foreignKey: 'category_id', targetKey: 'id' });
+    app.model.Material.belongsTo(app.model.MaterialUse, { foreignKey: 'detail_use', targetKey: 'id' });
   };
   return detail;
 };

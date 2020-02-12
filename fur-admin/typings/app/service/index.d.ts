@@ -5,6 +5,7 @@ import 'egg';
 import ExportCategory = require('../../../app/service/category');
 import ExportGoods = require('../../../app/service/goods');
 import ExportList = require('../../../app/service/list');
+import ExportMaterial = require('../../../app/service/material');
 import ExportOrders = require('../../../app/service/orders');
 import ExportUpload = require('../../../app/service/upload');
 import ExportUser = require('../../../app/service/user');
@@ -15,6 +16,7 @@ declare module 'egg' {
     category: ExportCategory;
     goods: ExportGoods;
     list: ExportList;
+    material: ExportMaterial;
     orders: ExportOrders;
     upload: ExportUpload;
     user: ExportUser;

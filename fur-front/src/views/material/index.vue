@@ -88,7 +88,7 @@
               >
                 <template slot-scope="scope">
                   <el-button type="primary" icon="el-icon-edit" size="mini" round @click="editCategory(scope.row)">编辑</el-button>
-                  <el-button type="primary"  size="mini" round @click="showFlag = !showFlag">查看子列表</el-button>
+                  <el-button type="primary"  size="mini" round @click="showDetail(scope.row.id)">查看子列表</el-button>
                   <el-button @click="" type="danger" icon="el-icon-delete" size="mini" round @click="deleteCategory(scope.row)">删除</el-button>
                 </template>
               </el-table-column>
@@ -108,7 +108,7 @@
           </div>
           <MaterialDialog ref="MaterialDialog" @tableChange="tableChange"></MaterialDialog>
         </div>
-        <DetailList v-if="showFlag" />
+        <DetailList v-if="showFlag" :category_id="category_id"/>
         </transition>
       </el-card>
     </div>
@@ -129,6 +129,7 @@
               select:'id',
               values:''
             },
+            category_id: 0,
             pagination:0, //用于判断分页改变的时候是搜索分页还是获取商品分页
             currentPage: 1,
             loading:false,
@@ -140,8 +141,9 @@
           }
         },
       methods:{
-        sendTest(){
-
+        showDetail(category_id){
+          this.category_id = category_id;
+          this.showFlag = ! this.showFlag;
         },
         //添加配件列表
         addList(){

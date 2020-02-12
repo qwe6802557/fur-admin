@@ -66,7 +66,7 @@ class CategoryService extends Service {
 
   async deleteCategory() {
     const { id } = this.ctx.params;
-    const result = await this.ctx.model.Category.destroy({
+    await this.ctx.model.Category.destroy({
       where: {
         id,
       },
@@ -79,7 +79,7 @@ class CategoryService extends Service {
     const offset = (currentPage - 1) * pageSize;
     const limit = parseInt(pageSize);
     let result;
-    if (select == 'id') {
+    if (select === 'id') {
       result = await this.ctx.model.Category.findAndCountAll({
         where: {
           id: {

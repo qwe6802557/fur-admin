@@ -14,4 +14,4 @@ export const valiateToken=(code,message,router)=>{
     Message.error(Message);
     return false;
   }
-}
+};

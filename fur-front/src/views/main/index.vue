@@ -22,9 +22,9 @@
           if (!memoryUntil.token){
             return;
           }
-          valiateToken().then(res=>{
-            const {code} = res.data;
-            if (code == 0){
+          valiateToken().then(res => {
+            const { code } = res.data;
+            if (code === 0){
               this.$router.push({name:'Admin'});
             }else {
               memoryUntil.token = '';

@@ -60,15 +60,17 @@ export const reqSearchCategory=condition=>ajax(LOCALURL+'/category/search',condi
  * 配件子列表区域
  */
 //子列表分页与搜索 需要token验证
-export const reqCategoryDetailQuery = pagination => ajax(LOCALURL+'/category/detail', pagination, 'GET', Memory.token);
+export const reqCategoryDetailQuery = pagination => ajax(LOCALURL+'/material/list', pagination, 'POST', Memory.token);
+//获取配件用途 需要token验证
+export const reqCategoryDetailUse = () => ajax(LOCALURL + '/material/getDetailUse', {}, 'GET', Memory.token);
 //子列表配件入库 需要token验证
-export const reqCategoryDetailAdd = formData => ajax(LOCALURL+'/category/detail/add', formData, 'POST', Memory.token);
+export const reqCategoryDetailAdd = formData => ajax(LOCALURL+'/material/add', formData, 'POST', Memory.token);
 //子列表单个删除 需要token验证
-export const reqCategoryDetailDelete = id => ajax('/category/detail/delete/' + id, {}, 'POST', Memory.token);
+export const reqCategoryDetailDelete = id => ajax('/material/delete/' + id, {}, 'POST', Memory.token);
 //子列表批量删除 需要token验证
-export const reqCategoryDetailDeleteMany = idArr => ajax('/category/detail/delete', {idArr}, 'POST', Memory.token);
+export const reqCategoryDetailDeleteMany = idArr => ajax('/material/delete', {idArr}, 'POST', Memory.token);
 //子列表单个编辑获取信息 需要token验证
-export const reqCategoryDetailEditGet = id => ajax('/category/detail/edit/' + id, {}, 'GET', Memory.token);
+export const reqCategoryDetailEditGet = id => ajax('/material/edit/' + id, {}, 'GET', Memory.token);
 //子列表单个编辑完成 需要token验证
-export const reqCategoryDetailEditPost = formData => ajax('/category/detail/edit', formData, 'POST', Memory.token);
+export const reqCategoryDetailEditPost = formData => ajax('/material/edit', formData, 'POST', Memory.token);
 

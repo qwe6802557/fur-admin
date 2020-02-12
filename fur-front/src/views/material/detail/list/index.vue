@@ -32,8 +32,7 @@
             <el-col :span="4.5">
               <el-form-item v-if="formInline.select === 'other_conditions'" label="配件用途">
                 <el-select v-model="formInline.detail_use" placeholder="请选择配件用途" style="width: 180px;">
-                  <el-option label="可用" value="1"></el-option>
-                  <el-option label="不可用" value="0"></el-option>
+                  <el-option v-for="item in detailUseArr" :label="item.use_name" :value="item.id" :key="item.id"></el-option>
                 </el-select>
               </el-form-item>
             </el-col>
@@ -41,7 +40,7 @@
               <el-form-item v-if="formInline.select === 'other_conditions'" label="入库时间">
                 <!--<el-input v-model="formInline.detail_time" placeholder="请选择入库时间"></el-input>-->
                 <el-date-picker
-                  v-model="formInline.detail_time"
+                  v-model="detail_time"
                   type="datetimerange"
                   :picker-options="pickerOptions"
                   range-separator="-"
@@ -52,17 +51,17 @@
               </el-form-item>
             </el-col>
             <el-form-item>
-              <el-button type="primary" @click="" icon="el-icon-search" @click="searchDetail">{{formInline.select !== 'other_conditions'?'搜索':''}}</el-button>
+              <el-button type="primary" @click="" icon="el-icon-search" @click="searchDetail" :loading="loading">{{formInline.select !== 'other_conditions'?'搜索':''}}</el-button>
             </el-form-item>
             <el-form-item v-if="formInline.select !== 'other_conditions'">
-              <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteMany">批量删除</el-button>
+              <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteDetailMany">批量删除</el-button>
             </el-form-item>
             <el-form-item v-if="formInline.select !== 'other_conditions'">
               <el-button plain icon="el-icon-plus" @click="addDetail">新配件入库</el-button>
             </el-form-item>
           </el-row>
           <el-form-item v-if="formInline.select === 'other_conditions'">
-            <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteMany">批量删除</el-button>
+            <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteDetailMany">批量删除</el-button>
           </el-form-item>
           <el-form-item v-if="formInline.select === 'other_conditions'">
             <el-button plain icon="el-icon-plus" @click="addDetail">新配件入库</el-button>
@@ -77,7 +76,6 @@
           max-height="605"
           stripe
           border
-          v-loading="loading"
           @selection-change="handleSelectionChange">
           <el-table-column
             type="selection"
@@ -92,28 +90,41 @@
             width="200">
           </el-table-column>
           <el-table-column
-            prop="category_name"
+            prop="detail_name"
             label="配件名称"
             align="center"
             width="300"
           >
           </el-table-column>
           <el-table-column
-            prop="category_info"
+            prop="detail_status"
             label="配件状态"
             align="center"
           >
+            <template slot-scope="scope">
+              <span :style="scope.row.detail_status === '0'? {color:'red'} : {color:'green'}">{{scope.row.detail_status === '0' ? '不可用' : '可用' }}</span>
+            </template>
           </el-table-column>
           <el-table-column
-            prop="category_num"
+            prop="detail_num"
             label="配件库存(个)"
             align="center"
             width="200"
           >
           </el-table-column>
           <el-table-column
-            prop="category_children_num"
+            prop="detail_use"
             label="配件用途"
+            align="center"
+            width="200"
+          >
+            <template slot-scope="scope">
+              {{scope.row['material_use.use_name']}}  <!--elementUI的对象显示方法-->
+            </template>
+          </el-table-column>
+          <el-table-column
+            prop="detail_time"
+            label="入库时间"
             align="center"
             width="200"
           >
@@ -125,9 +136,9 @@
             width="400"
           >
             <template slot-scope="scope">
-              <el-button type="primary" icon="el-icon-edit" size="mini" round @click="editCategory(scope.row)">编辑</el-button>
-              <el-button type="primary"  size="mini" round @click="showFlag = !showFlag">查看子列表</el-button>
-              <el-button @click="" type="danger" icon="el-icon-delete" size="mini" round @click="deleteCategory(scope.row)">删除</el-button>
+              <el-button type="primary" icon="el-icon-edit" size="mini" round @click="editDetail(scope.row)">编辑</el-button>
+              <el-button type="primary"  size="mini" round @click="showFlag = !showFlag">查看详情</el-button>
+              <el-button type="danger" icon="el-icon-delete" size="mini" round @click="deleteDetail(scope.row)">删除</el-button>
             </template>
           </el-table-column>
         </el-table>
@@ -136,38 +147,53 @@
             background
             @size-change="handleSizeChange"
             @current-change="handleCurrentChange"
-            :current-page="currentPage"
+            :current-page="pagination.currentPage"
             :page-sizes="[10, 20, 30]"
-            :page-size="100"
+            :page-size="pagination.pageSize"
             layout="total, sizes, prev, pager, next, jumper"
-            :total="total">
+            :total="pagination.total">
           </el-pagination>
         </div>
       </div>
-      <DetailDialog :formVisible="formVisible" @visibleChange="visibleChange" @dialogAdd="dialogAdd" ref="DetailDialog" :loading="loading" :rowData="rowData"/>
+      <DetailDialog :formVisible="formVisible" @visibleChange="visibleChange" @dialogAdd="dialogAdd" ref="DetailDialog" :loading="loading_confirm" :rowData="rowData" :detailUseArr="detailUseArr" :category_id="category_id"/>
     </div>
 </template>
 <script>
-  import DetailDialog from '@/views/material/detail/dialog'
-  import { reqCategoryDetailAdd, reqCategoryDetailEditGet, reqCategoryDetailEditPost } from "@/api";
-  import { Message } from 'element-ui';
+  import DetailDialog from '@/views/material/detail/dialog';
+  import { reqCategoryDetailAdd, reqCategoryDetailEditGet,
+    reqCategoryDetailEditPost, reqCategoryDetailQuery,
+    reqCategoryDetailDelete, reqCategoryDetailDeleteMany,
+    reqCategoryDetailUse, } from "@/api";
+  import { Message, MessageBox } from 'element-ui';
+  import Moment from 'moment';
   export default {
         name: "List",
+        props:['category_id'],
         data(){
           return {
             formVisible:false,
             currentPage:1,
-            total:0,
             tableData:[],
             loading:false,
+            loading_confirm:false,
             rowData:{},
+            formData:{}, //记录每次搜索的表单数据
+            checkedArr:[],
+            detailUseArr:[],
+            detail_time: null,
             formInline:{
               select:'id',
               values:'',
               detail_name:'',
               detail_use:'',
               detail_status:'',
-              detail_time:'',
+              detail_start_time:'',
+              detail_end_time:'',
+            },
+            pagination:{
+              currentPage:1,
+              pageSize:10,
+              total:0,
             },
             pickerOptions: {
               shortcuts: [{
@@ -200,17 +226,38 @@
         },
       methods:{
         searchDetail(){
-
+          this.loading = true;
+          this.getCategoryDetail(this.formInline);
         },
         addDetail(){
           this.formVisible = true;
           this.$nextTick(() => {
             this.$refs.DetailDialog.resetFields();
-          })
+          });
         },
         //点击取消的回调
         visibleChange(){
           this.formVisible = false;
+        },
+        //分页搜索
+        getCategoryDetail(data = {},showMessage){
+          let { currentPage, pageSize } = this.pagination;
+          data.category_id = this.category_id;
+          reqCategoryDetailQuery({
+            currentPage,
+            pageSize,
+            data:data,
+          }).then(res => {
+            const { code, message, data,  } = res.data;
+            if (code === 0 ){
+              !!data && !!showMessage && Message.success(message);
+              this.tableData = data.rows;
+              this.pagination.total = data.count;
+            }else {
+              Message.warning(message);
+            }
+            this.loading = false;
+          });
         },
         //弹框点击确定
         dialogAdd(formData, confirmFlag){
@@ -218,9 +265,14 @@
           if (!confirmFlag){
             reqCategoryDetailAdd(formData).then(res => {
               const { code, message } = res.data;
-              code === 0 && Message.success(message);
-              this.loading = false;
-              this.formVisible = false;
+              if (code === 0){
+                Message.success(message);
+                this.loading = false;
+                this.formVisible = false;
+                this.getCategoryDetail();
+              } else {
+                Message.warning(message);
+              }
             }).catch(err => {
               Message.error(err);
               this.loading = false;
@@ -237,19 +289,33 @@
             });
           }
         },
-        deleteMany(){
-
+        //批量删除
+        deleteDetailMany(){
+          MessageBox.confirm('确定删除配件'+ this.checkedArr.map((item) => item.detail_name ).join(',') +'吗？','批量删除提示',{
+            confirmButtonText:'确定',
+            cancelButtonText: '取消',
+            type: 'warning',
+          }).then(res =>{
+            reqCategoryDetailDeleteMany({
+              idArr:this.checkedArr.map((item) => item.id),
+            }).then(res => {
+              const { code, message } = res.data;
+              code === 0 && Message.success(message) && this.getCategoryDetail(this.formData) || Message.warning(message);
+            });
+          }).catch(err => {});
         },
-        handleSizeChange(){
-
+        handleSizeChange(pageSize){
+          this.pagination.pageSize = pageSize;
+          this.getCategoryDetail();
         },
-        handleCurrentChange(){
-
+        handleCurrentChange(currentPage){
+          this.pagination.currentPage = currentPage;
+          this.getCategoryDetail();
         },
-        handleSelectionChange(){
-
+        handleSelectionChange(checkedArr){
+          this.checkedArr = checkedArr;
         },
-        editCategory(rowData){
+        editDetail(rowData){
           reqCategoryDetailEditGet({
             id:rowData.id,
           }).then(res => {
@@ -265,13 +331,42 @@
             Message.error(err);
           })
         },
-        deleteCategory(){
-
+        deleteDetail(rowData){
+          MessageBox.confirm('确定删除配件'+ rowData.detail_name +'吗？','删除提示',{
+            confirmButtonText:'确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          }).then(res => {
+            reqCategoryDetailDelete(rowData.id).then(res => {
+              const { code, message, } = res.data;
+              code === 0 && Message.success(message) && this.getCategoryDetail(this.formData) || Message.warning(message);
+            });
+          }).catch(err => {});
         },
       },
       components:{
           DetailDialog,
-      }
+      },
+      mounted() {
+         reqCategoryDetailUse().then(res => {
+           const { code, message, data } = res.data;
+           code === 0 ? this.detailUseArr = data : Message.error(message);
+         }).catch(err => {
+           Message.error(err);
+         });
+         this.getCategoryDetail();
+      },
+      watch:{
+          detail_time(val){ //单独监听某个对象里的属性
+            if (val){
+              this.formInline.detail_start_time = Moment(val[0]).format('YYYY-MM-DD HH:mm:ss');
+              this.formInline.detail_end_time = Moment(val[1]).format('YYYY-MM-DD HH:mm:ss');
+            }else if (!val && this.formInline.detail_start_time && this.formInline.detail_end_time){
+              this.formInline.detail_start_time = '';
+              this.formInline.detail_end_time = '';
+            }
+          }
+        },
     }
 </script>
 

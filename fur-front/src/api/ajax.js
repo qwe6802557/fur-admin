@@ -7,7 +7,7 @@ import Vue from 'vue'
 
 const vue=new Vue({
   router
-})
+});
 export default function ajax(url,data=null,method="GET",token){
   return new Promise((resolve,reject)=>{
     let promise=0;

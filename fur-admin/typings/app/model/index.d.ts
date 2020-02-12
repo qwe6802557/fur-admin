@@ -2,11 +2,12 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
-import ExportCategoryDetail = require('../../../app/model/category-detail');
 import ExportCategory = require('../../../app/model/category');
 import ExportFriendList = require('../../../app/model/friend-list');
 import ExportGoods = require('../../../app/model/goods');
 import ExportList = require('../../../app/model/list');
+import ExportMaterialUse = require('../../../app/model/material-use');
+import ExportMaterial = require('../../../app/model/material');
 import ExportMessageAdd = require('../../../app/model/message-add');
 import ExportMessageNotification = require('../../../app/model/message-notification');
 import ExportMessage = require('../../../app/model/message');
@@ -25,11 +26,12 @@ import ExportWoodStandard = require('../../../app/model/wood-standard');
 
 declare module 'egg' {
   interface IModel {
-    CategoryDetail: ReturnType<typeof ExportCategoryDetail>;
     Category: ReturnType<typeof ExportCategory>;
     FriendList: ReturnType<typeof ExportFriendList>;
     Goods: ReturnType<typeof ExportGoods>;
     List: ReturnType<typeof ExportList>;
+    MaterialUse: ReturnType<typeof ExportMaterialUse>;
+    Material: ReturnType<typeof ExportMaterial>;
     MessageAdd: ReturnType<typeof ExportMessageAdd>;
     MessageNotification: ReturnType<typeof ExportMessageNotification>;
     Message: ReturnType<typeof ExportMessage>;
