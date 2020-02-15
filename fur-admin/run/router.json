@@ -335,6 +335,40 @@
       "HEAD",
       "GET"
     ],
+    "paramNames": [
+      {
+        "name": "category_id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      },
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/material/edit/:category_id/:id",
+    "regexp": "/^\\/material\\/edit\\/((?:[^\\/]+?))\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
     "paramNames": [],
     "path": "/material/getDetailUse",
     "regexp": "/^\\/material\\/getDetailUse(?:\\/(?=$))?$/",
@@ -362,6 +396,18 @@
     "paramNames": [],
     "path": "/material/add",
     "regexp": "/^\\/material\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/material/edit",
+    "regexp": "/^\\/material\\/edit(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

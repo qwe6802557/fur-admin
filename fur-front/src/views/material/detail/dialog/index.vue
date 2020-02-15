@@ -14,7 +14,7 @@
               <el-input v-model="ruleForm.detail_price" class="goods_price"></el-input><span>&nbsp;元</span>
           </el-form-item>
           <el-form-item label="配件数量" prop="detail_num">
-              <el-input-number v-model="ruleForm.detail_num" @change="handleChange" :min="1" :max="999" label="配件数量"></el-input-number>
+              <el-input-number v-model="ruleForm.detail_num" @change="handleChange" :min="0" :max="999" label="配件数量"></el-input-number>
           </el-form-item>
           <el-form-item label="配件用途" prop="detail_use">
               <el-select v-model="ruleForm.detail_use" placeholder="请选择配件用途" style="width: 180px;">
@@ -70,12 +70,12 @@
         fileList: [{name: '默认图片.jpeg', url: '/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg'}],
         ruleForm:{
           category_id: this.category_id || 0,
-          detail_name:this.rowData.detail_name || '',
-          detail_info:this.rowData.detail_info || '',
-          detail_price:this.rowData.detail_price || '',
-          detail_image:this.rowData.detail_image || '/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg',
-          detail_num:this.rowData.detail_num || '',
-          detail_use:this.rowData.detail_use || '',
+          detail_name:'',
+          detail_info:'',
+          detail_price:'',
+          detail_image:'/public/uploads/a0b762859636f4ae43b694d4edf10b2e.jpg',
+          detail_num: '',
+          detail_use:'',
         },
         rules:{
           detail_name:[{
@@ -121,10 +121,9 @@
       //确定按钮点击函数
       confirm(){
         this.$refs['ruleForm'].validate((boolean)=>{
-          if (boolean===true){
-            this.$emit('dialogAdd', this.ruleForm);
-            /*this.$emit('tableChange',this.ruleForm,this.resetFileList,this.resetFields,this.id);
-            this.$emit('visibleChange');*/
+          if (boolean === true){
+            !!this.ruleForm.id && this.$emit('dialogAdd', this.ruleForm, true)
+            || this.$emit('dialogAdd', this.ruleForm);
           }else{
             Message.error('请您输入正确的信息！');
           }
@@ -157,13 +156,14 @@
       //重置表单数据函数
       resetFields(){
         this.$refs.ruleForm.resetFields();
+        !!this.ruleForm.id && delete this.ruleForm.id;
       }
     },
     watch:{
-      //检测单个编辑数据变化
+      /*//检测单个编辑数据变化
       singleData:{
         handler(val){
-          let newForm={}
+          let newForm={};
           for(let item in val){
             if (item!=='id'){
               newForm[item]=val[item];
@@ -173,11 +173,16 @@
           this.ruleForm=newForm;
           this.fileList=[{name: newForm.detail_name+newForm.detail_image.substring(newForm.detail_image.lastIndexOf('.')), url: newForm.detail_image}];
         }
+      },*/
+      rowData(val){
+        delete val.detail_time;
+        delete val['material_use.id'];
+        delete val['material_use.use_name'];
+        this.ruleForm = val;
       },
-
       //检测点击添加或编辑变化
       flag(val){
-        if (val===0){
+        if (val === 0){
           this.title='添加产品';
           this.id='';
           return;
@@ -188,7 +193,7 @@
     mounted(){
       document.querySelector('.el-dialog__close').addEventListener('click',()=>{
         this.cancel();
-      })
+      });
     }
   }
 </script>

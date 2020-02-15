@@ -12,15 +12,28 @@ class MaterialService extends Service {
     let searchCondition = {};
     let result = [];
     if (select === 'id') {
-      result = await this.ctx.model.Material.findAndCountAll({
-        where: {
-          id: values,
-          category_id,
-        },
-        offset,
-        limit,
-        raw: true,
-      });
+      if (values) {
+        result = await this.ctx.model.Material.findAndCountAll({
+          where: {
+            id: values,
+            category_id,
+          },
+          offset,
+          limit,
+          raw: true,
+          include: this.ctx.model.MaterialUse,
+        });
+      } else {
+        result = await this.ctx.model.Material.findAndCountAll({
+          where: {
+            category_id,
+          },
+          offset,
+          limit,
+          raw: true,
+          include: this.ctx.model.MaterialUse,
+        });
+      }
     } else {
       if (detail_start_time && !detail_end_time) {
         detail_start_time = new Date(detail_start_time).getTime();
@@ -57,19 +70,20 @@ class MaterialService extends Service {
         }
       }
       searchCondition.category_id = category_id;
-      console.log(searchCondition);
       result = await this.ctx.model.Material.findAndCountAll({
         where: searchCondition,
-        include: this.ctx.model.MaterialUse,
         offset,
         limit,
         raw: true,
+        include: this.ctx.model.MaterialUse,
       });
     }
     result.rows.map(item => {
       item.detail_time = moment(item.detail_time).format('YYYY-MM-DD HH:mm:ss');
       if (item.detail_num === 0) {
         item.detail_status = '0';
+      } else {
+        item.detail_status = '1';
       }
       return item;
     });
@@ -96,6 +110,30 @@ class MaterialService extends Service {
     }
     await this.ctx.model.Material.create(this.ctx.request.body, {
       raw: true,
+    });
+    return true;
+  }
+  async editMaterialGet() {
+    const { category_id, id } = this.ctx.params;
+    const result = await this.ctx.model.Material.findOne({
+      where: {
+        category_id,
+        id,
+      },
+      include: this.ctx.model.MaterialUse,
+      raw: true,
+    });
+    return result;
+  }
+  async editMaterialPost() {
+    const { category_id, id, ...other } = this.ctx.request.body;
+    await this.ctx.model.Material.update({
+      ...other,
+    }, {
+      where: {
+        category_id,
+        id,
+      },
     });
     return true;
   }

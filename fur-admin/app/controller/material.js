@@ -55,5 +55,37 @@ class MaterialController extends Controller {
       };
     }
   }
+  async editMaterialGet() {
+    const { ctx } = this;
+    try {
+      const result = await this.service.material.editMaterialGet();
+      ctx.body = {
+        code: 0,
+        message: '查询配件成功!',
+        data: result,
+      };
+    } catch (e) {
+      ctx.body = {
+        code: 5,
+        message: '查询失败!',
+      };
+    }
+  }
+  async editMaterialPost() {
+    const { ctx } = this;
+    try {
+      await this.service.material.editMaterialPost();
+      ctx.body = {
+        code: 0,
+        message: '更新配件成功',
+      };
+    } catch (e) {
+      ctx.body = {
+        code: 5,
+        message: '更新配件失败！',
+      };
+      throw e;
+    }
+  }
 }
 module.exports = MaterialController;

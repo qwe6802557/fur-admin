@@ -51,7 +51,7 @@
               </el-form-item>
             </el-col>
             <el-form-item>
-              <el-button type="primary" @click="" icon="el-icon-search" @click="searchDetail" :loading="loading">{{formInline.select !== 'other_conditions'?'搜索':''}}</el-button>
+              <el-button type="primary" icon="el-icon-search" @click="searchDetail" :loading="loading">{{formInline.select !== 'other_conditions'?'搜索':''}}</el-button>
             </el-form-item>
             <el-form-item v-if="formInline.select !== 'other_conditions'">
               <el-button class="el-button--danger" icon="el-icon-delete" @click="deleteDetailMany">批量删除</el-button>
@@ -73,7 +73,7 @@
           ref="multipleTable"
           :data="tableData"
           width="100%"
-          max-height="605"
+          max-height="583"
           stripe
           border
           @selection-change="handleSelectionChange">
@@ -87,7 +87,7 @@
             prop="id"
             label="配件编号"
             align="center"
-            width="200">
+            width="100">
           </el-table-column>
           <el-table-column
             prop="detail_name"
@@ -100,27 +100,36 @@
             prop="detail_status"
             label="配件状态"
             align="center"
+            width="150"
           >
             <template slot-scope="scope">
               <span :style="scope.row.detail_status === '0'? {color:'red'} : {color:'green'}">{{scope.row.detail_status === '0' ? '不可用' : '可用' }}</span>
             </template>
           </el-table-column>
           <el-table-column
-            prop="detail_num"
-            label="配件库存(个)"
-            align="center"
-            width="200"
-          >
-          </el-table-column>
-          <el-table-column
             prop="detail_use"
             label="配件用途"
             align="center"
-            width="200"
           >
             <template slot-scope="scope">
               {{scope.row['material_use.use_name']}}  <!--elementUI的对象显示方法-->
             </template>
+          </el-table-column>
+          <el-table-column
+            prop="detail_price"
+            label="配件价格(元)"
+            align="center"
+          >
+            <template slot-scope="scope">
+              <span>{{scope.row.detail_price | moneyFormat}}</span>
+            </template>
+          </el-table-column>
+          <el-table-column
+            prop="detail_num"
+            label="配件库存(个)"
+            align="center"
+            width="150"
+          >
           </el-table-column>
           <el-table-column
             prop="detail_time"
@@ -165,6 +174,7 @@
     reqCategoryDetailDelete, reqCategoryDetailDeleteMany,
     reqCategoryDetailUse, } from "@/api";
   import { Message, MessageBox } from 'element-ui';
+  import {moneyFormat} from "@/filters/index.js"
   import Moment from 'moment';
   export default {
         name: "List",
@@ -269,7 +279,7 @@
                 Message.success(message);
                 this.loading = false;
                 this.formVisible = false;
-                this.getCategoryDetail();
+                this.getCategoryDetail(this.formInline);
               } else {
                 Message.warning(message);
               }
@@ -279,10 +289,16 @@
             })
           }else {
             reqCategoryDetailEditPost(formData).then(res => {
-              const { code, message } = res;
-              code === 0 && Message.success(message);
-              this.loading = false;
-              this.formVisible = false;
+              const { code, message } = res.data;
+              if ( code === 0){
+                Message.success(message);
+                this.loading = false;
+                this.formVisible = false;
+                this.getCategoryDetail(this.formInline);
+              }else {
+                this.loading = false;
+                message.error(message);
+              }
             }).catch(err => {
               Message.error(err);
               this.loading = false;
@@ -316,16 +332,15 @@
           this.checkedArr = checkedArr;
         },
         editDetail(rowData){
-          reqCategoryDetailEditGet({
-            id:rowData.id,
-          }).then(res => {
+          reqCategoryDetailEditGet(this.category_id, rowData.id).then(res => {
             const { code, message, data } = res.data;
             if (code === 0){
-              Message.success(message);
               this.formVisible = true;
               this.$nextTick(() => {
                 this.rowData = data;
               });
+            } else {
+              Message.error(message);
             }
           }).catch(err => {
             Message.error(err);
@@ -344,6 +359,11 @@
           }).catch(err => {});
         },
       },
+      filters:{
+        moneyFormat(money){
+          return moneyFormat(money);
+        }
+      },
       components:{
           DetailDialog,
       },
@@ -357,7 +377,7 @@
          this.getCategoryDetail();
       },
       watch:{
-          detail_time(val){ //单独监听某个对象里的属性
+          detail_time(val){
             if (val){
               this.formInline.detail_start_time = Moment(val[0]).format('YYYY-MM-DD HH:mm:ss');
               this.formInline.detail_end_time = Moment(val[1]).format('YYYY-MM-DD HH:mm:ss');
@@ -371,4 +391,7 @@
 </script>
 
 <style scoped lang="less">
+  /deep/ .pagination{
+    margin:20px 0px;
+  }
 </style>
