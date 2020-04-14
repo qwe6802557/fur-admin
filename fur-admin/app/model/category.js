@@ -39,8 +39,8 @@ module.exports = app => {
     underscored: true, // 注意需要加上这个， egg-sequelize只是简单的使用Object.assign对配置和默认配置做了merge, 如果不加这个 update_at会被转变成 updateAt故报错
   });
   Category.associate = function() {
-    app.model.Category.hasOne(app.model.List, { foreignKey: 'category_id' });
     app.model.Category.hasMany(app.model.Material, { foreignKey: 'category_id' });
+    app.model.Category.hasMany(app.model.PackageMaterial, { foreignKey: 'category_id' });
   };
   return Category;
 };

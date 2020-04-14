@@ -1,6 +1,6 @@
 'use strict';
 /**
- * 状态表--配件
+ * 状态表--生产过程
  * @param app
  * @return {*|sequelize.Model<any, any, TAttributes>|void}
  */
@@ -24,7 +24,8 @@ module.exports = app => {
     // 但是为了安全着想，复数的转换可能会发生变化，所以禁止该行为
   });
   materialUse.associate = function() {
-    app.model.MaterialUse.hasMany(app.model.Material, { foreignKey: 'detail_use' });
+    app.model.MaterialUse.hasMany(app.model.Package, { foreignKey: 'package_use' });
+    app.model.MaterialUse.hasMany(app.model.Machine, { foreignKey: 'machine_type' });
   };
   return materialUse;
 };

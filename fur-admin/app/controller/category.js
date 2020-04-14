@@ -19,6 +19,26 @@ class CategoryController extends Controller {
       };
     }
   }
+
+  async getAllCategory() {
+    const { ctx } = this;
+
+    try {
+      const result = await this.service.category.getAllCategory();
+      ctx.body = {
+        code: 0,
+        message: '查询成功！',
+        data: result,
+      };
+    } catch (e) {
+      ctx.body = {
+        code: 5,
+        message: '查询失败!',
+      };
+      throw e;
+    }
+  }
+
   async addCategory() {
     const { ctx } = this;
     try {
@@ -71,16 +91,17 @@ class CategoryController extends Controller {
 
   async deleteCategory() {
     const { ctx } = this;
-    try {
-      await this.service.category.deleteCategory();
+    const result = await this.service.category.deleteCategory();
+
+    if (result) {
       ctx.body = {
         code: 0,
         message: '删除成功！',
       };
-    } catch (e) {
+    } else {
       ctx.body = {
         code: 5,
-        message: e,
+        message: '删除失败!',
       };
     }
   }
@@ -96,7 +117,7 @@ class CategoryController extends Controller {
     } catch (e) {
       ctx.body = {
         code: 5,
-        message: e,
+        message: '查询失败！',
       };
     }
   }

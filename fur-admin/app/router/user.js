@@ -11,4 +11,5 @@ module.exports = app => {
   router.post('/user/reset', controller.user.resetPass);
   router.post('/user/login_out', controller.user.loginOut);
   router.get('/user/main_message', controller.user.getMainMessage);
+  router.get('/user/getApproveId', controller.user.getApproveId);
 };

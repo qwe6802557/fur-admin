@@ -6,7 +6,7 @@
         <LeftBar></LeftBar>
       </div>
       <div class="admin-content">
-        <router-view></router-view>
+        <router-view/>
       </div>
     </div>
    <div class="contact-dialog">
@@ -23,22 +23,22 @@
 </template>
 
 <script>
-    import Header from '@/components/head/Header'
-    import LeftBar from '@/components/left-bar/Left-bar'
-    import memoryUntil from '@/untils/memoryUntil';
+    import Header from '@/components/head/Header';
+    import LeftBar from '@/components/left-bar/Left-bar';
     import storeUntil from '@/untils/storeUntil';
-    import { reqMainMessage } from "../../api";
+    import { mapMutations } from 'vuex';
+    import Store from '@/vuex/store';
+    import { reqMainMessage } from "@/api/login";
     import Vue from "vue";
     import VueSocketIO from "vue-socket.io";
     import { Message } from 'element-ui'
-
     Vue.use(
       new VueSocketIO({
         debug: true,
         connection: `http://127.0.0.1:7001`,
         options:{
           autoConnect:false,
-          query:`token=Bear ${memoryUntil.token}`
+          query:`token=Bear ${Store.state.token}`
         }
       }));
     export default {
@@ -60,13 +60,13 @@
           $('.contact-dialog').css('display','none');
         },
         getUserMes(val){
-          this.userMes=val;
-        }
+          this.userMes = val;
+        },
+        ...mapMutations(['changeToken'])
       },
       mounted(){
-          document.querySelector('.admin-side').style.height=document.documentElement.clientHeight-74+'px';
-          const token = memoryUntil.token;
-          this.$socket.io.opts.query = `token=Bear ${token}`;
+          document.querySelector('.admin-side').style.height = document.documentElement.clientHeight-74+'px';
+          this.$socket.io.opts.query = `token=Bear ${Store.state.token}`;
           this.$socket.connect();
           /*this.$socket.disconnected === true && this.$socket.connect();*/
       },
@@ -80,21 +80,21 @@
       sockets:{
         customEmit:function (val) {
           const { code, message } = val;
-          if (!code || code == 0){
+          if (!code || code === 0){
             return false;
           }
-          Message.error(message);
-          memoryUntil.token=null;
+          this.$message.destroy() && this.$message.error(message);
+          this.changeToken('');
           storeUntil.delToken();
           this.$router.push({name:'Main'});
         },
         handelEvent(val){
           const { code, message } = val;
-          if (!code || code == 0){
+          if (!code || code === 0){
             return false;
           }
-          Message.error(message);
-          memoryUntil.token=null;
+          this.$message.destroy() && this.$message.error(message);
+          this.changeToken('');
           storeUntil.delToken();
           this.$router.push({name:'Main'});
         },
@@ -108,8 +108,8 @@
           reqMainMessage().then(res => {
             const { code, message, data } = res.data;
             code === 0? this.value = data.length : Message.error(message);
-          }).catch(err => {
-            Message.error(err);
+          }).catch( () => {
+            this.$message.destroy() && this.$message.error('请求异常');
           });
         },
         disconnect(val){
@@ -145,7 +145,7 @@
     }
     .admin-content{
       flex: 1;
-      background: #eeeeee;
+      background: #F4F6F9;
       padding: 15px 15px;
     }
   }

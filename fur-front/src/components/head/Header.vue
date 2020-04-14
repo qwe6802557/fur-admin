@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <h1>
-      <span>LOGO</span>
+      <img :src="require('@/public/images/LOGO.png')" alt="商标" style="width: 150px; height: 50px;margin-left: 20px;">
     </h1>
     <el-popover
       placement="bottom"
@@ -36,7 +36,7 @@
           <template slot="title">
             <span class="header-myself"><el-avatar :size="40" :src="circleUrl" class="avatar"></el-avatar>{{this.userMes.username}}</span>
             </template>
-          <el-menu-item index="2-1">个人资料</el-menu-item>
+          <!--<el-menu-item index="2-1">个人资料</el-menu-item>-->
           <el-menu-item index="2-2" @click="toContact">在线交流</el-menu-item>
           <el-menu-item index="2-3" @click="loginOut">退出系统</el-menu-item>
         </el-submenu>
@@ -45,13 +45,13 @@
 
 </template>
 <script>
-  import {reqLoginMes} from "../../api";
+  import {reqLoginMes} from "@/api/login";
   import {Message} from 'element-ui'
-  import memoryUntil from '@/untils/memoryUntil';
   import storeUntil from '@/untils/storeUntil';
-  import { MessageBox, Popover } from 'element-ui';
+  import { mapMutations } from 'vuex';
+  import { MessageBox } from 'element-ui';
   import LinkButton from '@/components/link-button/link-button';
-  import { reqLoginOut, reqMainMessage } from "../../api";
+  import { reqLoginOut, reqMainMessage } from "@/api/login";
 
   export default {
         name: "Header",
@@ -80,8 +80,9 @@
         getUserMes(){
           return reqLoginMes().then(res=>{
             const {code,data,message}=res.data;
-              if (code===0){
-                this.userMes=data.data;
+              if (code === 0){
+                this.userMes = data.data;
+                this.changeUserInfo(data.data);
                 this.$emit('getUserMes',this.userMes);
                 return true;
               }else {
@@ -101,16 +102,17 @@
           }).then(() => {
             reqLoginOut().then(res=>{
               const {code, message} = res.data;
-              if (code == 0){
-                memoryUntil.token = null;
+              if (code === 0){
+                this.changeToken('');
                 storeUntil.delToken();
-                Message.success(message);
+                this.$notification.open({
+                  message: '登出提示',
+                  description: '退出成功! 如果需要继续操作请您重新登录!'
+                });
                 this.$router.push({name:'Main'});
               }else{
-                Message.error(message);
+                this.$message.error(message);
               }
-            }).catch(err=>{
-              Message.error(err);
             })
           }).catch(err => {});
         },
@@ -123,6 +125,7 @@
             Message.error(err);
           })
         },
+        ...mapMutations(['changeToken', 'changeUserInfo'])
       },
     components:{
       LinkButton

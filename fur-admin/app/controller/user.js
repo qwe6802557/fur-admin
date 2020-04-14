@@ -13,7 +13,7 @@ class UserController extends Controller {
     if (code === 0) {
       const token = this.app.jwt.sign({
         data: result.data,
-      }, this.app.config.jwt.secret, { expiresIn: '0.5h' });
+      }, this.app.config.jwt.secret, { expiresIn: '1h' });
       ctx.body = {
         code,
         message: res + '欢迎您！' + result.data.username,
@@ -51,6 +51,28 @@ class UserController extends Controller {
   // 通过token获取用户信息
   async getUserInfo() {
     const { ctx } = this;
+
+    const result_staff = await this.ctx.model.Staff.findOne({
+      where: {
+        staff_username: ctx.payload.data.username,
+      },
+      raw: true,
+    });
+
+    if (result_staff) {
+      const result_authority = await this.ctx.model.StaffAuthority.findAll({
+        where: {
+          staff_id: result_staff.id,
+        },
+        raw: true,
+        include: this.ctx.model.Authority,
+      });
+
+      const authority = result_authority.map(item => item['authority.authority_name']);
+
+      ctx.payload.data.authority = authority;
+    }
+
     ctx.body = {
       code: 0,
       message: '获取用户信息成功!',
@@ -99,6 +121,27 @@ class UserController extends Controller {
         message: '退出失败！',
       };
       console.log(e);
+    }
+  }
+  // 查询审批人
+  async getApproveId() {
+    const { ctx } = this;
+
+    try {
+      const result = await this.service.user.getApproveId();
+
+      ctx.body = {
+        code: 0,
+        message: '查询成功!',
+        data: result,
+      };
+    } catch (e) {
+      ctx.body = {
+        code: 5,
+        message: '查询失败!',
+        data: null,
+      };
+      throw e;
     }
   }
 }

@@ -2,32 +2,50 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
-import memoryUntil from '@/untils/memoryUntil'
-import storeUntil from '@/untils/storeUntil'
-import VueLazyLoad from 'vue-lazyload'
-import VueQuillEditor from 'vue-quill-editor'
-import 'quill/dist/quill.core.css'
-/*import 'quill/dist/quill.snow.css'
-import 'quill/dist/quill.bubble.css'*/  //样式三选一
-import 'default-passive-events'
-import GeminiScrollbar from 'vue-gemini-scrollbar'
-import {Form,FormItem,Input,RadioGroup,Radio,
-        Button,Icon,Menu,MenuItem,MenuItemGroup,
-        Submenu,Avatar,Row,RadioButton,Card,Table,
-        TableColumn,Popover,Tag,Select,Option,Divider,
-        Pagination,Loading,Dialog,DatePicker,Col,TimePicker,
-        InputNumber,Upload,Drawer,Scrollbar,checkboxGroup,checkbox, Badge}from "element-ui";
-Vue.use(Form).use(FormItem).use(Input).use(RadioGroup).use(Radio).use(Button).use(Icon).use(Menu).use(MenuItem).use(MenuItemGroup).use(Submenu).use(RadioButton)
-   .use(Avatar).use(Row).use(RadioButton).use(Card).use(Table).use(TableColumn).use(Popover).use(Tag).use(Select).use(Option).use(Divider)
-   .use(Pagination).use(Loading).use(Dialog).use(DatePicker).use(Col).use(TimePicker).use(InputNumber).use(Upload).use(Drawer).use(VueLazyLoad)
-   .use(VueQuillEditor).use(GeminiScrollbar).use(Scrollbar).use(checkboxGroup).use(checkbox).use(Badge);
-Vue.config.productionTip = false
-memoryUntil.token=storeUntil.getToken();
+import router from '@/router'
+import store from "@/vuex/store";
+//引入nprogress
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css' //这个样式必须引入
+import 'default-passive-events';
+import '@/plugins/element';
+import '@/plugins/antd';
+import '@/public/css/antd.less';
+import '@/public/css/reset.css';
+//引入eacharts
+import echarts from 'echarts';
+import animated from 'animate.css';
+
+Vue.use(animated);
+Vue.config.productionTip = false;
+Vue.prototype.$echarts = echarts;
+
+/*NProgress.configure({
+  easing: 'ease',  // 动画方式
+  speed: 500,  // 递增进度条的速度
+  showSpinner: false, // 是否显示加载ico
+  trickleSpeed: 200, // 自动递增间隔
+  minimum: 0.3 // 初始化时的最小百分比
+});*/
+/*// 简单配置
+NProgress.inc(0.2);
+NProgress.configure({ easing: 'ease', speed: 500, showSpinner: false })*/
+
+
+router.beforeEach((to,from,next) => {
+  NProgress.start();
+  next()
+});
+
+router.afterEach(() => {
+  NProgress.done()
+});
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
-})
+});

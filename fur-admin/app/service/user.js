@@ -151,5 +151,13 @@ class UserService extends Service {
     });
     this.ctx.payload = null;
   }
+  // 查询审批人
+  async getApproveId() {
+    return await this.ctx.model.User.findAll({
+      where: {
+        identity: 1,
+      },
+    });
+  }
 }
 module.exports = UserService;

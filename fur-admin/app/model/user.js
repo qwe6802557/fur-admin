@@ -52,11 +52,11 @@ module.exports = app => {
   });
   User.associate = function() {
     app.model.User.hasOne(app.model.SocketUser, { foreignKey: 'user_id' });
-    app.model.User.hasMany(app.model.Orders, { foreignKey: 'uid' });
     app.model.User.hasMany(app.model.FriendList, { foreignKey: 'user_id' });
     app.model.User.hasMany(app.model.MessageAdd, { foreignKey: 'user_id' });
     app.model.User.hasMany(app.model.MessageNotification, { foreignKey: 'user_id' });
-    app.model.User.hasMany(app.model.UserRole, { foreignKey: 'user_id' });
+    app.model.User.hasMany(app.model.Approve, { foreignKey: 'approve_id' });
+    app.model.User.hasMany(app.model.Approve, { foreignKey: 'creator_id' });
   }; // 一对多或一对一外键设置
   return User;
 };

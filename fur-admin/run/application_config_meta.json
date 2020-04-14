@@ -1,349 +1,349 @@
 {
-  "keys": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-  "middleware": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+  "keys": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+  "middleware": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
   "sequelize": {
-    "dialect": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "database": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "host": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "port": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "username": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "password": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "timezone": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "dialect": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "database": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "host": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "port": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "username": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "password": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "timezone": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
     "dialectOptions": {
-      "dateStrings": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-      "typeCast": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-      "charset": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-      "collate": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js"
+      "dateStrings": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+      "typeCast": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+      "charset": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+      "collate": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js"
     }
   },
   "security": {
     "csrf": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-      "ignoreJSON": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-      "type": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "refererWhiteList": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+      "ignoreJSON": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+      "type": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
-    "domainWhiteList": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "protocolWhiteList": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "protocolWhiteList": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "referrerPolicy": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
   "cors": {
-    "origin": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "allowMethods": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "credentials": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js"
+    "origin": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "allowMethods": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "credentials": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js"
   },
   "jwt": {
-    "secret": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-jwt\\config\\config.default.js"
+    "secret": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-jwt\\config\\config.default.js"
   },
   "multipart": {
-    "mode": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "fileSize": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "autoFields": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "fileSize": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "autoFields": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js",
     "cleanSchedule": {
-      "cron": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-multipart\\config\\config.default.js"
     }
   },
   "token": {
-    "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-    "ignore": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js"
+    "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+    "ignore": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js"
   },
   "io": {
     "namespace": {
       "/": {
-        "connectionMiddleware": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js",
-        "packetMiddleware": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\config\\config.default.js"
+        "connectionMiddleware": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js",
+        "packetMiddleware": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\config\\config.default.js"
       }
     },
-    "init": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-socket.io\\config\\config.default.js"
+    "init": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-socket.io\\config\\config.default.js"
   },
   "session": {
-    "maxAge": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
-    "shtml": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-onerror\\config\\config.default.js"
   },
   "i18n": {
-    "defaultLocale": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-watcher\\config\\config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js"
     }
   },
   "schedule": {
-    "directory": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-schedule\\config\\config.default.js"
   },
   "development": {
-    "watchDirs": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-development\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-logrotator\\config\\config.default.js"
   },
   "static": {
-    "prefix": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-static\\config\\config.default.js"
   },
   "view": {
-    "root": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js"
+    "root": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-view\\config\\config.default.js"
   },
   "mysql": {
     "default": {
-      "database": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js",
-      "connectionLimit": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js"
+      "database": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js"
     },
-    "app": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js",
-    "agent": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js"
+    "app": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js",
+    "agent": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg-mysql\\config\\config.default.js"
   },
-  "env": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "name": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "maxIpsCount": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "env": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "name": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
   "pkg": {
-    "name": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "version": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "description": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "private": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "name": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "version": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "description": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "private": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
     "egg": {
-      "declarations": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "declarations": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "dependencies": {
-      "bcryptjs": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-cors": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-jwt": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-multipart": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-mysql": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-scripts": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-sequelize": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-socket.io": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "md5": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "moment": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "mysql2": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "stream-wormhole": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "svg-captcha": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "bcryptjs": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-jwt": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-multipart": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-mysql": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-scripts": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-sequelize": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-socket.io": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "md5": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "moment": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "mysql2": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "stream-wormhole": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "svg-captcha": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "autod": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "autod-egg": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-bin": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-ci": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-mock": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "eslint": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "eslint-config-egg": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "autod": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "autod-egg": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-ci": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "engines": {
-      "node": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "node": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "scripts": {
-      "start": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "stop": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "dev": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "debug": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "test": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "test-local": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "cov": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "lint": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "ci": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "autod": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "start": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "stop": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "dev": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "debug": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "test": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "test-local": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "cov": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "lint": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "ci": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "autod": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "ci": {
-      "version": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "version": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "repository": {
-      "type": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "url": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "type": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "url": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
-    "author": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "license": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "author": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "license": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
-  "baseDir": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
   "dump": {
-    "ignore": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
   "notfound": {
-    "pageUrl": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
   "bodyParser": {
-    "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "textLimit": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "strict": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "strict": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
     "queryString": {
-      "arrayLimit": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "depth": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "depth": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
-    "onerror": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "onerror": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
   "logger": {
-    "dir": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "env": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "level": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "dir": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "env": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "level": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
     "coreLogger": {
-      "consoleLevel": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.local.js"
     },
-    "allowDebugAtProd": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
     "request": {
-      "timeout": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "meta": {
-    "enable": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "logging": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "enable": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "logging": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
-  "coreMiddleware": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
   "cluster": {
     "listen": {
-      "path": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "port": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+      "path": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "port": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
   },
-  "onClientError": "C:\\Users\\Administrator\\Desktop\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "C:\\Users\\Administrator\\Desktop\\ProjectsCollection\\project\\fur-admin\\fur-admin\\node_modules\\egg\\config\\config.default.js"
 }

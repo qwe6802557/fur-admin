@@ -2,50 +2,60 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportApprove = require('../../../app/model/approve');
+import ExportAuthority = require('../../../app/model/authority');
 import ExportCategory = require('../../../app/model/category');
 import ExportFriendList = require('../../../app/model/friend-list');
+import ExportGoodsPackage = require('../../../app/model/goods-package');
+import ExportGoodsStatus = require('../../../app/model/goods-status');
 import ExportGoods = require('../../../app/model/goods');
-import ExportList = require('../../../app/model/list');
+import ExportGroupMember = require('../../../app/model/group-member');
+import ExportGroup = require('../../../app/model/group');
+import ExportMachine = require('../../../app/model/machine');
 import ExportMaterialUse = require('../../../app/model/material-use');
 import ExportMaterial = require('../../../app/model/material');
+import ExportMerchant = require('../../../app/model/merchant');
 import ExportMessageAdd = require('../../../app/model/message-add');
 import ExportMessageNotification = require('../../../app/model/message-notification');
 import ExportMessage = require('../../../app/model/message');
-import ExportOrders = require('../../../app/model/orders');
-import ExportPrivilege = require('../../../app/model/privilege');
-import ExportProduceStatus = require('../../../app/model/produce-status');
-import ExportProduce = require('../../../app/model/produce');
-import ExportRolePrivilege = require('../../../app/model/role-privilege');
-import ExportRole = require('../../../app/model/role');
+import ExportOrder = require('../../../app/model/order');
+import ExportPackageMaterial = require('../../../app/model/package-material');
+import ExportPackage = require('../../../app/model/package');
+import ExportPicCode = require('../../../app/model/picCode');
+import ExportProduceGoods = require('../../../app/model/produce-goods');
+import ExportProducePackage = require('../../../app/model/produce-package');
 import ExportSocketUser = require('../../../app/model/socket-user');
-import ExportSpends = require('../../../app/model/spends');
-import ExportStatus = require('../../../app/model/status');
-import ExportUserRole = require('../../../app/model/user-role');
+import ExportStaffAuthority = require('../../../app/model/staff-authority');
+import ExportStaff = require('../../../app/model/staff');
 import ExportUser = require('../../../app/model/user');
-import ExportWoodStandard = require('../../../app/model/wood-standard');
 
 declare module 'egg' {
   interface IModel {
+    Approve: ReturnType<typeof ExportApprove>;
+    Authority: ReturnType<typeof ExportAuthority>;
     Category: ReturnType<typeof ExportCategory>;
     FriendList: ReturnType<typeof ExportFriendList>;
+    GoodsPackage: ReturnType<typeof ExportGoodsPackage>;
+    GoodsStatus: ReturnType<typeof ExportGoodsStatus>;
     Goods: ReturnType<typeof ExportGoods>;
-    List: ReturnType<typeof ExportList>;
+    GroupMember: ReturnType<typeof ExportGroupMember>;
+    Group: ReturnType<typeof ExportGroup>;
+    Machine: ReturnType<typeof ExportMachine>;
     MaterialUse: ReturnType<typeof ExportMaterialUse>;
     Material: ReturnType<typeof ExportMaterial>;
+    Merchant: ReturnType<typeof ExportMerchant>;
     MessageAdd: ReturnType<typeof ExportMessageAdd>;
     MessageNotification: ReturnType<typeof ExportMessageNotification>;
     Message: ReturnType<typeof ExportMessage>;
-    Orders: ReturnType<typeof ExportOrders>;
-    Privilege: ReturnType<typeof ExportPrivilege>;
-    ProduceStatus: ReturnType<typeof ExportProduceStatus>;
-    Produce: ReturnType<typeof ExportProduce>;
-    RolePrivilege: ReturnType<typeof ExportRolePrivilege>;
-    Role: ReturnType<typeof ExportRole>;
+    Order: ReturnType<typeof ExportOrder>;
+    PackageMaterial: ReturnType<typeof ExportPackageMaterial>;
+    Package: ReturnType<typeof ExportPackage>;
+    PicCode: ReturnType<typeof ExportPicCode>;
+    ProduceGoods: ReturnType<typeof ExportProduceGoods>;
+    ProducePackage: ReturnType<typeof ExportProducePackage>;
     SocketUser: ReturnType<typeof ExportSocketUser>;
-    Spends: ReturnType<typeof ExportSpends>;
-    Status: ReturnType<typeof ExportStatus>;
-    UserRole: ReturnType<typeof ExportUserRole>;
+    StaffAuthority: ReturnType<typeof ExportStaffAuthority>;
+    Staff: ReturnType<typeof ExportStaff>;
     User: ReturnType<typeof ExportUser>;
-    WoodStandard: ReturnType<typeof ExportWoodStandard>;
   }
 }

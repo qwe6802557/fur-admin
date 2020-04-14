@@ -1,169 +1,450 @@
 <template>
-      <div class="login">
-        <div class="login-form">
-          <div class="login-form-title">
-            <h1>用户后台管理系统</h1>
-          </div>
-          <div class="login-form-content">
-          <router-view></router-view>
-          </div>
-        </div>
-      </div>
+  <div id="main">
+    <div class="login-center center-width">
+      <transition name="el-fade-in-linear" mode="out-in">
+      <router-view/>
+      </transition>
+    </div>
+  </div>
 </template>
 
 <script>
-    import memoryUntil from '@/untils/memoryUntil';
-    import storeUntil from "@/untils/storeUntil";
-    import {valiateToken} from "../../untils/valiateUntil";
-
     export default {
-        name: "Main",
-        beforeMount() {
-          if (!memoryUntil.token){
-            return;
-          }
-          valiateToken().then(res => {
-            const { code } = res.data;
-            if (code === 0){
-              this.$router.push({name:'Admin'});
-            }else {
-              memoryUntil.token = '';
-              storeUntil.delToken();
-            }
-          })
-        }
+        name: "Main"
     }
 </script>
 
 <style lang="less">
-  .login{
-    width: 100%;
-    height: 100%;
-    background: url("../../assets/bg.png") center no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  img{
-    position: absolute;
-    z-index: 99;
-    top: 50%;
-    left:8px;
-    transform: translateY(-50%);
-  }
-  .login-form{
-    width: 788px;
-    height: 528px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url("../../assets/form.png") center no-repeat;
-  .login-form-title{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 78px;
-  }
-  .login-form-content{
-    width: 40%;
-    height: 40%;
-    margin-top: 40px;
-  .el-form-item__content{
-    margin-left: 50px !important;
-  }
-  .el-input__inner{
-    padding: 0 27px;
-  }
-  .el-form-item__label{
-    text-align: right;
-    width: auto !important;
-  }
-  button{
-    margin-left: 35px;
-  }
-  .valiateWord{
-    margin-left: -14px;
-  .valiateInput{
-    width: 40%;
-  }
-  }
-  .valiateWord .el-form-item__error{
-    margin-left: 14px;
-  }
-    .valiateWord img{
-      left: 23px;
+  #main{
+    background: url("../../public/images/login-bg.png") no-repeat;
+    background-size: cover;
+    min-width: 1200px;
+    #login{
+      /deep/ .ant-btn{
+        span{
+          font-size: 16px;
+        }
+      }
+      .center-width{
+        width: 1300px;
+        margin: 0 auto;
+      }
+      .login-center{
+        padding-top: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .center-right{
+          width: 400px;
+          height: 400px;
+          text-align: left;
+          h1{
+            font-size: 24px;
+            color: #4452D5;
+            font-weight: normal;
+          }
+          span{
+            font-size: 14px;
+            color: #B5B5B5;
+          }
+          .ant-input{
+            width: 300px;
+            height: 40px;
+          }
+          span{
+            color:#B5B5B5;
+          }
+          /deep/ .ant-btn{
+            width: 300px;
+            height: 40px;
+            margin-top: 5px;
+            span{
+              font-size: 17px;
+              color: white;
+            }
+          }
+          /deep/ .ant-form-item{
+            margin-top: 25px;
+            input{
+              padding-left: 40px;
+            }
+          }
+          /deep/ .ant-form-item:first-child{
+            margin-top: 25px;
+          }
+          /deep/ .ant-form-item:nth-child(2){
+            margin-bottom: 25px;
+          }
+          /deep/.ant-form-item:nth-child(3){
+            margin-top: 0;
+            input{
+              width: 170px;
+            }
+          }
+          .register{
+            margin-top: 0px;
+            span{
+              color: #1C93FF;
+              cursor: pointer;
+              margin-left: 5px;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+          .has-success{
+            line-height: 0px;
+          }
+          /deep/ .ant-input-affix-wrapper{
+            width: 300px;
+            height: 40px;
+          }
+          /deep/ .ant-form-item{
+            &:nth-child(3){
+              margin-bottom: 0px;
+              .ant-input-affix-wrapper{
+                width: 150px;
+                height: 40px;
+              }
+            }
+            &:nth-child(4){
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+            &:nth-child(5){
+              margin-top: 0;
+            }
+          }
+          #validate{
+            height: 40px;
+            width: 90px;
+            position: absolute;
+            top: -12px;
+            left: 123%;
+            cursor:pointer;
+          }
+        }
+        /deep/ .ant-input-prefix{
+          font-size: 16px !important;
+          left: 10px;
+        }
+      }
     }
-    .confirmPass label{
-      margin-left: -28px;
+    #register{
+      .center-width{
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .login-center{
+        padding-top: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .center-right{
+          width: 400px;
+          height: 400px;
+          text-align: left;
+          h1{
+            font-size: 24px;
+            color: #4452D5;
+            font-weight: normal;
+          }
+          span{
+            font-size: 14px;
+            color: #B5B5B5;
+          }
+          /deep/ .ant-input{
+            width: 300px;
+            height: 40px;
+          }
+          span{
+            color:#B5B5B5;
+          }
+          /deep/ .ant-btn{
+            width: 300px;
+            height: 40px;
+            margin-top: 25px;
+            span{
+              font-size: 17px;
+              color: white;
+            }
+          }
+          /deep/ .ant-form-item{
+            margin-top: 25px;
+            input{
+              padding-left: 40px;
+            }
+          }
+          /deep/ .ant-form-item:first-child{
+            margin-top: 25px;
+          }
+          /deep/ .ant-form-item:nth-child(2){
+            margin-bottom: 10px;
+          }
+          .register{
+            span{
+              color: #1C93FF;
+              cursor: pointer;
+              margin-left: 5px;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        /deep/ .ant-input-prefix{
+          font-size: 18px !important;
+        }
+        .back{
+          margin-top: 3px;
+          cursor: pointer;
+          color: #1C93FF;
+          &:hover{
+            text-decoration: underline;
+          }
+          span{
+            color: #1C93FF;
+            font-size: 15px;
+          }
+          i{
+            color: #1C93FF !important;
+          }
+        }
+      }
     }
-    a{
-      margin-left: 20px;
-    }
-    a:hover{
-      text-decoration: underline;
-    }
-    .valiateWord .valiate-area{
-      width: 130px;
-      height: 40px;
-      float: right;
-      cursor: pointer;
-    }
-  }
-  }
     .reset{
-      font-size:14px;
-      padding-left: 50px;
-      .resetPw{
-      margin-left: 10px !important;
+      color: #6b747a !important;
+      float: right;
+      margin-right: 100px;
+      &:hover{
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
-    .mobile{
-      position: relative;
-      .el-form-item__content{
-         position: absolute;
-         left: 30px;
-       }
-      input{
-        padding: 0 8px !important;
-        width: 200px;
-      }
+    .verify{
+      height: 40px;
+      margin-left: 10px;
     }
-    .mes_code{
-      position: relative;
-      .el-form-item__content{
-        position: absolute;
-        left: 30px;
-      }
-      input{
-        padding: 0 8px !important;
-        width: 90px;
-      }
-      .mes_code-button{
-        position: absolute;
-        left: 68px;
-        top: 0;
-        padding: 12px 12px;
-      }
+    #validate{
+        /deep/ .ant-btn{
+          span{
+            font-size: 16px;
+          }
+        }
+        .center-width{
+          width: 1200px;
+          margin: 0 auto;
+        }
+        .login-center{
+          padding-top: 250px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          .center-right{
+            width: 400px;
+            height: 400px;
+            text-align: left;
+            h1{
+              font-size: 24px;
+              color: #4452D5;
+              font-weight: normal;
+            }
+            span{
+              font-size: 14px;
+              color: #B5B5B5;
+            }
+            .ant-input{
+              width: 300px;
+              height: 40px;
+            }
+            span{
+              color:#B5B5B5;
+            }
+            /deep/ .login-form-button{
+              width: 300px;
+              height: 40px;
+              margin-top: 5px;
+              span{
+                font-size: 17px !important;
+                color: white;
+              }
+            }
+            /deep/ .ant-form-item{
+              margin-top: 25px;
+              input{
+                padding-left: 40px;
+              }
+            }
+            /deep/ .ant-form-item:first-child{
+              margin-top: 25px;
+            }
+            /deep/ .ant-form-item:nth-child(2){
+              margin-bottom: 25px;
+            }
+            /deep/.ant-form-item:nth-child(3){
+              margin-top: 0;
+              input{
+                width: 170px;
+              }
+            }
+            .back{
+              margin-top: 3px;
+              cursor: pointer;
+              color: #1C93FF;
+              &:hover{
+                text-decoration: underline;
+              }
+              span{
+                color: #1C93FF;
+                font-size: 15px;
+              }
+              i{
+                color: #1C93FF !important;
+              }
+            }
+            .has-success{
+              line-height: 0px;
+            }
+            /deep/ .ant-input-affix-wrapper{
+              width: 300px;
+              height: 40px;
+            }
+            /deep/ .ant-form-item{
+              &:nth-child(2){
+                margin-bottom: 25px;
+                .ant-input-affix-wrapper{
+                  width: 150px;
+                  height: 40px;
+                  input{
+                    width: 150px;
+                  }
+                }
+              }
+              &:nth-child(4){
+                margin-top: 0;
+              }
+            }
+            .verify{
+              height: 40px;
+              margin-left: 10px;
+              span{
+                color: rgba(0, 0, 0, .6);
+              }
+            }
+            /deep/ .ant-btn{
+              span{
+                font-size: 14px;
+              }
+            }
+          }
+          /deep/ .ant-input-prefix{
+            font-size: 16px !important;
+            left: 10px;
+          }
+        }
     }
-    .password{
-      position: relative;
-      .el-form-item__content{
-        position: absolute;
-        left: 30px;
+    #reset{
+      /deep/ .ant-btn{
+        span{
+          font-size: 16px;
+        }
       }
-      input{
-        padding: 0 8px !important;
-        width: 200px;
+      .center-width{
+        width: 1200px;
+        margin: 0 auto;
       }
-    }
-    .confirmPass_code{
-      position: relative;
-      .el-form-item__content{
-        position: absolute;
-        left: 30px;
-      }
-      input{
-        padding: 0 8px !important;
-        width: 200px;
+      .login-center{
+        padding-top: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .center-right{
+          width: 400px;
+          height: 400px;
+          text-align: left;
+          h1{
+            font-size: 24px;
+            color: #4452D5;
+            font-weight: normal;
+          }
+          span{
+            font-size: 14px;
+            color: #B5B5B5;
+          }
+          .ant-input{
+            width: 300px;
+            height: 40px;
+          }
+          span{
+            color:#B5B5B5;
+          }
+          /deep/ .login-form-button{
+            width: 300px;
+            height: 40px;
+            margin-top: 5px;
+            span{
+              font-size: 17px !important;
+              color: white;
+            }
+          }
+          /deep/ .ant-form-item{
+            margin-top: 25px;
+            input{
+              padding-left: 40px;
+            }
+          }
+          /deep/ .ant-form-item:first-child{
+            margin-top: 25px;
+          }
+          /deep/ .ant-form-item:nth-child(2){
+            margin-bottom: 25px;
+          }
+          /deep/.ant-form-item:nth-child(3){
+            margin-top: 0;
+            input{
+              width: 170px;
+            }
+          }
+          .back{
+            margin-top: 3px;
+            cursor: pointer;
+            color: #1C93FF;
+            &:hover{
+              text-decoration: underline;
+            }
+            span{
+              color: #1C93FF;
+              font-size: 15px;
+            }
+            i{
+              color: #1C93FF !important;
+            }
+          }
+          .has-success{
+            line-height: 0px;
+          }
+          /deep/ .ant-input-affix-wrapper{
+            width: 300px;
+            height: 40px;
+          }
+          /deep/ .ant-form-item{
+            &:nth-child(2){
+              margin-bottom: 25px;
+            }
+            &:nth-child(4){
+              margin-top: 0;
+            }
+          }
+          /deep/ .ant-btn{
+            span{
+              font-size: 14px;
+            }
+          }
+        }
+        /deep/ .ant-input-prefix{
+          font-size: 16px !important;
+          left: 10px;
+        }
       }
     }
   }

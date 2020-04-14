@@ -7,6 +7,6 @@ module.exports = app => {
   router.post('/material/list', controller.material.getMaterialList);
   router.post('/material/add', controller.material.addMaterial);
   router.post('/material/edit', controller.material.editMaterialPost);
-  /* router.post('/material/delete/:id', controller.material.deleteMaterial);
-  router.post('/material/delete', controller.material.deleteMaterial);*/
+  router.post('/material/delete', controller.material.deleteMaterial);
+  router.get('/material/allMaterial', controller.material.getAllMaterial);
 };

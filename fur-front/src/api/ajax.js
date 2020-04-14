@@ -1,70 +1,63 @@
-import axios from 'axios';
-import {Message} from "element-ui";
-import memoryUntil from '@/untils/memoryUntil';
-import storeUntil from '@/untils/storeUntil';
-import router from '@/router/index.js';
+import axios from 'axios'
+import router from '@/router/index.js'
 import Vue from 'vue'
-
-const vue=new Vue({
-  router
+import Store from "@/vuex/store";
+import { message } from 'ant-design-vue';
+import storeUntil from "../untils/storeUntil";
+let that = {};
+new Vue({
+  router,
+  data () {
+    that = this;
+    return {}
+  }
 });
-export default function ajax(url,data=null,method="GET",token){
-  return new Promise((resolve,reject)=>{
-    let promise=0;
-    if (!token){
-      if (method==="GET"){
-        promise=axios({
-          url:url,
-          method:method.toLowerCase(),
-          withCredentials:true,
-          params:data
-        })
-      }else{
-        promise=axios({
-          url:url,
-          method:method.toLowerCase(),
-          data:data,
-          withCredentials:true
-        });
-      }
-    }else{
-      if (method==="GET"){
-        promise=axios({
-          url:url,
-          method:method.toLowerCase(),
-          withCredentials:true,
-          params:data,
-          headers:{
-            'Authorization':`Bearer ${token}`
-          }
-        })
-      }else{
-        promise=axios({
-          url:url,
-          method:method.toLowerCase(),
-          data:data,
-          withCredentials:true, //允许跨域携带cookies
-          headers:{
-            'Authorization':`Bearer ${token}`
-          }
-        });
-      }
-    }
-    promise.then(res=>{
-      const {code,message}=res.data;
-      if (code===8){
-        Message.error(message);
-        memoryUntil.token=null;
-        storeUntil.delToken();
-        vue.$router.push({name:'Main'});
-      }else if(code===6 || code===7 || code===9){
-        Message.error(message);
-        vue.$router.push({name:'Main'});
-      }else{
-        resolve(res);
-      }
-    }).catch(err=>{
-      reject(err);
+/**
+ * 配置拦截器
+ */
+axios.interceptors.response.use(res => {
+  // 对响应数据做些什么
+  if (res.data.code === 6 || res.data.code === 7 || res.data.code === 8){
+    Store.state.token = '';
+    storeUntil.delToken();
+    that.$message.destroy() && that.$message.error(res.data.message);
+    that.$router.push('/login');
+  }
+  return res;
+}, err => {
+  // 对响应错误做些什么
+  err.response.status === 404 && message.destroy() && message.error('请求异常，请检查网络!');
+  err.response.status.toString().startsWith('5') && message.destroy() && message.error('服务器出错，请检查服务器状态!');
+  return err;
+});
+/**
+ * 导出封装ajax函数对象
+ * @param url
+ * @param data
+ * @param method
+ * @param token
+ * @param responseType
+ * @returns {Promise<unknown>}
+ */
+export default function ajax (url, data = null, method = 'GET', token, responseType) {
+  return new Promise((resolve, reject) => {
+    let promise = {};
+    const ajaxObj = {};
+
+    !!url && Object.defineProperty(ajaxObj,'url', { value: url, enumerable:true});
+    !!data && method === 'POST'&& Object.defineProperty(ajaxObj,'data', { value: data, enumerable:true });
+    !!data && method === 'GET' && Object.defineProperty(ajaxObj,'params', { value: data, enumerable:true });
+    !!method && Object.defineProperty(ajaxObj,'method', { value: method, enumerable:true});
+    !!token && Object.defineProperty(ajaxObj,'headers', { value: {   'Authorization':`Bearer ${token}`, enumerable:true }});
+    !!responseType && Object.defineProperty(ajaxObj,'responseType', { value: responseType, enumerable:true});
+
+    promise = axios(ajaxObj);
+
+    promise.then(res => {
+      resolve(res)
+    }).catch(err => {
+      reject(err)
     })
+
   })
 }

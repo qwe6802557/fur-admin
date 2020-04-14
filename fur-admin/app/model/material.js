@@ -35,7 +35,7 @@ module.exports = app => {
       type: ENUM([ '0', '1' ]),
       allowNull: true,
       fields: 'detail_status',
-      defaultValue: '1',
+      defaultValue: '0',
     },
     detail_num: {
       type: INTEGER,
@@ -47,11 +47,6 @@ module.exports = app => {
       type: STRING,
       allowNull: false,
       fields: 'detail_img',
-    },
-    detail_use: {
-      type: INTEGER,
-      allowNull: false,
-      fields: 'detail_use',
     },
     detail_time: { // 存入的时间戳
       type: BIGINT,
@@ -69,7 +64,7 @@ module.exports = app => {
   });
   detail.associate = function() {
     app.model.Material.belongsTo(app.model.Category, { foreignKey: 'category_id', targetKey: 'id' });
-    app.model.Material.belongsTo(app.model.MaterialUse, { foreignKey: 'detail_use', targetKey: 'id' });
+    app.model.Material.hasMany(app.model.PackageMaterial, { foreignKey: 'material_id' });
   };
   return detail;
 };

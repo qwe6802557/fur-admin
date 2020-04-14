@@ -1,76 +1,53 @@
 import ajax from './ajax'
-import Memory from '@/untils/memoryUntil'
-//设置本地服务器IP端口前缀
-const LOCALURL='http://127.0.0.1:7001';
-/**
- *登录及产品管理区域
- */
-//token是否过期验证请求
-export const reqValiateToken=()=>ajax(LOCALURL+'/verify/token',{},"POST",Memory.token);
-//获取验证码请求 不用token验证
-export const reqValiateImg=()=>ajax(LOCALURL+'/verify/verify_code');
-//找回密码获取验证码请求 不用token验证
-export const reqMesCode=mobile=>ajax(LOCALURL+"/verify/mes_code",mobile,"POST");
-//找回密码发送验证请求  不用token验证
-export const reqValiateMes=message=>ajax(LOCALURL+"/verify/valiate_code",message,"POST");
-//找回密码确认重置请求  不用token验证
-export const reqReset=message=>ajax(LOCALURL+"/user/reset",message,"POST");
-//登录请求 不用token验证
-export const reqLogin=user=>ajax(LOCALURL+'/user/login',user,'POST');
-//注册请求 不用token验证
-export const reqRegistor=user=>ajax(LOCALURL+'/user/registor',user,'POST');
-//退出请求 需要token验证
-export const reqLoginOut=()=>ajax(LOCALURL+'/user/login_out',{}, 'POST',Memory.token);
-//获取未处理信息列表
-export const reqMainMessage =()=>ajax(LOCALURL+'/user/main_message', {}, 'GET', Memory.token);
-//根据token取登录信息请求 需要token验证
-export const reqLoginMes=()=>ajax(LOCALURL+'/user/userInfo',{},'GET',Memory.token);
+import Store from "@/vuex/store";
+/*//设置本地服务器IP端口前缀
+const LOCALURL='http://127.0.0.1:7001';*/
 //获取产品及分页列表 需要token验证
-export const reqProduct=page=>ajax(LOCALURL+'/goods/list',page,'GET',Memory.token);
+export const reqProduct = page =>ajax('/goods/list',page,'GET',Store.state.token);
 //添加产品请求 需要token验证
-export const reqAddProduct=product=>ajax(LOCALURL+'/goods/add',product,'POST',Memory.token);
+export const reqAddProduct = product => ajax('/goods/add',product,'POST',Store.state.token);
 //编辑产品获取请求 需要token验证
-export const reqGetProduct=id=>ajax(LOCALURL+'/goods/edit',id,'GET',Memory.token);
+export const reqGetProduct=id=>ajax('/goods/edit',id,'GET',Store.state.token);
 //编辑产品提交请求 需要token验证
-export const reqEditProduct=product=>ajax(LOCALURL+'/goods/edit',product,'POST',Memory.token);
+export const reqEditProduct=product=>ajax('/goods/edit',product,'POST',Store.state.token);
 //删除产品提交请求 需要token验证
-export const reqDelProduct=id=>ajax(LOCALURL+'/goods/delete',id,'POST',Memory.token);
+export const reqDelProduct=id=>ajax('/goods/delete',id,'POST',Store.state.token);
 //批量删除产品提交请求，需要token验证
-export const reqDelMany=arr=>ajax(LOCALURL+'/goods/deleteMany',arr,'POST',Memory.token);
+export const reqDelMany=arr=>ajax('/goods/deleteMany',arr,'POST',Store.state.token);
 //模糊搜索产品提交请求，需要token验证
-export const reqSearch=condition=>ajax(LOCALURL+'/goods/search',condition,'POST',Memory.token);
+export const reqSearch=condition=>ajax('/goods/search',condition,'POST',Store.state.token);
 //移除图片删除请求 需要token验证
-export const reqDeletePic=picture=>ajax(LOCALURL+'/upload/delete',picture,'POST',Memory.token);
+export const reqDeletePic=picture=>ajax('/upload/delete',picture,'POST',Store.state.token);
 /**
  *配件列表区域
  */
 //获取配件一级列表 需要token验证
-export const reqCategory=page=>ajax(LOCALURL+'/category/list',page,'GET',Memory.token);
+export const reqCategory = page => ajax('/category/list',page,'GET',Store.state.token);
 //添加配件一级列表 需要token验证
-export const reqAddCategory=category=>ajax(LOCALURL+'/category/add',category,'POST',Memory.token);
+export const reqAddCategory = category => ajax('/category/add',category,'POST',Store.state.token);
 //编辑获取配件一级列表 需要token验证
-export const reqGetCategory=id=>ajax(LOCALURL+'/category/update/'+id,{},'GET',Memory.token);
+export const reqGetCategory = id => ajax('/category/update/'+id,{},'GET',Store.state.token);
 //编辑提交配件一级列表 需要token验证
-export const reqEditCategory=category=>ajax(LOCALURL+'/category/update',category,'POST',Memory.token);
+export const reqEditCategory = category => ajax('/category/update',category,'POST',Store.state.token);
 //删除配件列表 需要token验证
-export const reqDeleteCategory=id=>ajax(LOCALURL+'/category/delete/'+id,{},'POST',Memory.token);
+export const reqDeleteCategory = id => ajax('/category/delete',id,'POST',Store.state.token);
 //模糊搜索配件 需要token验证
-export const reqSearchCategory=condition=>ajax(LOCALURL+'/category/search',condition,'GET',Memory.token);
+export const reqSearchCategory = condition => ajax('/category/search',condition,'GET',Store.state.token);
 /**
  * 配件子列表区域
  */
 //子列表分页与搜索 需要token验证
-export const reqCategoryDetailQuery = pagination => ajax(LOCALURL+'/material/list', pagination, 'POST', Memory.token);
+export const reqCategoryDetailQuery = pagination => ajax('/material/list', pagination, 'POST', Store.state.token);
 //获取配件用途 需要token验证
-export const reqCategoryDetailUse = () => ajax(LOCALURL + '/material/getDetailUse', {}, 'GET', Memory.token);
+export const reqCategoryDetailUse = () => ajax('/material/getDetailUse', {}, 'GET', Store.state.token);
 //子列表配件入库 需要token验证
-export const reqCategoryDetailAdd = formData => ajax(LOCALURL+'/material/add', formData, 'POST', Memory.token);
+export const reqCategoryDetailAdd = formData => ajax('/material/add', formData, 'POST', Store.state.token);
 //子列表单个删除 需要token验证
-export const reqCategoryDetailDelete = (category_id, id) => ajax('/material/delete/' + category_id + '/' + id, {}, 'POST', Memory.token);
+export const reqCategoryDetailDelete = id => ajax('/material/delete', id, 'POST', Store.state.token);
 //子列表批量删除 需要token验证
-export const reqCategoryDetailDeleteMany = idArr => ajax('/material/delete', {idArr}, 'POST', Memory.token);
+export const reqCategoryDetailDeleteMany = (category_id , idArr) => ajax('/material/delete', {category_id, idArr}, 'POST', Store.state.token);
 //子列表单个编辑获取信息 需要token验证
-export const reqCategoryDetailEditGet = (category_id, id) => ajax('/material/edit/' + category_id + '/' + id, {}, 'GET', Memory.token);
+export const reqCategoryDetailEditGet = (category_id, id) => ajax('/material/edit/' + category_id + '/' + id, {}, 'GET', Store.state.token);
 //子列表单个编辑完成 需要token验证
-export const reqCategoryDetailEditPost = formData => ajax('/material/edit', formData, 'POST', Memory.token);
+export const reqCategoryDetailEditPost = formData => ajax('/material/edit', formData, 'POST', Store.state.token);
 

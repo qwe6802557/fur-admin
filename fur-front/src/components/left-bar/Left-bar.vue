@@ -1,67 +1,82 @@
 <template>
   <div class="left-nav">
     <el-radio-group v-model="isCollapse" style="margin-bottom: 20px;" >
-      <el-radio-button :label="collapse" v-col><i class="collapse" @click="collapse=!collapse"></i></el-radio-button>
+      <el-radio-button :label="collapse" v-col><a-icon type="menu-fold" class="collapse" @click="collapse = !collapse"/></el-radio-button>
     </el-radio-group>
-    <el-menu default-active="0" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
-      <router-link to="/admin/home">
-      <el-menu-item index="0">
-        <i class="el-icon-setting"></i>
+    <el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+      <router-link to="/auth/home">
+      <el-menu-item index="/auth/home">
+        <i class="el-icon-s-home"></i>
        <span slot="title">首页</span>
       </el-menu-item>
       </router-link>
-      <el-submenu index="5">
+      <!--<el-submenu index="5">
         <template slot="title">
           <i class="el-icon-location"></i>
           <span slot="title">订单管理</span>
         </template>
         <el-menu-item-group>
-          <router-link to="/admin/produce"><el-menu-item index="5-1">订单列表</el-menu-item></router-link>
+          <router-link to="/auth/produce"><el-menu-item index="5-1">订单列表</el-menu-item></router-link>
         </el-menu-item-group>
         <el-menu-item-group>
-          <router-link to="/admin/produce"><el-menu-item index="5-2">我的订单</el-menu-item></router-link>
+          <router-link to="/auth/produce"><el-menu-item index="5-2">我的订单</el-menu-item></router-link>
         </el-menu-item-group>
-      </el-submenu>
-      <el-submenu index="1">
+      </el-submenu>-->
+      <el-submenu index="1" v-if="this.$store.state.userInfo.authority && this.$store.state.userInfo.authority.includes('产品管理') || this.$store.state.userInfo.identity && this.$store.state.userInfo.identity === 1">
         <template slot="title">
-          <i class="el-icon-location"></i>
+          <i class="el-icon-shopping-bag-1"></i>
           <span slot="title">产品管理</span>
         </template>
         <el-menu-item-group>
-          <router-link to="/admin/product"><el-menu-item index="1-1">产品列表</el-menu-item></router-link>
-          <router-link to="/admin/material"><el-menu-item index="1-2">配件列表</el-menu-item></router-link>
-          <router-link to="/admin/product"><el-menu-item index="1-3">机器列表</el-menu-item></router-link>
+          <router-link to="/auth/materialCategory"><el-menu-item index="/auth/materialCategory">原料管理</el-menu-item></router-link>
+          <router-link to="/auth/package"><el-menu-item index="/auth/package">配件管理</el-menu-item></router-link>
+          <router-link to="/auth/goods"><el-menu-item index="/auth/goods">产品管理</el-menu-item></router-link>
+          <router-link to="/auth/machine"><el-menu-item index="/auth/machine">机器管理</el-menu-item></router-link>
         </el-menu-item-group>
-        <el-submenu index="1-4">
-          <span slot="title">选项4</span>
-          <el-menu-item index="1-4-1">选项1</el-menu-item>
-        </el-submenu>
       </el-submenu>
-      <el-submenu index="2">
+      <el-submenu index="2" v-if="this.$store.state.userInfo.authority && this.$store.state.userInfo.authority.includes('生产管理') || this.$store.state.userInfo.identity && this.$store.state.userInfo.identity === 1">
         <template slot="title">
-          <i class="el-icon-location"></i>
+          <i class="el-icon-money"></i>
           <span slot="title">生产管理</span>
         </template>
         <el-menu-item-group>
-          <router-link to="/admin/produce"><el-menu-item index="2-1">生产列表</el-menu-item></router-link>
+          <router-link to="/auth/producePackage"><el-menu-item index="/auth/producePackage">配件生产</el-menu-item></router-link>
+          <router-link to="/auth/produceGoods"><el-menu-item index="/auth/produceGoods">产品生产</el-menu-item></router-link>
         </el-menu-item-group>
       </el-submenu>
-      <el-submenu index="3">
+      <el-submenu index="5" v-if="this.$store.state.userInfo.authority && this.$store.state.userInfo.authority.includes('商家管理') || this.$store.state.userInfo.identity && this.$store.state.userInfo.identity === 1">
         <template slot="title">
-          <i class="el-icon-location"></i>
-          <span slot="title">审批管理</span>
+          <i class="el-icon-s-marketing"></i>
+          <span slot="title">商家管理</span>
         </template>
         <el-menu-item-group>
-          <router-link to="/admin/produce"><el-menu-item index="3-1">流程审批</el-menu-item></router-link>
-        </el-menu-item-group>
-        <el-menu-item-group>
-          <router-link to="/admin/produce"><el-menu-item index="3-2">订单审批</el-menu-item></router-link>
+          <router-link to="/auth/merchant"><el-menu-item index="/auth/merchant">商家列表</el-menu-item></router-link>
+          <router-link to="/auth/order"><el-menu-item index="/auth/order">交付管理</el-menu-item></router-link>
         </el-menu-item-group>
       </el-submenu>
-      <el-menu-item index="4">
-        <i class="el-icon-setting"></i>
-        <span slot="title">导航四</span>
-      </el-menu-item>
+      <el-submenu index="6" v-if="this.$store.state.userInfo.authority && this.$store.state.userInfo.authority.includes('员工管理') || this.$store.state.userInfo.identity && this.$store.state.userInfo.identity === 1">
+        <template slot="title">
+          <i class="el-icon-setting"></i>
+          <span slot="title">员工管理</span>
+        </template>
+        <el-menu-item-group>
+          <router-link to="/auth/staff/staffList"><el-menu-item index="/auth/staff/staffList">员工列表</el-menu-item></router-link>
+          <router-link to="/auth/staff/group"><el-menu-item index="/auth/staff/group">分组管理</el-menu-item></router-link>
+          <router-link to="/auth/staff/authority"><el-menu-item index="/auth/staff/authority">权限管理</el-menu-item></router-link>
+        </el-menu-item-group>
+      </el-submenu>
+      <router-link to="/auth/approve" v-if="this.$store.state.userInfo.authority && this.$store.state.userInfo.authority.includes('审批管理') || this.$store.state.userInfo.identity && this.$store.state.userInfo.identity === 1">
+        <el-menu-item index="/auth/approve">
+          <i class="el-icon-tickets"></i>
+          <span slot="title">审批管理</span>
+        </el-menu-item>
+      </router-link>
+      <router-link to="/auth/picCode" v-if="this.$store.state.userInfo.authority && this.$store.state.userInfo.authority.includes('二维码管理') || this.$store.state.userInfo.identity && this.$store.state.userInfo.identity === 1">
+        <el-menu-item index="/auth/picCode">
+          <i class="el-icon-picture"></i>
+          <span slot="title">二维码管理</span>
+        </el-menu-item>
+      </router-link>
     </el-menu>
   </div>
 </template>
@@ -107,10 +122,12 @@
       min-height: 400px;
     }
     .collapse{
-      display: block;
-      width: 20px;
-      height: 20px;
-      background: url("../../assets/col.png") no-repeat;
+      color: black;
+      font-size: 25px;
+      transition: .3s all;
+      &:hover{
+        color: #54B2FE;
+      }
     }
     .collapse_active{
       background-color: transparent !important;
@@ -120,9 +137,6 @@
       background: #54B2FE;
       color: #ffffff;
     }
-    .el-radio-button:hover{
-      background:#EDF5FF!important;
-    }
     .el-radio-button{
       position: absolute;
       top: 17px;
@@ -131,5 +145,11 @@
     .el-radio-button__orig-radio:checked+.el-radio-button__inner{
       border: none;
     }
+    .el-menu-item [class^=el-icon-], .el-submenu [class^=el-icon-]{
+      margin-bottom: 3px;
+    }
+  }
+  .el-radio-button__orig-radio:checked+.el-radio-button__inner{
+    background: none !important;
   }
 </style>
