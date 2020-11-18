@@ -620,6 +620,9 @@
     .ant-btn{
       margin-top: 20px;
     }
+    .ant-select-selection--single{
+      background: #F7F9FA !important;
+    }
     .ant-input-number{
       width: 100% !important;
       background: #F7F9FA !important;
@@ -632,9 +635,6 @@
     }
     .ant-input:focus{
       background: #ffffff !important;
-    }
-    .ant-select-selection--single{
-      background: #F7F9FA !important;
     }
   }
   .personal-modal{

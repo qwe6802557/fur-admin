@@ -47,7 +47,7 @@ class VerifyController extends Controller {
       });
       if (result.data) {
         const { code } = result.data;
-        console.log(result.data);
+
         if (code === 0) {
           ctx.session.mes_code = {
             time: Date.now(),

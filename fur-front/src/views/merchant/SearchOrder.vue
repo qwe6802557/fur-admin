@@ -55,7 +55,7 @@
           }"
           format="YYYY-MM-DD HH:mm:ss"
           v-decorator="['group_time']"
-          :placeholder="['请输入开始时间', '请输入结束时间']"
+          :placeholder="['请选择开始时间', '请选择结束时间']"
         />
       </a-form-item>
     </a-form>

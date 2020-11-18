@@ -1,3 +1,6 @@
+/**
+ * Vuex使用库存放--store
+ */
 import Vuex from 'vuex';
 import Vue from 'vue';
 import state from '@/vuex/state';

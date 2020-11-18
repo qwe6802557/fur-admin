@@ -1,3 +1,6 @@
+/**
+ * UI框架配置使用
+ */
 import Vue from 'vue';
 import { Menu, Icon, Card, Steps, Form, Input,
   Button, Tag, Table, Drawer, Row, Col, Select,
